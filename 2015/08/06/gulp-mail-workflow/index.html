@@ -1,0 +1,505 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" />
+
+
+
+  <meta name="keywords" content="耀东,晓风,博客,晓风东东,东东,互联网,设计,前端开发,分享,李耀东,vanilla" />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="晓风博客" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta content="晓风博客" property="og:site_name">
+<meta content="使用 Gulp 加速 HTML 邮件开发" property="og:title">
+<meta content="http://liyaodong.com/2015/08/06/gulp-mail-workflow/" property="og:url">
+<meta content="article" property="og:type">
+<meta content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" property="og:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    analytics: {
+      google: 'UA-30027709-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> 使用 Gulp 加速 HTML 邮件开发 // 晓风博客 </title>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <span class="logo windmill-logo">
+    <i class="windmill-top"></i>
+    <i class="windmill-dot"></i>
+    <i class="windmill-base"></i>
+  </span>
+  <a href="/" class="brand windmill-hover">
+    <span class="site-title">晓风博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              使用 Gulp 加速 HTML 邮件开发
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-08-06
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/08/06/gulp-mail-workflow/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="使用 Gulp 加速 HTML 邮件开发"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p><img src="http://liyaodong.qiniudn.com/uploads/2015/0806/mailcheck-hd.jpg" alt="mailcheck dribbble@Eddie Lobanovskiy"><br>如果说前端里最痛苦的事情是什么，那一定是用行内样式和 table 写响应式的 HTML 邮件了。</p>
+<a id="more"></a>
+<p>既然是痛点，那就解决它。</p>
+<h3 id="第一步，解决行内样式引用的问题"><a href="#第一步，解决行内样式引用的问题" class="headerlink" title="第一步，解决行内样式引用的问题"></a>第一步，解决行内样式引用的问题</h3><p>邮件内不能使用 <code>&lt;link&gt;</code> 来引入 CSS 样式，因此写邮件就十分痛苦。行内样式无法公用 CSS 而且写起来也很费劲，维护起来更痛苦。因此我们需要外链的样式。</p>
+<p>通过 <a href="https://www.npmjs.com/package/gulp-inline-css" target="_blank" rel="external">gulp-inline-css</a> 这个插件可以很方便的将外链样式转化为行内样式。</p>
+<p>这个插件很屌，不过仍然有坑。后面再说。</p>
+<h3 id="如果-HTML-也能复用"><a href="#如果-HTML-也能复用" class="headerlink" title="如果 HTML 也能复用"></a>如果 HTML 也能复用</h3><p>对于相同的部分例如头部和底部，当然是抽出模板来写更方便。邮件编写这么小的事情想当然用不上 <code>swig</code> <code>jade</code> 这种东西，Break a fly upon a wheel。</p>
+<p><a href="https://www.npmjs.com/package/gulp-file-include" target="_blank" rel="external">gulp-file-include</a> 就是我们想要的东西，虽然是简单的 file inlcude，但是对于编写邮件已经足够了。</p>
+<h3 id="看起来已经够了，如果再加一些调料"><a href="#看起来已经够了，如果再加一些调料" class="headerlink" title="看起来已经够了，如果再加一些调料"></a>看起来已经够了，如果再加一些调料</h3><p>再加上 <code>stylus</code> CSS 预处理器，本地文件服务器以及浏览器自动刷新(Livereload) …</p>
+<p>Perfect，比起以前直接写静态好了太多。</p>
+<h3 id="inline-css-的一些坑"><a href="#inline-css-的一些坑" class="headerlink" title="inline-css 的一些坑"></a>inline-css 的一些坑</h3><p>在开发过程中发现如果嵌入 <code>&lt;%= @user.username%&gt;</code> 这样的语句是编译后就成了 <code>&lt;%= @user.username=&quot;&quot;%&gt;</code>，这样放到 Ruby erb 中显然无法运行。经过排除发现是 <code>inline-css</code> 这个包的问题。其实仔细思考这样的结果也在情理之中，<code>&lt;abc</code> 本身就是 HTML 的标签形式。默认给属性加了空值其实也能理解，虽然 HTML5 推荐 <code>disabled=&quot;disabled&quot;</code> 直接写成 <code>disabled</code>。那么如何解决呢？</p>
+<p>写的时候写成 <code>|%</code> 最后全局搜索替换成 <code>&lt;%</code> 不就好了。这是我最初的想法，确实挺 low 。这种事情就不应该手动去做，不如写个 Gulp 函数来处理这件事情。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">replaceStr</span>(<span class="params">type</span>) </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">transform</span>(<span class="params">file, cb</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(type === <span class="string">'replace'</span>) &#123;</div><div class="line">      file.contents = <span class="keyword">new</span> Buffer(<span class="built_in">String</span>(file.contents).replace(<span class="regexp">/&lt;%/g</span>, <span class="string">'|%'</span>));</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      file.contents = <span class="keyword">new</span> Buffer(<span class="built_in">String</span>(file.contents).replace(<span class="regexp">/\|%/g</span>, <span class="string">'&lt;%'</span>));</div><div class="line">    &#125;</div><div class="line">    cb(<span class="literal">null</span>, file);</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="built_in">require</span>(<span class="string">'event-stream'</span>).map(transform);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// ...</span></div><div class="line">    .pipe(replaceStr(<span class="string">'replace'</span>))</div><div class="line">    .pipe(inlineCss(&#123;</div><div class="line">      <span class="attr">applyStyleTags</span>: <span class="literal">false</span>,</div><div class="line">      <span class="attr">removeStyleTags</span>: <span class="literal">false</span></div><div class="line">    &#125;))</div><div class="line">    .pipe(replaceStr(<span class="string">'fix'</span>))</div><div class="line"></div><div class="line"><span class="comment">// ...</span></div></pre></td></tr></table></figure>
+<p>并没有什么难度的一个功能，但确实方便了不少。</p>
+<p>完整的DEMO <a href="https://github.com/liyaodong/gulp_mail_workflow" target="_blank" rel="external">github@liyaodong/gulp_mail_workflow</a></p>
+<p>头图来自 <a href="https://dribbble.com/shots/654389-mailcheck" target="_blank" rel="external">dribbble@Eddie Lobanovskiy</a> 侵删</p>
+<blockquote class="blockquote-center"><br>I prefer my history dead. Dead history is writ in ink, the living sort in blood.<br></blockquote>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/08/30/move-fast-and-break-things/">Facebook 里的那些触动人心的海报</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/07/26/using-you-get-to-download-the-video/">使用 you-get 来下载视频网站上的视频</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2015/08/06/gulp-mail-workflow/"
+     data-title="使用 Gulp 加速 HTML 邮件开发"
+     data-content=""
+     data-url="http://liyaodong.com/2015/08/06/gulp-mail-workflow/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="使用 Gulp 加速 HTML 邮件开发"
+               data-title="使用 Gulp 加速 HTML 邮件开发" data-url="http://liyaodong.com/2015/08/06/gulp-mail-workflow/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <div class="site-overview"  style="display: block;" >
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://avatars3.githubusercontent.com/u/3196361?v=3&s=460" alt="Vanilla" />
+          <p class="site-author-name">Vanilla</p>
+        </div>
+        <p class="site-description motion-element">晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">168</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            
+              <span class="site-state-item-count">104</span>
+              <span class="site-state-item-name">标签</span>
+              
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/liyaodong" target="_blank">github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/xiaofengdong" target="_blank">twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/lyd19941020" target="_blank">weibo</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.zhihu.com/people/liyaodong" target="_blank">zhihu</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://846400221.qzone.qq.com/" target="_blank">qzone</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name"></p>
+            
+              <span class="links-of-author-item">
+              <a href="http://cloudy9101.github.io/" target="_blank">Cloudy9101</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.ligan.me/" target="_blank">Gavin's Blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://zkuns.github.io/" target="_blank">Zkun's blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://yxq01.sinaapp.com/" target="_blank">与爱同深</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://jianglimao.sinaapp.com/" target="_blank">讲礼貌</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.xjp.cc/" target="_blank">XJP的碎碎念</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.jason2be.com/" target="_blank">jason2Be</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.nczonline.net/blog/" target="_blank">NCZOnline</a>
+              </span>
+            
+          
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2012 - 
+  2017
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Vanilla</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/jquery-pjax/jquery.pjax.js?v=0.4.4"></script>
+  <script type="text/javascript" src="/vendors/nprogress/nprogress.js?v=0.4.4"></script>
+  <link rel="stylesheet" href="/vendors/nprogress/nprogress.css?v=0.4.4">
+  <script type="text/javascript" src="/js/pjax-config.js"></script>
+
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"xfdd"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/js/analytics_google-analytics.js?v=0.4.4"></script>
+
+
+</body>
+</html>

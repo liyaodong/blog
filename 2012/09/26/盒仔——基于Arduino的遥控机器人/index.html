@@ -1,0 +1,592 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" />
+
+
+
+  <meta name="keywords" content="科技改变生活," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="晓风博客" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta content="晓风博客" property="og:site_name">
+<meta content="盒仔——基于Arduino的遥控机器人" property="og:title">
+<meta content="http://liyaodong.com/2012/09/26/盒仔——基于Arduino的遥控机器人/" property="og:url">
+<meta content="article" property="og:type">
+<meta content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" property="og:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    analytics: {
+      google: 'UA-30027709-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> 盒仔——基于Arduino的遥控机器人 // 晓风博客 </title>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <span class="logo windmill-logo">
+    <i class="windmill-top"></i>
+    <i class="windmill-dot"></i>
+    <i class="windmill-base"></i>
+  </span>
+  <a href="/" class="brand windmill-hover">
+    <span class="site-title">晓风博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              盒仔——基于Arduino的遥控机器人
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2012-09-26
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2012/09/26/盒仔——基于Arduino的遥控机器人/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="盒仔——基于Arduino的遥控机器人"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p>盒仔是一款开源的互动娱乐平台！我们将Arduino，亚克力板和纸模型创意的结合在一起，让大家可以快速搭建自己的遥控玩偶，开展互动体验，而它的组装就像搭乐高积木或者宜家家居一样简单！而盒仔的外形和功能完全取决于您的创意。我们可以用它来搞足球比赛，角色扮演，赛车或对战，甚至拍MV！<a id="more"></a></p>
+<p><a href="http://liyaodong.qiniudn.com/uploads/2012/09/zcevko.jpg" target="_blank" rel="external"><img src="http://liyaodong.qiniudn.com/uploads/2012/09/zcevko.jpg" alt="" title="zcevko"></a></p>
+<p><table frame="void" rules="none"></table></p>
+<p><tbody valign="top"></tbody></p>
+<p><tr></tr></p>
+<p><th>DIYer:</th></p>
+<p><td>Leo</td><br></p>
+<p><tr></tr></p>
+<p><th>制作时间:</th></p>
+<p><td>1天</td><br></p>
+<p><tr></tr></p>
+<p><th>制作难度:</th></p>
+<p><td>★★☆☆☆</td><br></p>
+<p><tr></tr></p>
+<p><th>GEEK指数:</th></p>
+<p><td>★★★☆☆</td><br><br><br></p>
+<div><object width="700" height="560" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://static.youku.com/qplayer.swf?playMode=mp4&amp;winType=index&amp;VideoIDS=XNDIzOTk2MTQw&amp;isAutoPlay=false&amp;ShowRelatedVideo=false"><param name="allowscriptaccess" value="always"><param name="allowfullscreen" value="true"><param name="wmode" value="opaque"><embed width="700" height="560" type="application/x-shockwave-flash" src="http://static.youku.com/qplayer.swf?playMode=mp4&amp;winType=index&amp;VideoIDS=XNDIzOTk2MTQw&amp;isAutoPlay=false&amp;ShowRelatedVideo=false" allowscriptaccess="always" allowfullscreen="true" wmode="opaque"></object></div><br><div><br><br><object width="700" height="560" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://static.youku.com/qplayer.swf?playMode=mp4&amp;winType=index&amp;VideoIDS=XNDQyODg5MDI0&amp;isAutoPlay=false&amp;ShowRelatedVideo=false"><param name="allowscriptaccess" value="always"><param name="allowfullscreen" value="true"><param name="wmode" value="opaque"><embed width="700" height="560" type="application/x-shockwave-flash" src="http://static.youku.com/qplayer.swf?playMode=mp4&amp;winType=index&amp;VideoIDS=XNDQyODg5MDI0&amp;isAutoPlay=false&amp;ShowRelatedVideo=false" allowscriptaccess="always" allowfullscreen="true" wmode="opaque"></object><br>盒仔第二版。<br><br>BOXZ，昵称盒仔。是一款开源的互动娱乐平台！我们将Arduino，亚克力板和纸模型创意的结合在一起，让大家可以快速搭建自己的遥控玩偶，开展互动体验，而它的组装就像搭乐高积木一样简单！而盒仔的外形和功能完全取决于您的创意。我们可以用它来搞足球比赛，角色扮演，赛车或对战，甚至拍MV！<br><br>我们希望通过盒仔，让大家把更多的精力放在创意和互动上，让每个喜欢DIY的人都能拥有自己的小机器人，最最重要的是可以拿出来与大家进行互动，分享快乐，而不是静静躺在实验室里。<br><br>大家可以在家里制作BOXZ，快速体验互动机器人的魅力。BOXZ对材料没有什么要求，可以是硬纸板，PVC塑料等任何2MM厚度的材质。我们推荐使用2MM厚的硬纸板，因为其价格便宜且加工容易，美术用品商店就有，大概10元一张。<br><div id="id1"><br><br>双向电梯<br><br></div>
+
+<h3 id="1-材料和工具"><a href="#1-材料和工具" class="headerlink" title="1   材料和工具"></a>1   材料和工具</h3><h4 id="1-1-工具清单"><a href="#1-1-工具清单" class="headerlink" title="1.1   工具清单"></a>1.1   工具清单</h4><p><a href="http://liyaodong.qiniudn.com/uploads/2012/09/ftxcwx.jpg" target="_blank" rel="external"><img src="http://liyaodong.qiniudn.com/uploads/2012/09/ftxcwx.jpg" alt="" title="ftxcwx"></a></p>
+<ul>
+<li>壁纸刀（最好用如图小款窄刀片，宽刀片切槽费劲）</li>
+<li>钢板尺</li>
+<li>双面胶（5MM宽度最佳）</li>
+<li>螺丝刀（小号一字和十字各一个）</li>
+<li>电烙铁和焊锡丝（如无，就多缠几圈线然后绑胶带吧）</li>
+<li>斜嘴钳</li>
+<li>万用表（安全第一）</li>
+<li>铅笔（可无）</li>
+<li>纸胶带（备用，当购买的硬纸板厚度不足2MM时，可用此紧固）</li>
+<li>电钻（如无，就用壁纸刀吧）</li>
+</ul>
+<h4 id="1-2-材料清单"><a href="#1-2-材料清单" class="headerlink" title="1.2   材料清单"></a>1.2   材料清单</h4><p><img src="http://img1.guokr.com/gkimage/dw/4q/wt/dw4qwt.png" alt="http://img1.guokr.com/gkimage/dw/4q/wt/dw4qwt.png"><img src="http://img1.guokr.com/gkimage/07/8o/5q/078o5q.png" alt="http://img1.guokr.com/gkimage/07/8o/5q/078o5q.png"><img src="http://img1.guokr.com/gkimage/px/7u/md/px7umd.png" alt="http://img1.guokr.com/gkimage/px/7u/md/px7umd.png"><img src="http://img1.guokr.com/gkimage/6r/2q/hh/6r2qhh.png" alt="http://img1.guokr.com/gkimage/6r/2q/hh/6r2qhh.png"></p>
+<ul>
+<li>Arduino 2009 328P 主控 x 1 （也可以是UNO）</li>
+<li>Arduino 电机驱动板 x 1 （要求可堆叠，极力推荐ladyada.net设计的Arduino兼容全功能电机驱动板）</li>
+<li>Arduino 蓝牙控制板 x 1 （要求可堆叠，当然也可以采用传感器扩展板+蓝牙板，或者Zigbee板，本文只介绍蓝牙）</li>
+<li>TT减速齿轮箱 x 2</li>
+<li>130电机 5V x 2</li>
+<li>65MM 塑料车轮 x 2</li>
+<li>4节5号电池盒 x 1</li>
+<li>面包线 x 4</li>
+<li>Arduino USB线缆一根（用于下载程序）</li>
+<li>五号电池 x 4(如为1.2V充电电池，需要五节)</li>
+<li>2MM厚白色硬纸板（但厚度尽量是2MM，虽然1.6MM也勉强可以，但是硬度不够，需要用纸胶带加固）</li>
+<li>M1.0x30MM 螺丝+螺母 x 6</li>
+<li>M3x10MM 六角铜柱 + M3螺母 x 3(长度可以是5-20MM范围内，推荐用10MM长的)</li>
+</ul>
+<h3 id="2-二-方盒结构件制作部分"><a href="#2-二-方盒结构件制作部分" class="headerlink" title="2   二. 方盒结构件制作部分"></a>2   二. 方盒结构件制作部分</h3><p>在开始制作之前，我们先来了解一下盒仔的机械结构吧</p>
+<p><img src="http://img1.guokr.com/gkimage/ig/o3/ww/igo3ww.png" alt="http://img1.guokr.com/gkimage/ig/o3/ww/igo3ww.png">上图就是盒仔板块一览，盒仔是由大小不等的板块构成，板块和板块之间采用插入式连接，因此不需要任何螺丝等紧固件。但是盒仔和其他部件，例如电机之间的连接就只能通过螺丝螺母了。这里面最大的板子外围尺寸为128x128MM，也是我们盒仔的外壳尺寸。这样的板子一共有五块，包围了整个盒仔，我们称之为大板。其中还有些尺寸各异的支撑板，用来支撑盒仔内部的Arduino模块和电机。值得一提的是，在最新的Base图纸中，我们已经优化掉了P006，同时在即将发布的Pro中，P007也会消失，我们一直致力于让大家可以以一种最简单的方式快速构建盒仔，就像搭积木一样简单。</p>
+<p><img src="http://img1.guokr.com/gkimage/s3/ab/1w/s3ab1w.png" alt="http://img1.guokr.com/gkimage/s3/ab/1w/s3ab1w.png">首先将下载好的BOXZ Base图纸和皮肤打印到A4纸上</p>
+<p>先把皮肤放到一边，我们需要先把图纸进行裁剪到合适的大小，大概距离边线10MM左右即可</p>
+<p>然后把图纸进行简单的排版，用双面胶把裁减好的图纸粘贴到硬纸板上，记得双面胶要粘贴在板块的线框以内，每个大板4个，其他2个即可，主要是固定作用。图纸在裁切完后是丢掉的，因此粘贴时间不能过长，太久了的话双面胶固化了，图纸撕下来可能会影响硬纸板的效果。</p>
+<p><img src="http://img1.guokr.com/gkimage/3w/8w/tv/3w8wtv.png" alt="http://img1.guokr.com/gkimage/3w/8w/tv/3w8wtv.png">首先用裁纸刀将各个板块裁成一块，一块的。然后对需要开孔的用电转进行开孔，如果没有的话，就用壁纸刀吧，但是注意孔不能开大了，否则螺丝就固定不住了。开完孔后就可以对边角进行修正，开槽。等一个板块的所有边线都裁切完成之后，就可以揭去图纸了。呵呵，一块纯手工打造的盒仔板块就算完成啦！</p>
+<p><img src="http://img1.guokr.com/gkimage/c9/8w/jr/c98wjr.png" alt="http://img1.guokr.com/gkimage/c9/8w/jr/c98wjr.png">陆陆续续对其他所有的板块进行裁切，并完成所有的板块，整个过程大概会占用你4-5小时，如下图。</p>
+<h3 id="3-板块的组装"><a href="#3-板块的组装" class="headerlink" title="3   板块的组装"></a>3   板块的组装</h3><p><img src="http://img1.guokr.com/gkimage/pz/e1/m8/pze1m8.png" alt="http://img1.guokr.com/gkimage/pz/e1/m8/pze1m8.png">列表中对每一个板块的编号和名称都有定义，如果你对于第一次组装盒仔感到困扰的话，我们有一个建议就是根据上面的我们定义过的P0xx的编号，用铅笔对每一块进行标注，我们下面的组装过程会按照编号跟大家讲解。下图为盒仔的结构示意图，从图中大家可以大致了解各个板块之间的连接关系。我们的板块采用了对称设计，因此你几乎可以忽略安装时上下左右的方向问题，它们之间不分正反，可以相互替换。即使第一眼你觉得很复杂也没关系，只要按照我们的教程一步一步操作即可。</p>
+<p><img src="http://img1.guokr.com/gkimage/s4/yk/qr/s4ykqr.png" alt="http://img1.guokr.com/gkimage/s4/yk/qr/s4ykqr.png">好的，下面我们开始介绍盒仔的组装。为了让大家更熟悉正安装过程，我们配合Sketchup效果图给大家解释整个组装过程。首先用到的是P003，我们一共有2块电机支撑板，用于连接和固定TT减速箱电机（以下简称电机）。在开始安装电机之前，大家可以先把P003实验性的插入P001，从而定义好一个方向，我们的电机都是在支撑板内侧安装的。然后就可以用紧固件分别把电机固定在P003的内侧了。如图每块P003与TT减速箱通过两个M1.0x30MM的螺丝固定。</p>
+<p><img src="http://img1.guokr.com/gkimage/ck/lc/un/cklcun.png" alt="http://img1.guokr.com/gkimage/ck/lc/un/cklcun.png"><img src="http://img1.guokr.com/gkimage/ly/3s/ix/ly3six.png" alt="http://img1.guokr.com/gkimage/ly/3s/ix/ly3six.png">将安装好电机的2块P003插入P001，然后把P002插入P001，此时整个盒仔的支撑结构已经完成。这里强调一点，一定要注意安装的先后顺序，这很重要！</p>
+<p><img src="http://img1.guokr.com/gkimage/8f/m6/us/8fm6us.png" alt="http://img1.guokr.com/gkimage/8f/m6/us/8fm6us.png">把电池盒用紧固件固定在P001上，这样我们的电机便牢牢的固定在了支撑板上。你可能会发现，此时的支撑结构还不是很稳定，在外力作用下依然有晃动。不要担心，我们还很很多板块没有安装，等你把盒仔板块全部组装完成之后，你就好发现它是多么的坚固稳定了。</p>
+<p>另外对于电池盒我们要额外说明一下的是，我们推荐大家使用4节5号普通电池，其电压为1.5V（新电池一般能达到1.7V），4节即6V构成了我们系统的最低电压。如果你使用的是1.2V的充电电池，那么就需要更换成5节5号电池盒。</p>
+<p><img src="http://img1.guokr.com/gkimage/v3/12/vn/v312vn.png" alt="http://img1.guokr.com/gkimage/v3/12/vn/v312vn.png">将车轮安装在盒仔P003的两侧，此时一个盒仔的最小系统已经出来了。你可以直接用面包线将电机连接到电池盒上，做成一个简易的小赛车，呵呵。</p>
+<p><img src="http://img1.guokr.com/gkimage/sf/c6/bx/sfc6bx.png" alt="http://img1.guokr.com/gkimage/sf/c6/bx/sfc6bx.png">将两块P004分别插入P001的两侧，然后装入两块P005，它们负责连接P002，P003和P004。此时你的小车应该已经非常牢固了！如果你所购买的硬纸板厚度不足2MM或者比较软的时候，我们建议你用纸胶带，对P002，P004和P005进行一个整体的加固，这会让你在安装外围板块的时候更轻松。</p>
+<p><img src="http://img1.guokr.com/gkimage/ao/3i/dk/ao3idk.png" alt="http://img1.guokr.com/gkimage/ao/3i/dk/ao3idk.png">现在盒仔的底板已经全部完成。这里我们要用到编号为P008的主控平台板，从中可以看出一共有三个孔位对应着Arduino主控上的三个固定孔。通过3个紧固件将Arduino主控固定在P008上，这里大家需要注意一下方向，两个孔的冲向盒仔的正前方。P008还有一个人性化的功能，即使你要用Arduino做其他有趣的事情，只要将P008向上一推即可取出，然后作为平台板放置到桌子上，不但方便大家调试，更重要的是安全！因为桌子上的细小的铜丝或其它金属物可能导致Arduino短路，这是非常危险的！</p>
+<p>好的，下面我们可以通过USB线缆对Arduino的程序进行下载了，下载方法请参看Arduino基础教程。</p>
+<p><img src="http://img1.guokr.com/gkimage/fh/ux/ct/fhuxct.png" alt="http://img1.guokr.com/gkimage/fh/ux/ct/fhuxct.png">将装好Arduino的P008插入我们的盒仔底盘，插入P002，这里我们需要使用P007作为支撑垫板先插入P001中</p>
+<p><img src="http://img1.guokr.com/gkimage/ty/co/6x/tyco6x.png" alt="http://img1.guokr.com/gkimage/ty/co/6x/tyco6x.png">然后将电机驱动板叠加到Arduino主控之上，下面就是连接各个电路部分了，不要慌，我们只有6根线哦！第一步，首先将电池盒的红线连接到电机驱动板的M+，然后将黑线连接至GND，电源部分完成！第二步，将电机连接到电机驱动板上，连接方法如图：P1-M1.1，P2-M1.2，P4-M2.1，P5-M2.2。其中P3是悬空的。第三步，确认电机驱动板的跳帽为短接状态（在电源端子旁边，默认为短接状态，如果取下跳帽，则电机驱动板和Arduino将需要独立供电）。</p>
+<p><img src="http://img1.guokr.com/gkimage/le/nj/gx/lenjgx.png" alt="http://img1.guokr.com/gkimage/le/nj/gx/lenjgx.png">最后将蓝牙控制板也叠加在电机板之上，我们的电路部分就基本搭建完成了！这里需要注意一点，我们教程中使用蓝牙板有切换软硬串口的跳线功能，而板子的默认位置需要大家确认一下，只要按照图中2个红色方块所示调整好跳帽即可。</p>
+<p><img src="http://img1.guokr.com/gkimage/x5/cw/iq/x5cwiq.png" alt="http://img1.guokr.com/gkimage/x5/cw/iq/x5cwiq.png">最后将两块P040，P020和P030四块外围板依次安装,（这只是一张实际安装效果图，图中两根我们做Pro版本测试的舵机线，蓝牙跳帽的位置是错的，请大家注意）</p>
+<p><img src="http://img1.guokr.com/gkimage/sk/lm/rv/sklmrv.png" alt="http://img1.guokr.com/gkimage/sk/lm/rv/sklmrv.png"><img src="http://img1.guokr.com/gkimage/4a/2h/27/4a2h27.png" alt="http://img1.guokr.com/gkimage/4a/2h/27/4a2h27.png">最让人激动的时刻马上就要到了！盖上P050顶板，插入电池，一个Base版的盒仔诞生了！</p>
+<p><img src="http://img1.guokr.com/gkimage/oj/uc/03/ojuc03.png" alt="http://img1.guokr.com/gkimage/oj/uc/03/ojuc03.png">测试通过的话，我们就可以开始制作皮肤了。</p>
+<h3 id="4-Arduino程序和调试"><a href="#4-Arduino程序和调试" class="headerlink" title="4   Arduino程序和调试"></a>4   Arduino程序和调试</h3><p>关于程序，我们列出初始化部分和主程序，以便让大家对其有个了解。全部代码大家可以 <a href="http://vdisk.weibo.com/s/b7UA3" target="_blank" rel="external">点此下载</a> 。这里要强调一点的是我们使用了ladyada.net设计的电机驱动库AFMotor，大家需要把解压后的文件放到Arduino安装目录libraries的文件夹下。</p>
+<p>程序片段如下：</p>
+<p>ARDUINO 代码复制打印</p>
+<p>[c]/*<br>BOXZ is is an open source robot platform for interactive entertainment!<br>We connected Arduino,Plexiglass(PMMA) Origami and your idea together,<br>so we can easily and quickly build a remote robot by ourself!<br>We can use it to playing football game, racing, fighting or some other interesting things!</p>
+<p>Author: Guangjun Zhu<br>Email: [email]zgj0729@163.com[/email]</p>
+<p>Code license: Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)<br>*/</p>
+<p>#include</p>
+<p>#include</p>
+<p>/<em><br> b_motor_stop(): stop motor<br> b_motor_com():  for Manual Operator<br> b_servo_ini();<br> b_servo_com();<br> b_skill();
+ </em>/</p>
+<p>//——————-define motor———————————————-//<br>AF_DCMotor motorL(1,MOTOR12_8KHZ);  //connect to M1<br>AF_DCMotor motorR(2,MOTOR12_8KHZ);  //connect to M2<br>int motor_speed = 200; //[modifid]motor speed 150-200,—min:100;max:255<br>int motor_delay = 400; //[modifid]delay time in step</p>
+<p>//——————-define servo———————————————-//<br>Servo hand_l_servo;  // create servo object to control a servo<br>Servo hand_r_servo;  // create servo object to control a servo<br>int hand_l_pos = 90; //<br>int hand_r_pos = 90; //<br>int hand_delay = 1;  //[modifid] speed of hand</p>
+<p>//——————main program———————————————–//</p>
+<p>void setup()<br>{<br>  Serial.begin(9600);<br>  b_motor_stop();<br>  b_servo_ini();<br>  delay(2000);  //waiting time<br>  Serial.println(&quot;Hello! BOXZ!&quot;);<br>}</p>
+<p>void loop()<br>{<br>  int  key;<br>  if(Serial.available() &amp;gt; 0) {<br>    key = Serial.read();<br>    if(key &amp;gt;= 30 &amp;amp;&amp;amp; key &amp;lt;= 122) {<br>      b_motor_com(key);<br>      b_servo_com(key);<br>      b_skill(key);<br>    }<br>  }<br>  // servo_test();<br>}[/c]</p>
+<p>从中我们可以看出，盒仔的主程序很少，调用了不同的功能子程序来实现其功能。盒仔是通过Arduino的串口将数据发送给蓝牙控制板，由笔记本电脑或者手机接收蓝牙串口数据，大家可以使用任何串口终端控制我们的盒仔。目前我们用windows7笔记本，MacBook和Iphone三种终端测试通过了蓝牙和Zigbee两种通讯模块，将来也会推出Wifi通讯。，由于软件还有很多功能需要添加，目前就暂不公布了，不过大家可以用串口助手实现操作，就像我们发布视频中的一样，操作也很方便。</p>
+<p>盒仔Base的程序是通过接收来自于键盘按键来进行动作判断的，只支持单个的字符。而在盒仔 Pro的版本中我们将采用更强大的字符串通讯方式，让大家拥有更棒的互动体验！</p>
+<p>盒仔的操作就像打电脑游戏一样，操作方式按键定义如下：</p>
+<p>方向控制按键定义：‘w’-前进；‘a’-左转；‘s’-后退；‘d’-右转；‘ ’（空格）-急刹车 （如果你按下键盘的Shift键，将会激活点动模式，配合相应的方向键，例如W为向前一小步，A为向左转90°）</p>
+<p>当然在我们提供的代码里面还包括舵机部分的控制，你可以用舵机控制左右手臂的摆动，点动等多种动作，具体定义大家可以看程序的注释，本教程以介绍盒仔 Base的安装为主，就不过多描述。</p>
+<h3 id="5-番外篇-皮肤制作"><a href="#5-番外篇-皮肤制作" class="headerlink" title="5   番外篇-皮肤制作"></a>5   番外篇-皮肤制作</h3><object width="480" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://player.youku.com/player.php/sid/XNDM2NjQ0ODAw/v.swf"><param name="allowscriptaccess" value="sameDomain"><param name="allowfullscreen" value="true"><param name="wmode" value="opaque"><param name="data-pinit" value="registered"><embed width="480" height="400" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/sid/XNDM2NjQ0ODAw/v.swf" allowscriptaccess="sameDomain" allowfullscreen="true" wmode="opaque" data-pinit="registered"><img src="http://liyaodong.sinaapp.com/wp-includes/js/tinymce/themes/advanced/img/trans.gif" alt=""></object>盒仔方盒整体尺寸：128x128x128MM<br><br>盒仔皮肤的基本尺寸：130x130x130MM<br><br><img src="http://img1.guokr.com/gkimage/tv/9a/0e/tv9a0e.png" alt="http://img1.guokr.com/gkimage/tv/9a/0e/tv9a0e.png"><br><br>首先打印我们的皮肤，图纸大家可以从Github上免费下载，链接在本文最后提供。这里我们选择了Creeper，一共需要3张A4纸。<br><br><img src="http://img1.guokr.com/gkimage/jx/gs/z0/jxgsz0.png" alt="http://img1.guokr.com/gkimage/jx/gs/z0/jxgsz0.png">沿线裁剪皮肤，如图。<br><br><img src="http://img1.guokr.com/gkimage/hx/5z/lo/hx5zlo.png" alt="http://img1.guokr.com/gkimage/hx/5z/lo/hx5zlo.png">由于纸张较薄，所以裁剪后有些微翘。建议大家使用厚一点的A4纸张打印，即可避免此问题。<br><br><img src="http://img1.guokr.com/gkimage/ni/ge/e6/nigee6.png" alt="http://img1.guokr.com/gkimage/ni/ge/e6/nigee6.png">用双面胶粘贴在白色连接区域中，然后将每块皮肤粘贴在一起，这里建议大家使用5MM宽的双面胶。<br><br><img src="http://img1.guokr.com/gkimage/pd/hl/hc/pdhlhc.png" alt="http://img1.guokr.com/gkimage/pd/hl/hc/pdhlhc.png">由于纸张较薄的关系，这里用纸胶带进行了加固处理。<br><br><img src="http://img1.guokr.com/gkimage/oc/6m/ue/oc6mue.png" alt="http://img1.guokr.com/gkimage/oc/6m/ue/oc6mue.png">皮肤制作完成，来看一下整体效果吧。<br><br><img src="http://img1.guokr.com/gkimage/6v/r8/y9/6vr8y9.png" alt="http://img1.guokr.com/gkimage/6v/r8/y9/6vr8y9.png">最后再来一张配合马里奥的合影，呵呵。<br><object width="700" height="560" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://static.youku.com/qplayer.swf?playMode=mp4&amp;winType=index&amp;VideoIDS=XNDQyODkzNTg4&amp;isAutoPlay=false&amp;ShowRelatedVideo=false"><param name="allowscriptaccess" value="always"><param name="allowfullscreen" value="true"><param name="wmode" value="opaque"><embed width="700" height="560" type="application/x-shockwave-flash" src="http://static.youku.com/qplayer.swf?playMode=mp4&amp;winType=index&amp;VideoIDS=XNDQyODkzNTg4&amp;isAutoPlay=false&amp;ShowRelatedVideo=false" allowscriptaccess="always" allowfullscreen="true" wmode="opaque"></object>
+
+<h3 id="6-更多盒仔的故事"><a href="#6-更多盒仔的故事" class="headerlink" title="6   更多盒仔的故事"></a>6   更多盒仔的故事</h3><p><img src="http://img1.guokr.com/gkimage/52/k2/bg/52k2bg.png" alt="http://img1.guokr.com/gkimage/52/k2/bg/52k2bg.png">一个好的开始。</p>
+<p>盒仔2号原型机的作者是我们团队的视频后期高手，他的儿子很喜欢愤怒的小鸟。于是他爹就给他做了个红色小鸟的盒仔皮肤，套在盒仔上面和儿子一起玩互动。想象一下您和家人在一起，控制一只愤怒的小鸟冲向一堆贴有钢盔猪的饮料瓶或者积木时的开心景象吧！</p>
+<p>细心的大家可能会发现我们的文章里的照片实际使用的是P041板块，而不是BOXZ Base标配的P040。P041是在其基础上增加了舵机扩展槽，可以让大家安装9G舵机。P041将会出现在BOXZ Pro版本中，由于目前我们还需要验证其开槽位置是否恰当，所以暂时没有发布。</p>
+<p>我们的盒仔已经在 <a href="http://www.demohour.com/projects/303780" target="_blank" rel="external">点名时间</a> 发布了，上面有更多关于盒仔的故事。如果大家喜欢，可以来支持我一票！</p>
+<p>大家可以免费下载我们的 <a href="https://github.com/leolite/BOXZ" target="_blank" rel="external">设计图纸</a></p>
+<p>本教程中Arduino主控，电机驱动板和蓝牙控制板的图片来自互联网，归各自厂家所有，详细资料请登录网站查询。</p>
+<p></p></div><p></p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/科技改变生活/"> #科技改变生活 </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2012/10/07/国家地理2012年摄影大赛，惊人美图揭秘/">国家地理2012年摄影大赛，惊人美图揭秘</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2012/09/21/基于Arduino-Pro的超萌宠物小飞鱼/">基于Arduino Pro的超萌宠物小飞鱼</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2012/09/26/盒仔——基于Arduino的遥控机器人/"
+     data-title="盒仔——基于Arduino的遥控机器人"
+     data-content=""
+     data-url="http://liyaodong.com/2012/09/26/盒仔——基于Arduino的遥控机器人/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="盒仔——基于Arduino的遥控机器人"
+               data-title="盒仔——基于Arduino的遥控机器人" data-url="http://liyaodong.com/2012/09/26/盒仔——基于Arduino的遥控机器人/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <div class="site-overview"  style="display: block;" >
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://avatars3.githubusercontent.com/u/3196361?v=3&s=460" alt="Vanilla" />
+          <p class="site-author-name">Vanilla</p>
+        </div>
+        <p class="site-description motion-element">晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">168</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            
+              <span class="site-state-item-count">104</span>
+              <span class="site-state-item-name">标签</span>
+              
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/liyaodong" target="_blank">github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/xiaofengdong" target="_blank">twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/lyd19941020" target="_blank">weibo</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.zhihu.com/people/liyaodong" target="_blank">zhihu</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://846400221.qzone.qq.com/" target="_blank">qzone</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name"></p>
+            
+              <span class="links-of-author-item">
+              <a href="http://cloudy9101.github.io/" target="_blank">Cloudy9101</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.ligan.me/" target="_blank">Gavin's Blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://zkuns.github.io/" target="_blank">Zkun's blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://yxq01.sinaapp.com/" target="_blank">与爱同深</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://jianglimao.sinaapp.com/" target="_blank">讲礼貌</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.xjp.cc/" target="_blank">XJP的碎碎念</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.jason2be.com/" target="_blank">jason2Be</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.nczonline.net/blog/" target="_blank">NCZOnline</a>
+              </span>
+            
+          
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2012 - 
+  2017
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Vanilla</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/jquery-pjax/jquery.pjax.js?v=0.4.4"></script>
+  <script type="text/javascript" src="/vendors/nprogress/nprogress.js?v=0.4.4"></script>
+  <link rel="stylesheet" href="/vendors/nprogress/nprogress.css?v=0.4.4">
+  <script type="text/javascript" src="/js/pjax-config.js"></script>
+
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"xfdd"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/js/analytics_google-analytics.js?v=0.4.4"></script>
+
+
+</body>
+</html>

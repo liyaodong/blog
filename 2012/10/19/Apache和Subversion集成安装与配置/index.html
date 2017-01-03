@@ -1,0 +1,512 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" />
+
+
+
+  <meta name="keywords" content="科技改变生活,SVN," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="晓风博客" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta content="晓风博客" property="og:site_name">
+<meta content="Apache和Subversion集成安装与配置" property="og:title">
+<meta content="http://liyaodong.com/2012/10/19/Apache和Subversion集成安装与配置/" property="og:url">
+<meta content="article" property="og:type">
+<meta content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" property="og:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    analytics: {
+      google: 'UA-30027709-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> Apache和Subversion集成安装与配置 // 晓风博客 </title>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <span class="logo windmill-logo">
+    <i class="windmill-top"></i>
+    <i class="windmill-dot"></i>
+    <i class="windmill-base"></i>
+  </span>
+  <a href="/" class="brand windmill-hover">
+    <span class="site-title">晓风博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              Apache和Subversion集成安装与配置
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2012-10-19
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2012/10/19/Apache和Subversion集成安装与配置/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="Apache和Subversion集成安装与配置"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p><div><a href="http://liyaodong.qiniudn.com/uploads/2012/10/subversion-logo.png" target="_blank" rel="external"><img src="http://liyaodong.qiniudn.com/uploads/2012/10/subversion-logo.png" alt="" title="subversion-logo"></a></div></p>
+<p><div>因为工作需要,要架设一个Subversion和Apache一起工作的源码管理器.以便协同工作.于是网上找了一些资料,在找资料的过程中,也走了一些弯路,于是自己整理了一下安装的过程和一些注意的事项,希望能对大家有些帮助.<a id="more"></a></div><br>我这里用的IDE是netbeans6.0,其实用什么IDE都无所谓,只是netbeans一直是我喜欢的IDE,所以顺便向大家推荐一下.呵呵.<br>好了,言归正传吧,要准备的东西如下:<br>1,apache_2.0.63-win32-x86-no_ssl.msi<br>下载:<a href="http://apache.mirror.phpchina.com/httpd/binaries/win32/apache_2.0.63-win32-x86-no_ssl.msi" target="_blank" rel="external">http://apache.mirror.phpchina.com/httpd/binaries/win32/apache_2.0.63-win32-x86-no_ssl.msi</a><br>2,svn-1.4.5-setup.exe<br>下载地址:<a href="http://subversion.tigris.org/files/documents/15/39559/svn-1.4.5-setup.exe" target="_blank" rel="external">http://subversion.tigris.org/files/documents/15/39559/svn-1.4.5-setup.exe</a><br>当然,你也可以选择安装TortoiseSVN.但是我没有装,因为我的源码管理都是用netbeans完成的.</p>
+<p>好了,准备的两个软件都下载下来以后,就可以开始安装了.<br>首先安装apache,一般来说直接点下一步就可以了,在设置domain以及host的时候,设置为localhost就可以了,Email你可以填你自己的Email,也可以随便填一个.安装apache要注意的是,你的电脑上80端口不能被占用,否则你的http服务是启动不起来的,我就遇到过这事,因为我用了skype,它在本机上打开了80和443端口来监听,搞得我一开始装不好,总是启动不起来,后来才发现是skype占用了80端口,于是把skype的设置改了以后,重装apache才成功.装好apache以后,这个时候,它已经在运行了,你可以在浏览器的地址栏输入<a href="http://localhost看看,是否安装成功,如果安装成功的话,这个时候浏览器里面应该是可以看到一个页面的" target="_blank" rel="external">http://localhost看看,是否安装成功,如果安装成功的话,这个时候浏览器里面应该是可以看到一个页面的</a>.<br>然后,再安装svn-1.4.5-setup.exe,也很简单,一步一步点下步就可以了,在安装的过程中,它会默认选中一些选项,其中就有一个是是否对apache的HTTP服务器提供支持的选项,这个默认是勾上的,不要去反选它,其它的你可以反选掉.然后svn就宣布安装成功了.你可以到CMD下面去试一下svn这个命令,如果有输出,则说明安装成功了,如果提示svn 不是内部或外部命令，也不是可运行的程序或批处理文件。那就说明没有装好.或者没有把这个命令加入到path中,所以最好的办法是到svn的安装目录下的bin里面去看一下.<br>两者都装好了以后,就开始配置,当然,配置也是最重要的.<br>首先要建立一个数据仓库,我们假设建在E盘,数据仓库最好不要建在C盘,因为C盘重装系统以后就格了.我们先在E盘下面建立一个目录叫svnroot,然后在svnroot下面再建立一个我们专门放我们工程的目录,比如叫MyProject.于是我们在E盘下面就有了这个一个文件夹:E:\svnroot\MyProject,然后我们用svnadmin的命令,使这个文件夹变成我们的数据仓库,命令如下:<br>svnadmin create E:\svnroot\MyProject<br>如果运行成功的话,什么也没有输出,这个时候,我们再来到MyProject文件夹下面,我们会发现多了几个文件夹和文件,我们打开conf文件夹,然后再打开svnserve.conf文件,找到如下行# password-db = passwd,然后把它前面的#去掉,表示MyProject是需要密码验证的.但是我们密码设在哪里呢,这个时候我们再打开conf文件夹下面的passwd文件,用文本编辑器打开,在[users]下面加上我们需要启动的人员的用户和密码,比如<br>[users]<br>hadeslee=hadeslee1234<br>tom=123456<br>这个的话,我们就启动了两个用户,一个叫hadeslee,密码是hadeslee1234,一个叫tom,密码是123456.然后我们保存passwd文件.然后,我们再建一个文件,叫access.auth,这个文件是设置访问权限的,里面内容如下:<br>[MyProject:/]<br>hadeslee = rw<br>[MyProject:/module1]<br>tom=rw<br>hadeslee=rw<br>这表示,MyProject下面的所有子目录hadeslee都是有权限读写的,但是tom只有权限读写此项目下面的module1目录,这个各自的访问权限就分的更细致了.有关于MyProject文件夹下面的设置,我们就告一段落了,我们现在开始设置apache,使它能和subvertion一起工作.</p>
+<p>首先来到Subersion的安装目录,进入它的bin目录,我们会发现如下两个文件:<br>mod_authz_svn.so<br>mod_dav_svn.so<br>我们把这两个文件复制一下,粘帖到apache的安装目录下的modules文件中,然后我们再打开apache安装目录下的conf文件夹,打开httpd.conf文件.增加如下两行：<br>LoadModule dav_svn_module modules/mod_dav_svn.so<br>LoadModule authz_svn_module modules/mod_authz_svn.so<br>注意，由于dav_svn需要dav_module的支持，所以要确保下面这一行没有被注释，并且保证在dav_svn之前加载：<br>LoadModule dav_module modules/mod_dav.so<br>然后模块的设置就完成了,下面我们要设置SVN的目录,以使我们的apache能知道访问不同的URL的时候,它去哪里寻找这个URL所对应的SVN目录.<br>在httpd.conf文件中,增加如下内容:<br>&lt;Location /svn/MyProject&gt;<br>DAV svn<br>SVNPath E:/svnroot/MyProject</p>
+<p>AuthzSVNAccessFile E:/svnroot/MyProject/conf/access.auth<br>Satisfy Any<br>Require valid-user</p>
+<p>AuthType Basic<br>AuthName “Subversion repositories”<br>AuthUserFile  E:/svnroot/MyProject/conf/users.auth<br>Require valid-user<br>&lt;/Location&gt;</p>
+<p>添加完上面这些,我们会发现access.auth是我们刚才新建的,可是users.auth我们并没有新建啊.怎么就把它加进去了.不要急,现在我们就来生成users.auth文件.</p>
+<p>进入apache的安装目录的bin文件夹,输入如下命令:</p>
+<p>D:\Program Files\Apache Group\Apache2\bin&gt;htpasswd -cb users.auth hadeslee hadeslee1234<br>Automatically using MD5 format.<br>Adding password for user hadeslee</p>
+<p>D:\Program Files\Apache Group\Apache2\bin&gt;</p>
+<p>我们就会发现在bin目录生成了users.auth,我们可以看到,hadeslee用户名已经被添加进去了,密码是用MD5加密过的.然后我们还要增加用户呢,可以用如下方法:<br>D:\Program Files\Apache Group\Apache2\bin&gt;htpasswd -b users.auth tom 123456<br>Automatically using MD5 format.<br>Adding password for user tom</p>
+<p>D:\Program Files\Apache Group\Apache2\bin&gt;</p>
+<p>只是在生成密码的时候,小了一个c的参数,因为c表示重新生成一个这样的文件,我们第一次的时候是要加的,后面我们要添加用户的时候,就不用这个c了.然后打开users.auth,会发现两个用户都已经在里面了,这个时候,我们把users.auth移到E:/svnroot/MyProject/conf/里面去,使我们上面的设置生效.</p>
+<p>这个时候,我们的设置就完成了.可以在浏览器里面输入<a href="http://localhost/svn/MyProject试试看" target="_blank" rel="external">http://localhost/svn/MyProject试试看</a>.</p>
+<p>如果以后我们还要加入其它的项目呢,可以有两点解决方式<br>1,把以后的项目也导入到我们的MyProject的仓库中,这个的话,就不用改什么配置了<br>2,新建一个数据仓库,然后只要按上面的步骤,把新的&lt;Location…&gt;设置放到httpd.conf里面就可以了.<br>当然,验证文件,访问权限文件,还有访问SVN的密码都要自己按上面的方法再设一遍.</p>
+<p>祝大家能够设置成功:)</p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/科技改变生活/"> #科技改变生活 </a>
+          
+            <a href="/tags/SVN/"> #SVN </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2012/10/19/浅谈素材搜索技巧/">浅谈素材搜索技巧</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2012/10/07/国家地理2012年摄影大赛，惊人美图揭秘/">国家地理2012年摄影大赛，惊人美图揭秘</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2012/10/19/Apache和Subversion集成安装与配置/"
+     data-title="Apache和Subversion集成安装与配置"
+     data-content=""
+     data-url="http://liyaodong.com/2012/10/19/Apache和Subversion集成安装与配置/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="Apache和Subversion集成安装与配置"
+               data-title="Apache和Subversion集成安装与配置" data-url="http://liyaodong.com/2012/10/19/Apache和Subversion集成安装与配置/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <div class="site-overview"  style="display: block;" >
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://avatars3.githubusercontent.com/u/3196361?v=3&s=460" alt="Vanilla" />
+          <p class="site-author-name">Vanilla</p>
+        </div>
+        <p class="site-description motion-element">晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">168</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            
+              <span class="site-state-item-count">104</span>
+              <span class="site-state-item-name">标签</span>
+              
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/liyaodong" target="_blank">github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/xiaofengdong" target="_blank">twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/lyd19941020" target="_blank">weibo</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.zhihu.com/people/liyaodong" target="_blank">zhihu</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://846400221.qzone.qq.com/" target="_blank">qzone</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name"></p>
+            
+              <span class="links-of-author-item">
+              <a href="http://cloudy9101.github.io/" target="_blank">Cloudy9101</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.ligan.me/" target="_blank">Gavin's Blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://zkuns.github.io/" target="_blank">Zkun's blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://yxq01.sinaapp.com/" target="_blank">与爱同深</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://jianglimao.sinaapp.com/" target="_blank">讲礼貌</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.xjp.cc/" target="_blank">XJP的碎碎念</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.jason2be.com/" target="_blank">jason2Be</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.nczonline.net/blog/" target="_blank">NCZOnline</a>
+              </span>
+            
+          
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2012 - 
+  2017
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Vanilla</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/jquery-pjax/jquery.pjax.js?v=0.4.4"></script>
+  <script type="text/javascript" src="/vendors/nprogress/nprogress.js?v=0.4.4"></script>
+  <link rel="stylesheet" href="/vendors/nprogress/nprogress.css?v=0.4.4">
+  <script type="text/javascript" src="/js/pjax-config.js"></script>
+
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"xfdd"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/js/analytics_google-analytics.js?v=0.4.4"></script>
+
+
+</body>
+</html>

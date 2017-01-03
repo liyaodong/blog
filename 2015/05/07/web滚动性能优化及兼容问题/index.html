@@ -1,0 +1,523 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" />
+
+
+
+  <meta name="keywords" content="科技改变生活," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="晓风博客" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta content="晓风博客" property="og:site_name">
+<meta content="web滚动性能优化及兼容问题" property="og:title">
+<meta content="http://liyaodong.com/2015/05/07/web滚动性能优化及兼容问题/" property="og:url">
+<meta content="article" property="og:type">
+<meta content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" property="og:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    analytics: {
+      google: 'UA-30027709-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> web滚动性能优化及兼容问题 // 晓风博客 </title>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <span class="logo windmill-logo">
+    <i class="windmill-top"></i>
+    <i class="windmill-dot"></i>
+    <i class="windmill-base"></i>
+  </span>
+  <a href="/" class="brand windmill-hover">
+    <span class="site-title">晓风博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              web滚动性能优化及兼容问题
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-05-07
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/05/07/web滚动性能优化及兼容问题/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="web滚动性能优化及兼容问题"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p><img src="http://liyaodong.qiniudn.com/uploads/2015/05/mouse.jpg" alt="mouse"><br>如果滚动仅仅是onscroll那么简单那么本文就没有存在的必要了，至于兼容这个老生常谈的问题……还是呵呵吧。<a id="more"></a></p>
+<h3 id="先来说说需求"><a href="#先来说说需求" class="headerlink" title="先来说说需求"></a>先来说说需求</h3><p>某日看到某文发现其网站有一很舒适的设计，即当你向下看文章的时候会提示你看到多少了。细心一想这个主意还是蛮有用的，遂「<del>抄袭</del>」之。</p>
+<blockquote>
+<p>某文某网站：<a href="http://www.ozy.com/pov/teaching-kids-code/3238" target="_blank" rel="external">http://www.ozy.com/pov/teaching-kids-code/3238</a></p>
+<p>  最终效果：<a href="http://www.geekpark.net/topics/171430" target="_blank" rel="external">http://www.geekpark.net/topics/171430</a></p>
+</blockquote>
+<h3 id="开撸"><a href="#开撸" class="headerlink" title="开撸"></a>开撸</h3><p>呵，不就是这么个小小的功能么，都不用打开我的Sublime，vi都搞定了。</p>
+<blockquote>
+<ol>
+<li>先画个 <code>div</code> ，然后 <code>position: fixed</code> 到最顶部，然后 <code>width: 0</code> 调整颜色 balabala….<p></p></li>
+<li>然后根据js监听浏览器滚动，用已滚动的部分的高度 <code>-</code> 文章距离顶部的高度 <code>=</code> 已阅读部分文章的高度。然后用这个高度除以文章总高度就等于阅读百分比。</li>
+</ol>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> $line = $(<span class="string">'#reading_progress'</span>),</div><div class="line">      $article = $(<span class="string">'#article'</span>),</div><div class="line">      articleH = $article.height(),</div><div class="line">      articleMt = $article.offset().top;</div><div class="line"></div><div class="line">  <span class="built_in">window</span>.onscroll = render;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">render</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> readed = $(<span class="built_in">window</span>).scrollTop() - articleMt,</div><div class="line">        progress;</div><div class="line">    <span class="comment">// 如果超出阅读则不进行操作</span></div><div class="line">    <span class="keyword">if</span>(readed &amp;lt; <span class="number">0</span>) &#123;</div><div class="line">      progress = <span class="number">0</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(readed &amp;gt; articleH) &#123;</div><div class="line">      progress = <span class="number">100</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      progress = <span class="built_in">parseInt</span>(readed / articleH * <span class="number">100</span>);</div><div class="line">    &#125;</div><div class="line">    $line.css(<span class="string">'width'</span>, progress + <span class="string">'px'</span>);</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>看起来好像咩有什么问题了，于是浏览器刷新调试… 好像和别人的效果不太一样，别人的是舒畅的音乐的感觉，我这一卡一卡的感觉像便秘…</p>
+<p>恩，可能是因为没有动画吧。祭出我的杀器：<code>transition: all 0.3s</code> 动画神马必备，看了看效果好像好点了。不过感觉还是有些卡顿，心理作用？</p>
+<p>好吧，<del datetime="2015-05-07T03:39:50+00:00">可能</del>是 <code>width</code> 触发重绘（repaint）了。</p>
+<p>关于浏览器重绘请移步：<a href="http://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/" target="_blank" rel="external">Avoiding Unnecessary Paints</a></p>
+<p>那不用 <code>width: 100%</code> 如何做到从 0% - 100% 的阅读进度提示呢？另外一个好的方案是 <code>translateX</code> 或者更好的方案 <code>translate3d</code> ， 为啥？因为相比 <code>width</code> 的变换，<code>translate</code> 不会引发重绘，这对于性能上有优势。而 <code>translateX</code> 和 <code>translate3d</code> 相比，前者已经足够好了但是后者会开启GPU加速，理论上性能更好。所以最后的CSS看起来是酱紫的：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.reading_progress</span></div><div class="line">  <span class="selector-tag">width</span>: 100%</div><div class="line">  <span class="selector-tag">height</span>: 3<span class="selector-tag">px</span></div><div class="line">  <span class="selector-tag">position</span>: <span class="selector-tag">fixed</span></div><div class="line">  <span class="selector-tag">z-index</span>: 999</div><div class="line">  <span class="selector-tag">background-color</span>: <span class="selector-id">#7fc042</span></div><div class="line">  <span class="selector-tag">transform</span>: <span class="selector-tag">translate3d</span>(<span class="selector-tag">-100</span>%, 0, 0)</div><div class="line">  <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span></div></pre></td></tr></table></figure>
+<p>CSS的性能优化到这里就要结束啦，其实 <code>position: fixed</code> 已经引发了重绘，优化 <code>width</code> 什么的都是自我安慰。但在以后的项目中还是尽量少的触发重绘，用户体验毕竟是由众多细小的细节组成的。</p>
+<p>接下来聊聊JS，这样写功能上是没有太大问题的。问题在于 <code>onscroll</code> 是否性能足够优秀？</p>
+<p>参考该文：<br><a href="http://www.html5rocks.com/zh/tutorials/speed/scrolling/" target="_blank" rel="external">Scrolling Performance</a><br><a href="http://kristerkari.github.io/adventures-in-webkit-land/blog/2013/08/30/fixing-a-parallax-scrolling-website-to-run-in-60-fps/" target="_blank" rel="external">Fixing a parallax scrolling website to run in 60 FPS</a><br><a href="http://www.html5rocks.com/en/tutorials/speed/animations/" target="_blank" rel="external">Leaner, Meaner, Faster Animations with requestAnimationFrame</a></p>
+<p>夜太长，字太多。不如我来总结一下，总得来说在浏览器滚动的过程中尽量<strong>避免</strong>图片大小的缩放、<code>bow-shadow</code>、<code>width</code>、<code>height</code>等变化。在循环动画等问题上尽量避免使用 <code>setTimeout</code> 而是使用 <code>requestAnimationFrame</code>去代替。这和本文有什么关系呢？在我们的 <code>onscroll</code> 中调用的 render()函数会在滚动发生的时候去触发。其实这是很没有必要的，可以通过加锁的形式让其 <code>60fps</code> 的速度去刷新。具体来看代码可能是酱紫的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> didScroll = <span class="literal">false</span>;</div><div class="line"><span class="keyword">var</span> ua = navigator.userAgent,</div><div class="line">    isMobile = <span class="regexp">/iPhone|iPad|iPod|Android/i</span>.test(navigator.userAgent);</div><div class="line"></div><div class="line"><span class="comment">// better way to loop animation</span></div><div class="line"><span class="built_in">window</span>.requestAnimFrame = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span>  <span class="built_in">window</span>.requestAnimationFrame       ||</div><div class="line">          <span class="built_in">window</span>.webkitRequestAnimationFrame ||</div><div class="line">          <span class="built_in">window</span>.mozRequestAnimationFrame    ||</div><div class="line">          <span class="function"><span class="keyword">function</span>(<span class="params"> callback </span>)</span>&#123;</div><div class="line">            <span class="built_in">window</span>.setTimeout(callback, <span class="number">1000</span> / <span class="number">60</span>);</div><div class="line">          &#125;;</div><div class="line">&#125;)();</div><div class="line"></div><div class="line"><span class="keyword">if</span>(isMobile) &#123;</div><div class="line">  $(<span class="built_in">document</span>).bind(<span class="string">'touchmove'</span>, updateProgress);</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">  $(<span class="built_in">window</span>).on(<span class="string">'scroll'</span>, updateProgress);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">updateProgress</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  didScroll = <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 这个东西不应该在 updateProgress里么？好吧，我试着放进去然后没动画效果了，原因未知。</span></div><div class="line"><span class="comment">// 这样的话即时不滚动也会不停的检查高度信息，但是... 谁看文章不滚动呢...</span></div><div class="line">(<span class="function"><span class="keyword">function</span> <span class="title">animloop</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  requestAnimFrame(animloop);</div><div class="line">  <span class="keyword">if</span>(didScroll) &#123;</div><div class="line">    didScroll = <span class="literal">false</span>;</div><div class="line">    render();</div><div class="line">  &#125;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+<p>在移动端应该使用 <code>touchmove</code> 事件而不是 <code>onscroll</code> 事件，但即使使用了 <code>touchmove</code> 事件在我的 ios 8.3 chrome version 42.0上仍然有问题，因为Chrome考虑到性能问题跳过了 <code>touchmove</code>事件。通常来说使用 <code>onscroll</code> 事件在众多移动端浏览器上事件触发是在滚动结束后才触发。而PC端是只要滚动就能触发，因此随滚动而产生的动画会比较流畅。但如果是滚动结束后才产生，那就会表现的有点卡。其实不是性能问题。而 <code>touchmove</code> 在移动端却可以连续触发。虽然在某些浏览器上还是有Bug。</p>
+<p><a href="http://tjvantoll.com/2012/08/19/onscroll-event-issues-on-mobile-browsers/" target="_blank" rel="external">onscroll Event Issues on Mobile Browsers</a><br><a href="http://wilsonpage.co.uk/touch-events-in-chrome-android/" target="_blank" rel="external">Touch events in Chrome Android</a></p>
+<p>那么这个问题真的没法解决吗？ iScroll 的解决办法是用 JS 模拟滚动，而对于本需求来说确实有那么点杀鸡用牛刀的感觉，毕竟不是什么核心需求。所以直到目前位置这个问题依然在 ios android上 没有解决，期待以后的解决方案。</p>
+<p>头图来自<a href="https://dribbble.com/shots/1445181-Mouse-Grid?list=searches&amp;tag=mouse&amp;offset=22" target="_blank" rel="external">Dribbble @Jamal</a></p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/科技改变生活/"> #科技改变生活 </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/07/04/更简单纯粹的晓风博客/">更简单纯粹的晓风博客</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/03/31/【HTML5】基于客户端的图片裁剪及水印添加功能/">【HTML5】基于客户端的图片裁剪及水印添加功能</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2015/05/07/web滚动性能优化及兼容问题/"
+     data-title="web滚动性能优化及兼容问题"
+     data-content=""
+     data-url="http://liyaodong.com/2015/05/07/web滚动性能优化及兼容问题/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="web滚动性能优化及兼容问题"
+               data-title="web滚动性能优化及兼容问题" data-url="http://liyaodong.com/2015/05/07/web滚动性能优化及兼容问题/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <div class="site-overview"  style="display: block;" >
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://avatars3.githubusercontent.com/u/3196361?v=3&s=460" alt="Vanilla" />
+          <p class="site-author-name">Vanilla</p>
+        </div>
+        <p class="site-description motion-element">晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">168</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            
+              <span class="site-state-item-count">104</span>
+              <span class="site-state-item-name">标签</span>
+              
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/liyaodong" target="_blank">github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/xiaofengdong" target="_blank">twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/lyd19941020" target="_blank">weibo</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.zhihu.com/people/liyaodong" target="_blank">zhihu</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://846400221.qzone.qq.com/" target="_blank">qzone</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name"></p>
+            
+              <span class="links-of-author-item">
+              <a href="http://cloudy9101.github.io/" target="_blank">Cloudy9101</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.ligan.me/" target="_blank">Gavin's Blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://zkuns.github.io/" target="_blank">Zkun's blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://yxq01.sinaapp.com/" target="_blank">与爱同深</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://jianglimao.sinaapp.com/" target="_blank">讲礼貌</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.xjp.cc/" target="_blank">XJP的碎碎念</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.jason2be.com/" target="_blank">jason2Be</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.nczonline.net/blog/" target="_blank">NCZOnline</a>
+              </span>
+            
+          
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2012 - 
+  2017
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Vanilla</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/jquery-pjax/jquery.pjax.js?v=0.4.4"></script>
+  <script type="text/javascript" src="/vendors/nprogress/nprogress.js?v=0.4.4"></script>
+  <link rel="stylesheet" href="/vendors/nprogress/nprogress.css?v=0.4.4">
+  <script type="text/javascript" src="/js/pjax-config.js"></script>
+
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"xfdd"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/js/analytics_google-analytics.js?v=0.4.4"></script>
+
+
+</body>
+</html>

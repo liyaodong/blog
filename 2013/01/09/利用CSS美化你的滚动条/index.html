@@ -1,0 +1,499 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" />
+
+
+
+  <meta name="keywords" content="科技改变生活," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="晓风博客" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta content="晓风博客" property="og:site_name">
+<meta content="利用CSS美化你的滚动条" property="og:title">
+<meta content="http://liyaodong.com/2013/01/09/利用CSS美化你的滚动条/" property="og:url">
+<meta content="article" property="og:type">
+<meta content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" property="og:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    analytics: {
+      google: 'UA-30027709-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> 利用CSS美化你的滚动条 // 晓风博客 </title>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <span class="logo windmill-logo">
+    <i class="windmill-top"></i>
+    <i class="windmill-dot"></i>
+    <i class="windmill-base"></i>
+  </span>
+  <a href="/" class="brand windmill-hover">
+    <span class="site-title">晓风博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              利用CSS美化你的滚动条
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2013-01-09
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2013/01/09/利用CSS美化你的滚动条/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="利用CSS美化你的滚动条"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p>前两天逛别人的网站，突然发现人家的网站还可以自定义浏览器的滚动条的，作为一名前端er，必须得兴奋一下么。遂F12了一下，把样式“拿来”了！</p>
+<a id="more"></a>这个滚动条实际上也就是几行代码，不过能给人以愉悦的感觉。先看看我的成品吧：<br><br>我博客，或者文理微博墙。<br><br>我博客：<a href="http://liyaodong.sinaapp.com" target="_blank" rel="external">http://liyaodong.sinaapp.com</a><br><br>文理微博墙：<a href="http://wlwbq.sinaapp.com" target="_blank" rel="external">http://wlwbq.sinaapp.com</a><br><br>### 具体代码（以文理微博墙的滚动条为例）<br><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 定义滚动条宽度 */</span></div><div class="line"><span class="selector-pseudo">::-webkit-scrollbar</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">12px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 定义那个轨道的样式 */</span></div><div class="line"><span class="selector-pseudo">::-webkit-scrollbar-track</span> &#123;</div><div class="line">    <span class="attribute">background</span>:<span class="number">#222</span>;</div><div class="line">    <span class="attribute">-webkit-box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="built_in">rgba</span>(0,0,0,0.5);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 定义滚动按钮的样式，就是那个bar */</span></div><div class="line"><span class="selector-pseudo">::-webkit-scrollbar-thumb</span> &#123;</div><div class="line">    <span class="attribute">-webkit-border-radius</span>: <span class="number">5px</span>;</div><div class="line">    <span class="attribute">border-radius</span>: <span class="number">5px</span>;</div><div class="line">    <span class="attribute">background</span>: <span class="built_in">-webkit-gradient</span>(linear, 0 0, 0 100%, from(#43bbe7), <span class="built_in">to</span>(#2188d5));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>看前缀应该就知道，这个是浏览器的自定义样式。而不是普通的样式。浏览器的样式是用::两个冒号来开头的，很奇怪吧。以前没见过。然后看代码，track就是轨道，thumb就是滚动按钮，-weibkit-gradient是渐变，linear是线性渐变。下面给出这个伪元素的相关属性吧：</p>
+<p>::-webkit-scrollbar 滚动条整体部分<br>::-webkit-scrollbar-button 滚动条两端的按钮<br>::-webkit-scrollbar-track 外层轨道<br>::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）<br>::-webkit-scrollbar-thumb （拖动条？滑块？滚动条里面可以拖动的那个，肿么翻译好呢？）<br>::-webkit-scrollbar-corner 边角<br>::-webkit-resizer 定义右下角拖动块的样式</p>
+<p>恩，就这么多了。很遗憾的是，这个只支持webkit的浏览器。IE不支持这玩意，但是IE也有自己的自定义，可以自己百度之。个人认为IE 的那个限制太多，没兴趣。又收获了一点点~ ^_^</p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/科技改变生活/"> #科技改变生活 </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/01/19/想要安装Win8的同学看过来/">想要安装Win8的同学看过来</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/01/03/遇见未知的自己【读书笔记分享】/">遇见未知的自己【读书笔记分享】</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2013/01/09/利用CSS美化你的滚动条/"
+     data-title="利用CSS美化你的滚动条"
+     data-content=""
+     data-url="http://liyaodong.com/2013/01/09/利用CSS美化你的滚动条/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="利用CSS美化你的滚动条"
+               data-title="利用CSS美化你的滚动条" data-url="http://liyaodong.com/2013/01/09/利用CSS美化你的滚动条/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <div class="site-overview"  style="display: block;" >
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://avatars3.githubusercontent.com/u/3196361?v=3&s=460" alt="Vanilla" />
+          <p class="site-author-name">Vanilla</p>
+        </div>
+        <p class="site-description motion-element">晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">168</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            
+              <span class="site-state-item-count">104</span>
+              <span class="site-state-item-name">标签</span>
+              
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/liyaodong" target="_blank">github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/xiaofengdong" target="_blank">twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/lyd19941020" target="_blank">weibo</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.zhihu.com/people/liyaodong" target="_blank">zhihu</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://846400221.qzone.qq.com/" target="_blank">qzone</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name"></p>
+            
+              <span class="links-of-author-item">
+              <a href="http://cloudy9101.github.io/" target="_blank">Cloudy9101</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.ligan.me/" target="_blank">Gavin's Blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://zkuns.github.io/" target="_blank">Zkun's blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://yxq01.sinaapp.com/" target="_blank">与爱同深</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://jianglimao.sinaapp.com/" target="_blank">讲礼貌</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.xjp.cc/" target="_blank">XJP的碎碎念</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.jason2be.com/" target="_blank">jason2Be</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.nczonline.net/blog/" target="_blank">NCZOnline</a>
+              </span>
+            
+          
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2012 - 
+  2017
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Vanilla</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/jquery-pjax/jquery.pjax.js?v=0.4.4"></script>
+  <script type="text/javascript" src="/vendors/nprogress/nprogress.js?v=0.4.4"></script>
+  <link rel="stylesheet" href="/vendors/nprogress/nprogress.css?v=0.4.4">
+  <script type="text/javascript" src="/js/pjax-config.js"></script>
+
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"xfdd"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/js/analytics_google-analytics.js?v=0.4.4"></script>
+
+
+</body>
+</html>

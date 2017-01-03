@@ -1,0 +1,507 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" />
+
+
+
+  <meta name="keywords" content="科技改变生活," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="晓风博客" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta content="晓风博客" property="og:site_name">
+<meta content="windows server 2003下Subversion+Apache+PHP+mySQL配置心得" property="og:title">
+<meta content="http://liyaodong.com/2012/10/30/windows-server-2003下Subversion-Apache-PHP-mySQL配置心得/" property="og:url">
+<meta content="article" property="og:type">
+<meta content="晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。" property="og:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    analytics: {
+      google: 'UA-30027709-1'
+    },
+    sidebar: 'hide'
+  };
+</script>
+
+
+
+
+  <title> windows server 2003下Subversion+Apache+PHP+mySQL配置心得 // 晓风博客 </title>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <span class="logo windmill-logo">
+    <i class="windmill-top"></i>
+    <i class="windmill-dot"></i>
+    <i class="windmill-base"></i>
+  </span>
+  <a href="/" class="brand windmill-hover">
+    <span class="site-title">晓风博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              windows server 2003下Subversion+Apache+PHP+mySQL配置心得
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2012-10-30
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2012/10/30/windows-server-2003下Subversion-Apache-PHP-mySQL配置心得/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="windows server 2003下Subversion+Apache+PHP+mySQL配置心得"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p><img src="http://liyaodong.qiniudn.com/uploads/2012/10/subversion-logo.png" alt="" title="SVN"></p>
+<p>之前用过新浪云计算（SAE）的空间，觉得使用SVN来管理代码很方便，代码可控制性很强。于是想自己架设一个SVN的WEB服务器，历尽艰辛总算配置成功了。贴出心得，以帮助有需要的人们，同时也算是备忘了。<a id="more"></a></p>
+<p>首先搭建Apache+PHP+mySQL，网上有很多很多套件的例如wamp、apmz、apm等等，我这里用的是PHPnow，这个套件。由于事先已经有人把这些东西整合到一起了，而且Apache安装的人比较多，所以这之间几乎没有什么问题存在。一路Next下来就OK的差不多了。重点是SVN，光一个Subversion for windows就让我找了很久，不过还是给找到了。下载地址：<a href="http://subversion.apache.org/packages.html#windows" title="Subversion下载" target="_blank" rel="external">http://subversion.apache.org/packages.html#windows</a> 除过要下载Subversion之外还需要下载SVN的客户端，Subversion是服务器端。客户端推荐下载TortoiseSVN，俗称海龟SVN。这个很容易就能找到下载地址。不过还是贴出来吧：<a href="http://tortoisesvn.net/downloads.html" title="tortoisesvn下载" target="_blank" rel="external">http://tortoisesvn.net/downloads.html</a> 。</p>
+<p>假设已经把Apache+PHP+mySQL搭建完成了，然后就是安装Subversion了。这个安装也很简单，一路Next就OK了。但是配置挺麻烦的。先安装上吧，安装完成后再把TortoiseSVN安装好。完了之后开始配置。</p>
+<p>首先在D盘或者其他盘建立一个目录，我的目录叫做CodeBase，顾名思义，代码库。建立好文件夹之后点击进去，鼠标右键，TortoiseSVN-Create repository here，意思就是在这个文件夹下创建一个SVN库。创建完成后会发现多了几个文件夹和几个文件。基本上配置都是在这里进行的。首先配置的是conf下的三个文件，将svnserve.conf文件中的password-db = passwd  authz-db = authz   前面的#去掉。#是注释的意思。这两句的意思就是使用passwd作为密码配置文件。使用authz作为svn权限配置文件。然后在passwd中添加yourusername = yourpassword 添加你的用户名和密码。然后在authz中添加</p>
+<p><pre>[groups]<br>dev-group = liyaodong<br>[/]<br>@dev-group = rw</pre></p>
+<ul>
+<li>=<br>大致意思就是添加一个组dev-group，这个组中有liyaodong这个成员。然后设置这个组拥有r(read)w（write）也就是读写权限。设置* =也就是匿名用户没有任何权限。保证你的代码安全。然后Svn的配置大概就OK了，客户端TortoiseSVN就可以使用你设置账户和密码来与代码库进行同步了。但是现在有一个很严重的问题。就是SVN中的代码只能团队内部共享。但是还是不能与Web服务器Apache进行同步。这个问题是个很大的问题。不能同步那要SVN的作用就不是很大了。如果能同步那岂不是爽歪歪了。别着急，下面进行同步设置。SVN有一个很好的机制就是钩子机制，可以定义客户端TortoiseSVN在提交代码前和提交代码后服务器端做出的响应等等。利用这个钩子写一个bat批处理就可以达到同步代码的效果。钩子的文件具体在本例中的代码仓库，也就是codebase/hooks/post-commit.tmpl这个是定义客户端进行代码更新后服务器端所要进行的工作。将这个文件的内容改成以下：<br><pre>“C:\Program Files\Subversion\bin\svn.exe” update “D:\www” –quiet –username yourusername –password yourpassword</pre><br>首先前半部分是svn.exe的地址，也就是subversion的安装目录。然后使用了update命令到你的web服务器根目录，这里假设是D:\www，然后将用户名和密码改成你自己设置的就OK了。</li>
+</ul>
+<p>以上工作全部完成之后就可以开启SVN服务了。开启之后客户端即可开始更新。而且最爽歪歪的是客户端的更新会实时反馈到服务器web目录下。最最最爽歪歪的是使用SVN进行同步和配置。SVN本来就是一个版本管理工具。你每次上传代码等等，代码仓库都会记录下来。哪天项目出问题了可以随时找回来。有点像时间机器，真的是很不错的东西。恩，好的，不多说了。上最后一个bat文件吧。startSvnserver.bat，顾名思义就是启动SVN服务。需要启动的时候双击之，一个黑框框就会一直存在下去。看起来着实很不爽。</p>
+<p>代码内容：</p>
+<p><pre>svnserve -d -r d:\codebase</pre><br>后面的路径是你的代码仓库路径，本例中就是这个。<br>如果你觉得黑框框看起来着实不爽，可以参照网上的将SVN作为windows的内置服务。然后开机启动。很爽，不是么。当然你也可以编写你个隐藏运行bat的vbs，然后添加到系统启动项里。很多方法的，小问题。大的问题都不存在了。哈哈，爽歪歪了。</p>
+<p>总结一下，要配置这些东西，最好会点XML知识，会点BAT，再会点VBS，再会点Linux的知识。了解一下系统方面和网络方面的底层原理。做起项目来肯定事半功倍。后面需要我们学习的还有很多。加油！！   ^_^</p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/科技改变生活/"> #科技改变生活 </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2012/10/31/你凭什么说自己很努力/">你凭什么说自己很努力?</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2012/10/21/江南Style什么的都弱爆了！看比尔盖茨VS乔布斯【鬼马舞蹈篇】/">江南Style什么的都弱爆了！看比尔盖茨VS乔布斯【鬼马舞蹈篇】</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2012/10/30/windows-server-2003下Subversion-Apache-PHP-mySQL配置心得/"
+     data-title="windows server 2003下Subversion+Apache+PHP+mySQL配置心得"
+     data-content=""
+     data-url="http://liyaodong.com/2012/10/30/windows-server-2003下Subversion-Apache-PHP-mySQL配置心得/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="windows server 2003下Subversion+Apache+PHP+mySQL配置心得"
+               data-title="windows server 2003下Subversion+Apache+PHP+mySQL配置心得" data-url="http://liyaodong.com/2012/10/30/windows-server-2003下Subversion-Apache-PHP-mySQL配置心得/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <div class="site-overview"  style="display: block;" >
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://avatars3.githubusercontent.com/u/3196361?v=3&s=460" alt="Vanilla" />
+          <p class="site-author-name">Vanilla</p>
+        </div>
+        <p class="site-description motion-element">晓风博客是一个以技术成长、设计生活、个人心得为主题的个人博客，旨在与你分享生活点滴，共同成长。</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">168</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            
+              <span class="site-state-item-count">104</span>
+              <span class="site-state-item-name">标签</span>
+              
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/liyaodong" target="_blank">github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/xiaofengdong" target="_blank">twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/lyd19941020" target="_blank">weibo</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.zhihu.com/people/liyaodong" target="_blank">zhihu</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://846400221.qzone.qq.com/" target="_blank">qzone</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name"></p>
+            
+              <span class="links-of-author-item">
+              <a href="http://cloudy9101.github.io/" target="_blank">Cloudy9101</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.ligan.me/" target="_blank">Gavin's Blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://zkuns.github.io/" target="_blank">Zkun's blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://yxq01.sinaapp.com/" target="_blank">与爱同深</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://jianglimao.sinaapp.com/" target="_blank">讲礼貌</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.xjp.cc/" target="_blank">XJP的碎碎念</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.jason2be.com/" target="_blank">jason2Be</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.nczonline.net/blog/" target="_blank">NCZOnline</a>
+              </span>
+            
+          
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2012 - 
+  2017
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Vanilla</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/jquery-pjax/jquery.pjax.js?v=0.4.4"></script>
+  <script type="text/javascript" src="/vendors/nprogress/nprogress.js?v=0.4.4"></script>
+  <link rel="stylesheet" href="/vendors/nprogress/nprogress.css?v=0.4.4">
+  <script type="text/javascript" src="/js/pjax-config.js"></script>
+
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"xfdd"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/js/analytics_google-analytics.js?v=0.4.4"></script>
+
+
+</body>
+</html>
