@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liyaodong.com/"/>
-  <updated>2017-12-23T12:57:42.000Z</updated>
+  <updated>2017-12-23T13:01:07.000Z</updated>
   <id>http://liyaodong.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://liyaodong.com/2017/02/07/the-meaning-of-life/"/>
     <id>http://liyaodong.com/2017/02/07/the-meaning-of-life/</id>
     <published>2017-02-07T12:27:38.000Z</published>
-    <updated>2017-12-23T12:57:42.000Z</updated>
+    <updated>2017-12-23T13:01:07.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oax4654gb.bkt.clouddn.com/2017/12/23/IMG_4078.JPG" alt="2015 年摄于芽庄"><br>题图：2015 年摄于芽庄<br><a id="more"></a></p>
 <p>死亡并不可怕，可怕的是死亡之前没有完成自己的心愿。</p>
@@ -41,6 +41,37 @@
     
     
       <category term="life" scheme="http://liyaodong.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一站，世界公民</title>
+    <link href="http://liyaodong.com/2016/11/02/citizens-of-the-world/"/>
+    <id>http://liyaodong.com/2016/11/02/citizens-of-the-world/</id>
+    <published>2016-11-02T13:34:01.000Z</published>
+    <updated>2017-12-23T13:42:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://oax4654gb.bkt.clouddn.com/2017/12/23/world.jpg" alt="citizens_of_the_world"></p>
+<p>我曾经很好奇，为什么在历史的潮流中，不同种族不同地域的人都有一个共同的特点，那就是信仰。<a id="more"></a> 信仰神灵鬼魂，信仰耶稣基督，信仰各种人、物、或是组织。而今天的我们可能大多数人都没有明确的信仰，大家都在为更好的衣食住行而奋斗到筋疲力尽，在闲暇小憩之余也就是刷刷朋友圈，看看网络小说电视节目，打打小游戏。这可能是大多数人包括我自身在内的真实写照。</p>
+<p>生活就像是一个一个的圈套，永远有更好的环境、物质等着你去追求。而你在落入一个又一个的圈套后，欲望也变得越来越强。或许你能够得到满足，或许你会烦恼到难以入眠。而在这个过程中，你也慢慢地和大多数人一样。上班下班低头玩手机。</p>
+<p>有时候当自己回过头来发现并不知道自己在这半年、一年里都做了什么。似乎并没有什么值得骄傲的事情发生。而这样的生活，我定义为不精彩。</p>
+<p>慢慢地，我先是关掉了空间，关掉了微博，也关掉了朋友圈。我想要逃离这样的状态，想要逃离喧嚣的世界，想要在夜深人静的时候一个人去探索我所喜爱的世界，那里充满了未知、新奇和酷的东西。</p>
+<p>不得不说，我喜欢这样的世界。一个没有太多欲望、社交，单纯而简单的世界。而我与这个世界的连接，仅仅需要一台电脑，一个 wifi，飞过高墙，输入地址，按下回车。这一刻，仿佛我从身处之地遁入无形，转身游荡在一个满是 URL 所构成的空间。而在这个空间内，来自世界各地的人们互相帮助，大家各自拿出自己的拿手绝活，一同将这个世界勾画的更加美好。这里没有政治斗争，没有阶级压迫，大家都很开放友善，即使是一个不起眼的小问题也会有人乐意提供帮助。这一切，仿佛，进入了一个更高文明的社会。而在这里，我才能发现自己存在的意义。</p>
+<p>如果问我最悲哀的事情是什么，那就是被圈养在生活和欲望所组成的牢笼中挣扎死去。</p>
+<p>我很庆幸我找到了属于自己的空间，这片地方可能不一定适合每个人。但在这里，你可以成为一名世界公民，在无限的海洋中去探索，语言、高墙、肤色、人种、地域这些都无法阻止你发现美好。而你所需要的仅仅是一个热点，一颗希望发现美好的心，仅此而已。</p>
+<p>你好，世界公民，欢迎来到第一站。</p>
+<blockquote>
+<p>—— 一个别人眼中的“网瘾少年”</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://oax4654gb.bkt.clouddn.com/2017/12/23/world.jpg&quot; alt=&quot;citizens_of_the_world&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我曾经很好奇，为什么在历史的潮流中，不同种族不同地域的人都有一个共同的特点，那就是信仰。
+    
+    </summary>
+    
     
   </entry>
   
@@ -845,32 +876,6 @@ jQuery吃自己的狗粮（用自己提供的方法），我们会看到</code>$
     
     
       <category term="设计——让生活更有爱" scheme="http://liyaodong.com/tags/%E8%AE%BE%E8%AE%A1%E2%80%94%E2%80%94%E8%AE%A9%E7%94%9F%E6%B4%BB%E6%9B%B4%E6%9C%89%E7%88%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Airbnb公司的Javascript风格指南</title>
-    <link href="http://liyaodong.com/2014/11/17/Airbnb%E5%85%AC%E5%8F%B8%E7%9A%84Javascript%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/"/>
-    <id>http://liyaodong.com/2014/11/17/Airbnb公司的Javascript风格指南/</id>
-    <published>2014-11-17T15:37:11.000Z</published>
-    <updated>2017-01-03T11:34:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://liyaodong.qiniudn.com/uploads/2014/11/airbnb.jpg" target="_blank" rel="external"><img src="http://liyaodong.qiniudn.com/uploads/2014/11/airbnb.jpg" alt="airbnb-javascript-style-guide"></a></p>
-<p>看过很多的前端风格指南，不是太罗嗦就是太死板，这个风格指南句句干货，值得推荐。<a id="more"></a></p>
-<p>英文原版：<a href="https://github.com/airbnb/javascript" title="Airbnb javascript style guide" target="_blank" rel="external">https://github.com/airbnb/javascript</a></p>
-<p>中文翻译版：<a href="https://github.com/adamlu/javascript-style-guide" title="airbnb javascript style guide" target="_blank" rel="external">https://github.com/adamlu/javascript-style-guide</a></p>
-<p>建议用心仔细的看完这篇风格指南，当然大神扫两眼就行。像我这种基础不扎实的就应该仔细看，看完收获还是很多的。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://liyaodong.qiniudn.com/uploads/2014/11/airbnb.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://liyaodong.qiniudn.com/uploads/2014/11/airbnb.jpg&quot; alt=&quot;airbnb-javascript-style-guide&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;看过很多的前端风格指南，不是太罗嗦就是太死板，这个风格指南句句干货，值得推荐。
-    
-    </summary>
-    
-    
-      <category term="科技改变生活" scheme="http://liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
