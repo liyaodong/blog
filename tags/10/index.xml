@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>10 on 晓风博客</title>
+    <link>https://blog.liyaodong.com/tags/10/</link>
+    <description>Recent content in 10 on 晓风博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Thu, 30 Oct 2014 23:39:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.liyaodong.com/tags/10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim快键键备忘录</title>
+      <link>https://blog.liyaodong.com/posts/vim-shortcut-notes/</link>
+      <pubDate>Thu, 30 Oct 2014 23:39:46 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/vim-shortcut-notes/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/vimbanner.jpg&#34;
+    alt=&#34;vim banner &#34;
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;400&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 7 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;7&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+不支持Vim快键键的编辑器不是好记事本&amp;hellip;目测一大波Emacs人士正在狂奔而来。。。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

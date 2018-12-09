@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>晓风博客</title>
+    <link>https://blog.liyaodong.com/</link>
+    <description>Recent content on 晓风博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Wed, 08 Feb 2017 04:27:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.liyaodong.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>生命的意义</title>
+      <link>https://blog.liyaodong.com/posts/the-meaning-of-life/</link>
+      <pubDate>Wed, 08 Feb 2017 04:27:38 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/the-meaning-of-life/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/2017/12/23/IMG_4078.JPG&#34;
+    alt=&#34;2015 年摄于芽庄 &#34;
+    
+    
+    
+    
+    
+    width=&#34;3264&#34;
+    height=&#34;2448&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 307 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;307&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+题图：2015 年摄于芽庄&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>第一站，世界公民</title>
+      <link>https://blog.liyaodong.com/posts/citizens-of-the-world/</link>
+      <pubDate>Thu, 03 Nov 2016 05:34:01 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/citizens-of-the-world/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/2017/12/23/world.jpg&#34;
+    alt=&#34;citizens_of_the_world &#34;
+    
+    
+    
+    
+    
+    width=&#34;640&#34;
+    height=&#34;404&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 352 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;352&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;我曾经很好奇，为什么在历史的潮流中，不同种族不同地域的人都有一个共同的特点，那就是信仰。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>响应式图片解决方案</title>
+      <link>https://blog.liyaodong.com/posts/responsive-image-workflow/</link>
+      <pubDate>Sun, 18 Oct 2015 14:26:06 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/responsive-image-workflow/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2015/1018/car.jpg&#34;
+    alt=&#34;响应式图片 &#34;
+    
+    
+    
+    
+    
+    width=&#34;1440&#34;
+    height=&#34;677&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 468 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;468&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+如今开发一个网站不是响应式都不好意思拿出来，那么作为响应式中的重要一环「响应式图片」你又是如何解决的呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 you-get 来下载视频网站上的视频</title>
+      <link>https://blog.liyaodong.com/posts/using-you-get-to-download-the-video/</link>
+      <pubDate>Sun, 26 Jul 2015 18:09:40 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/using-you-get-to-download-the-video/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2015/0726/Download_Clockwise.gif&#34;
+    alt=&#34;Download_by_Clockwise &#34;
+    
+    
+    
+    
+    
+    width=&#34;800&#34;
+    height=&#34;600&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 170 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;170&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+自从有了 you-get ，麻麻再也不用担心下不了视频了 😁&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>微信调试的那些事</title>
+      <link>https://blog.liyaodong.com/posts/debug-in-wechat/</link>
+      <pubDate>Mon, 06 Jul 2015 21:26:51 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/debug-in-wechat/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2015/0706/Coding_Laboratory.gif&#34;
+    alt=&#34;Coding Laboratory &#34;
+    
+    
+    
+    
+    
+    width=&#34;800&#34;
+    height=&#34;600&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 332 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;332&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;微信内调试这件头疼的事情终于有一些靠谱的解决办法了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>项目总结什么的必须是要有的</title>
+      <link>https://blog.liyaodong.com/posts/project-review-for-geekpark-volvo/</link>
+      <pubDate>Tue, 31 Mar 2015 12:47:17 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/project-review-for-geekpark-volvo/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/canvasbanner.jpg&#34;
+    alt=&#34;canvas &#34;
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;350&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 111 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;111&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;沃尔沃项目总结&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新的Chrome插件「URL2QR」</title>
+      <link>https://blog.liyaodong.com/posts/new-chrome-extension-url2qr/</link>
+      <pubDate>Fri, 30 Jan 2015 01:45:18 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/new-chrome-extension-url2qr/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2015/01/qrcode.jpg&#34;
+    alt=&#34;qrcode &#34;
+    
+    
+    
+    
+    
+    width=&#34;1000&#34;
+    height=&#34;500&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 245 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;245&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+网上的二维码在线制作难道还不够多吗？为什么还要重复发明轮子？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim快键键备忘录</title>
+      <link>https://blog.liyaodong.com/posts/vim-shortcut-notes/</link>
+      <pubDate>Thu, 30 Oct 2014 23:39:46 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/vim-shortcut-notes/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/vimbanner.jpg&#34;
+    alt=&#34;vim banner &#34;
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;400&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 7 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;7&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+不支持Vim快键键的编辑器不是好记事本&amp;hellip;目测一大波Emacs人士正在狂奔而来。。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>网络极客移动APP经验总结</title>
+      <link>https://blog.liyaodong.com/posts/webgeek-app-retro/</link>
+      <pubDate>Sun, 10 Aug 2014 22:46:04 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/webgeek-app-retro/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2014/08/banner1.jpg&#34;
+    alt=&#34;web-app-dev &#34;
+    
+    
+    
+    
+    
+    width=&#34;1024&#34;
+    height=&#34;512&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 426 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;426&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于HTML5 localStorage的便利贴</title>
+      <link>https://blog.liyaodong.com/posts/sticker-wall-build-by-html5-localstorage/</link>
+      <pubDate>Wed, 06 Feb 2013 06:54:51 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/sticker-wall-build-by-html5-localstorage/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg&#34;
+    alt=&#34;应用截图 &#34;
+    
+    
+    
+    
+    
+    width=&#34;1440&#34;
+    height=&#34;900&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 37 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;37&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;放寒假了，整日昏昏欲睡，实在无聊。今天看了一会书，忽然发现一个让自己感兴趣的玩意——HTML5 localStorage，于是花了一下午加半晚上的时间完成了这个应用。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

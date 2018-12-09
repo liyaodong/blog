@@ -6,10 +6,13 @@
 
 <html amp lang="cn-zh" class="no-js">
 <head>
-    <title>科技改变生活</title>
+    <title>新的Chrome插件「URL2QR」</title>
     <meta charset="utf-8">
 
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+            <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
+            
+        
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -18,15 +21,12 @@
 
 
 
-    <link rel="canonical" href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/">
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/new-chrome-extension-url2qr/">
 
     <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    
-    <link href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/index.xml" rel="alternate" type="application/rss+xml" title="晓风博客" />
-    <link href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/index.xml" rel="feed" type="application/rss+xml" title="晓风博客" />
     
 
     <meta name="theme-color" content="#112233" />
@@ -94,15 +94,15 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://blog.liyaodong.com/tags/",
-          "name": "tags"
+          "@id": "https://blog.liyaodong.com/posts/",
+          "name": "posts"
         }
     },{
         "@type": "ListItem",
         "position": 4,
         "item": {
-          "@id": "https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/",
-          "name": "%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB"
+          "@id": "https://blog.liyaodong.com/posts/new-chrome-extension-url2qr/",
+          "name": "new-chrome-extension-url2qr"
         }
     }]
 }
@@ -125,10 +125,85 @@
 
 
 
+<header class="site-header--float">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
 
-<main>
-    Default list
-</main>
+
+<section class="single container">
+    <h1 class="post-title">新的Chrome插件「URL2QR」</h1>
+
+    <article>
+        <p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2015/01/qrcode.jpg"
+    alt="qrcode "
+    
+    
+    
+    
+    
+    width="1000"
+    height="500"
+    layout="responsive"
+    on="tap: 245 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="245"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+网上的二维码在线制作难道还不够多吗？为什么还要重复发明轮子？</p>
+
+<p>事情是这样的，当你想要在移动设备上调试你正在开发的网页的时候你需要更改<code>localhost:3000/xxx</code>为<code>192.168.1.xxx:3000/xxx</code>，每次都要复制，然后修改，然后生成这绝对不是一种好的体验。这是痛点，没错，是痛点。</p>
+
+<h3 id="既然有痛点那就去解决它">既然有痛点那就去解决它！</h3>
+
+<p>于是我和<a href="https://github.com/niandalu">@Neyo</a>同学一起做了这么一个插件，Neyo同学有深厚的功力可以做到自动检测局域网IP，而我只能做到正则替换。于是他做了一个<a href="https://github.com/Niandalu/alfred-convert-url-to-qrcode">Alfred的版本</a>而我做了Chrome插件版。</p>
+
+<p><a href="https://github.com/liyaodong/url2qr">下载、试用、源码、QA</a></p>
+
+<p>使用方法Github上都已经说明了，这里不如就聊聊TODO吧。</p>
+
+<h3 id="todo">TODO:</h3>
+
+<p>看到头图了吗？好漂亮的二维码有木有！好吧是转载自<a href="http://uiweek.com/">UIweek</a>的。有时间了把二维码美化一下，不说像头图那样至少也能让人赏心悦目，毕竟是天天要看的东西。好了，今天就这样把，晚安。</p>
+
+<p>［(－－)］zzz</p>
+    </article>
+
+    <amp-addthis
+        width="320"
+        height="92"
+        layout="responsive"
+
+        data-pub-id="ra-5c09c9760bf7e3b3"
+        data-widget-id="861l"></amp-addthis>
+
+    <amp-iframe width=600 height=140
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="/disqus.html#%2fposts%2fnew-chrome-extension-url2qr%2f">
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with &#10084;.
+</footer>
 
 
 
@@ -145,3 +220,4 @@
 
 </body>
 </html>
+

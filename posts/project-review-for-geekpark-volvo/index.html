@@ -6,10 +6,13 @@
 
 <html amp lang="cn-zh" class="no-js">
 <head>
-    <title>科技改变生活</title>
+    <title>项目总结什么的必须是要有的</title>
     <meta charset="utf-8">
 
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+            <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
+            
+        
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -18,15 +21,12 @@
 
 
 
-    <link rel="canonical" href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/">
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/project-review-for-geekpark-volvo/">
 
     <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    
-    <link href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/index.xml" rel="alternate" type="application/rss+xml" title="晓风博客" />
-    <link href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/index.xml" rel="feed" type="application/rss+xml" title="晓风博客" />
     
 
     <meta name="theme-color" content="#112233" />
@@ -94,15 +94,15 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://blog.liyaodong.com/tags/",
-          "name": "tags"
+          "@id": "https://blog.liyaodong.com/posts/",
+          "name": "posts"
         }
     },{
         "@type": "ListItem",
         "position": 4,
         "item": {
-          "@id": "https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/",
-          "name": "%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB"
+          "@id": "https://blog.liyaodong.com/posts/project-review-for-geekpark-volvo/",
+          "name": "project-review-for-geekpark-volvo"
         }
     }]
 }
@@ -125,10 +125,83 @@
 
 
 
+<header class="site-header--float">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
 
-<main>
-    Default list
-</main>
+
+<section class="single container">
+    <h1 class="post-title">项目总结什么的必须是要有的</h1>
+
+    <article>
+        <amp-img
+    src="https://image.liyaodong.com/canvasbanner.jpg"
+    alt="canvas "
+    
+    
+    
+    
+    
+    width="700"
+    height="350"
+    layout="responsive"
+    on="tap: 111 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="111"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+<p>沃尔沃项目总结&hellip;</p>
+
+<div>项目线上地址？还是算了吧....</div>
+
+<p><a href="http://www.geekpark.net/zhuanti/volvo/">手误，别点</a></p>
+
+<ol>
+<li>.container 类是必须要有的，这个很有必要。</li>
+<li>少用position来定位，在各种平台上表现很不一。（Bootstrap是区间分割法，而且<code>.container</code>有15px的<code>padding</code>）</li>
+<li>设计图中实现能用文字的尽量用文字，图片不好维护，改起来特别痛苦，而且显示不清晰，加载慢。</li>
+<li>移动端和PC端是否可以应用一个样式？判定标准是PC端是否足够复杂，如果PC端非常复杂，和移动端代码重用太少那就应该另起一个项目。好的方法是通过Ajax动态插入，不好的方法是在<code>&amp;lt;head&amp;gt;</code>中写跳转（万不得已会用？）。</li>
+<li>Grunt有性能优化的地方，目前JS压缩耗时太长（7s），简直了。</li>
+<li>尽量多用Lazyload，否则性能体验会不够好，尤其会造成JS data数据的阻塞。</li>
+<li>静态项目可以抽象出Partial模板，然后在JS中进行填充，这样的好处是移动端PC端公用一份数据。（探寻更好的方法，框架是如何去做的）</li>
+<li>微信JS签名校验，其中<code>access_toke</code>和<code>js_ticket</code>是需要缓存的，其他的不需要。往后端传url参数的时候要同域，且推荐使用post请求。因为url中如果微信分享过会增加 <code>?from=groupmessage&amp;amp;isappinstalled=0</code> ，get请求会将 &amp; 左右两次分成两个params 。但如果是post就尽量要求在同一个域，跨域post似乎不太好搞定。而JSONP因其实现原理是 <code>srcript src</code> 所以永远不可能实现JSONP 的post请求。</li>
+</ol>
+    </article>
+
+    <amp-addthis
+        width="320"
+        height="92"
+        layout="responsive"
+
+        data-pub-id="ra-5c09c9760bf7e3b3"
+        data-widget-id="861l"></amp-addthis>
+
+    <amp-iframe width=600 height=140
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="/disqus.html#%2fposts%2fproject-review-for-geekpark-volvo%2f">
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with &#10084;.
+</footer>
 
 
 
@@ -145,3 +218,4 @@
 
 </body>
 </html>
+

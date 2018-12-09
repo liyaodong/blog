@@ -6,10 +6,13 @@
 
 <html amp lang="cn-zh" class="no-js">
 <head>
-    <title>科技改变生活</title>
+    <title>使用 you-get 来下载视频网站上的视频</title>
     <meta charset="utf-8">
 
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+            <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
+            
+        
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -18,15 +21,12 @@
 
 
 
-    <link rel="canonical" href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/">
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/using-you-get-to-download-the-video/">
 
     <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    
-    <link href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/index.xml" rel="alternate" type="application/rss+xml" title="晓风博客" />
-    <link href="https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/index.xml" rel="feed" type="application/rss+xml" title="晓风博客" />
     
 
     <meta name="theme-color" content="#112233" />
@@ -94,15 +94,15 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://blog.liyaodong.com/tags/",
-          "name": "tags"
+          "@id": "https://blog.liyaodong.com/posts/",
+          "name": "posts"
         }
     },{
         "@type": "ListItem",
         "position": 4,
         "item": {
-          "@id": "https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/",
-          "name": "%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB"
+          "@id": "https://blog.liyaodong.com/posts/using-you-get-to-download-the-video/",
+          "name": "using-you-get-to-download-the-video"
         }
     }]
 }
@@ -125,10 +125,141 @@
 
 
 
+<header class="site-header--float">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
 
-<main>
-    Default list
-</main>
+
+<section class="single container">
+    <h1 class="post-title">使用 you-get 来下载视频网站上的视频</h1>
+
+    <article>
+        <p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2015/0726/Download_Clockwise.gif"
+    alt="Download_by_Clockwise "
+    
+    
+    
+    
+    
+    width="800"
+    height="600"
+    layout="responsive"
+    on="tap: 170 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="170"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+自从有了 you-get ，麻麻再也不用担心下不了视频了 😁</p>
+
+<h3 id="you-get-是干什么的">you-get 是干什么的？</h3>
+
+<p>当你看到优酷或者B站上牛叉的视频，你想下载但是没法下载下来。因为你不是会员或者因为你找不到下载按钮在哪里&hellip;😂</p>
+
+<p>如果你会一些前端，那么或许你会通过 Chrome 审查元素来进行嗅探视频地址。如果你没有 Chrome 你也可以在看视频之前清楚 Cookies 然后看一遍视频然后找到视频文件。</p>
+
+<p>或者你会装一个迅雷浏览器扩展插件之类的，直接右键嗅探视频地址。</p>
+
+<p>或者你会用一些在线视频网站提取的网站之类的方法。</p>
+
+<p>如果你已经会这项技能那就没有必要看了，除非你想更有B格的下载视频。</p>
+
+<blockquote>
+<p>You-Get is a video downloader for YouTube, Youku, niconico and a few other sites.</p>
+
+<p><a href="https://you-get.org/">官方网站</a>
+<a href="https://github.com/soimort/you-get">Github</a></p>
+</blockquote>
+
+<p>简单的来说 <code>you-get</code> 是一个用来下载视频网站的命令行工具。用它下载视频只需要在命令行输入：</p>
+
+<p><code>$ you-get http://youtu.be/sGwy8DsUJ4M</code></p>
+
+<p>So Easy, but not easy, 首先你得有 Python3 的环境。其实官网上的介绍已经很清楚了，不过这里会简单的再汉化精简一下。</p>
+
+<h3 id="安装">安装</h3>
+
+<p>####Step1 安装 Python 3
+<a href="https://www.python.org/downloads/release/python-343/">windows python3 最新版</a></p>
+
+<p><a href="https://www.python.org/downloads/release/python-343/">MAC python3 最新版</a></p>
+
+<p><a href="https://www.python.org/downloads/">Linux? 不可能有 Linux 用户看这个我在这扯淡</a>
+####Step2 安装 you-get
+MAC 用户打开终端输入 <code>sudo pip3 install you-get</code>
+Windows 用户打开命令控制台 输入 <code>pip3 install you-get</code>
+这一步是要在 python3 安装完毕后进行的，如果提示你 pip3 命令不存在那就是因为你的 python3 没有安装好。
+####Step3 下载你想下载的视频
+
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2015/0726/screenshot.png"
+    alt="screenshot "
+    
+    
+    
+    
+    
+    width="1152"
+    height="474"
+    layout="responsive"
+    on="tap: 119 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="119"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+我这里测试下载这么一个视频连五秒都不到就下载完了，用它下载 B站 的视频简直爽歪歪，而且发现它甚至会下载下来 B站 的弹幕。虽然不知道这个 xml 文件要怎么打开但是感觉很屌的样子。</p>
+
+<p>好了，又是一边扯淡文。小白看不懂，高手不屑看的扯淡文。就当练打字速度了 &lt;(▰˘◡˘▰)&gt;</p>
+
+<p>头图来自 <a href="https://dribbble.com/shots/2012292-Download-Progress">dribbble@ Nick Buturishvili</a> 侵删
+<blockquote class="blockquote-center">
+Love is the one thing we&rsquo;re capable of perceiving that transcends time and space. <br /> Interstellar
+</blockquote></p>
+    </article>
+
+    <amp-addthis
+        width="320"
+        height="92"
+        layout="responsive"
+
+        data-pub-id="ra-5c09c9760bf7e3b3"
+        data-widget-id="861l"></amp-addthis>
+
+    <amp-iframe width=600 height=140
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="/disqus.html#%2fposts%2fusing-you-get-to-download-the-video%2f">
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with &#10084;.
+</footer>
 
 
 
@@ -145,3 +276,4 @@
 
 </body>
 </html>
+

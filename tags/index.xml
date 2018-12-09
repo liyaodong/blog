@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 晓风博客</title>
+    <link>https://blog.liyaodong.com/tags/</link>
+    <description>Recent content in Tags on 晓风博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Fri, 30 Jan 2015 01:45:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.liyaodong.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>01</title>
+      <link>https://blog.liyaodong.com/tags/01/</link>
+      <pubDate>Fri, 30 Jan 2015 01:45:18 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/tags/01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>02</title>
+      <link>https://blog.liyaodong.com/tags/02/</link>
+      <pubDate>Wed, 06 Feb 2013 06:54:51 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/tags/02/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>03</title>
+      <link>https://blog.liyaodong.com/tags/03/</link>
+      <pubDate>Tue, 31 Mar 2015 12:47:17 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/tags/03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>08</title>
+      <link>https://blog.liyaodong.com/tags/08/</link>
+      <pubDate>Sun, 10 Aug 2014 22:46:04 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/tags/08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>10</title>
+      <link>https://blog.liyaodong.com/tags/10/</link>
+      <pubDate>Thu, 30 Oct 2014 23:39:46 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/tags/10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>科技改变生活</title>
+      <link>https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Tue, 31 Mar 2015 12:47:17 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>设计让生活更有爱</title>
+      <link>https://blog.liyaodong.com/tags/%E8%AE%BE%E8%AE%A1%E8%AE%A9%E7%94%9F%E6%B4%BB%E6%9B%B4%E6%9C%89%E7%88%B1/</link>
+      <pubDate>Fri, 30 Jan 2015 01:45:18 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/tags/%E8%AE%BE%E8%AE%A1%E8%AE%A9%E7%94%9F%E6%B4%BB%E6%9B%B4%E6%9C%89%E7%88%B1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
