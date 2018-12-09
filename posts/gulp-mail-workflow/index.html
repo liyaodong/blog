@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html amp lang="cn-zh" class="no-js">
+<head>
+    <title>使用 Gulp 加速 HTML 邮件开发</title>
+    <meta charset="utf-8">
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+            <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
+            
+        
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+
+
+
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/gulp-mail-workflow/">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+
+    <meta name="theme-color" content="#112233" />
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "晓风博客",
+    "alternateName": "Xiaofeng Blog",
+    "url": "https://blog.liyaodong.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://blog.liyaodong.com"
+  , "sameAs": [https://www.facebook.com/lydxfdd https://www.instagram.com/vvvvanilla https://www.linkedin.com/in/yaodong-li-8223a385/ https://twitter.com/xiaofengdong]
+  
+  
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://blog.liyaodong.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://blog.liyaodong.com/posts/",
+          "name": "posts"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@id": "https://blog.liyaodong.com/posts/gulp-mail-workflow/",
+          "name": "gulp-mail-workflow"
+        }
+    }]
+}
+</script>
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        .chroma{background-color:#eeeedd}.chroma .err{color:#a61717;background-color:#e3d2d2}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffffcc}.chroma .lnt{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .ln{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .k{color:#8b008b;font-weight:bold}.chroma .kc{color:#8b008b;font-weight:bold}.chroma .kd{color:#8b008b;font-weight:bold}.chroma .kn{color:#8b008b;font-weight:bold}.chroma .kp{color:#8b008b;font-weight:bold}.chroma .kr{color:#8b008b;font-weight:bold}.chroma .kt{color:#00688b;font-weight:bold}.chroma .na{color:#658b00}.chroma .nb{color:#658b00}.chroma .nc{color:#008b45;font-weight:bold}.chroma .no{color:#00688b}.chroma .nd{color:#707a7c}.chroma .ne{color:#008b45;font-weight:bold}.chroma .nf{color:#008b45}.chroma .nn{color:#008b45;text-decoration:underline}.chroma .nt{color:#8b008b;font-weight:bold}.chroma .nv{color:#00688b}.chroma .s{color:#cd5555}.chroma .sa{color:#cd5555}.chroma .sb{color:#cd5555}.chroma .sc{color:#cd5555}.chroma .dl{color:#cd5555}.chroma .sd{color:#cd5555}.chroma .s2{color:#cd5555}.chroma .se{color:#cd5555}.chroma .sh{color:#1c7e71;font-style:italic}.chroma .si{color:#cd5555}.chroma .sx{color:#cb6c20}.chroma .sr{color:#1c7e71}.chroma .s1{color:#cd5555}.chroma .ss{color:#cd5555}.chroma .m{color:#b452cd}.chroma .mb{color:#b452cd}.chroma .mf{color:#b452cd}.chroma .mh{color:#b452cd}.chroma .mi{color:#b452cd}.chroma .il{color:#b452cd}.chroma .mo{color:#b452cd}.chroma .ow{color:#8b008b}.chroma .c{color:#228b22}.chroma .ch{color:#228b22}.chroma .cm{color:#228b22}.chroma .c1{color:#228b22}.chroma .cs{color:#8b008b;font-weight:bold}.chroma .cp{color:#1e889b}.chroma .cpf{color:#1e889b}.chroma .gd{color:#aa0000}.chroma .ge{font-style:italic}.chroma .gr{color:#aa0000}.chroma .gh{color:#000080;font-weight:bold}.chroma .gi{color:#00aa00}.chroma .go{color:#888888}.chroma .gp{color:#555555}.chroma .gs{font-weight:bold}.chroma .gu{color:#800080;font-weight:bold}.chroma .gt{color:#aa0000}.chroma .gl{text-decoration:underline}.chroma .w{color:#bbbbbb}body{background-color:#f9f8f0;color:#222;font-family:"Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif}.tac{text-align:center}a{color:#222;text-decoration:none}.container{max-width:960px;margin-left:auto;margin-right:auto;padding:15px}.container img,.container amp-img{max-width:100%}.site-header{text-align:center;margin-top:40px;font-family:"Songti SC"}.site-title{margin:0;display:inline-block;vertical-align:middle}.site-subtitle{margin:5px;font-size:14px}.site-header--float{font-family:"Songti SC";padding:15px 30px;background:#fff;border-bottom:1px solid #dcdcdc}.site-header--float a{display:flex;align-items:center}.site-title--float{font-size:20px;margin:0px;margin-right:20px}.site-subtitle--float{font-size:12px;margin:0px}.site-footer{padding:10px;margin:20px;text-align:center}.article-item-title{font-size:24px;font-weight:bold;display:inline-block;vertical-align:middle;font-family:"Songti SC";margin:0}.article-item-title:hover{text-decoration:underline}.article-item-date{font-size:12px;display:block;color:#555}.article-item-summary{margin-top:20px;color:#555}.article-item-link{color:#222;text-decoration:none;margin:30px 0 5px}.article-item{max-width:700px;padding-bottom:40px;margin:0 auto 40px auto}.article-item:not(:last-of-type){border-bottom:1px solid #efefef}.article-item amp-img{margin-bottom:20px}.post-title{text-align:center;font-family:"Songti SC";font-size:32px;margin-bottom:5px}.single{line-height:1.625;color:#4a4a4a;max-width:700px}.single amp-img{margin:15px auto;text-align:center}.single code{color:#AA8D5B;font-size:14px;font-weight:bold;margin:5px}.single pre>code{font-weight:600;margin:0}.single div.highlight{box-shadow:0 3px 3px 1px #d2c7b5}.single .chroma{background-color:transparent}.single a{text-decoration:underline}.single a:hover{color:#000}.single-content{margin-bottom:20px}.pagination{display:flex;justify-content:center;margin:20px 0;padding:0}.pagination .page-item{list-style-type:none;font-size:16px;margin:0 5px}.pagination .page-item.active{font-weight:bold}
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+<header class="site-header--float">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
+
+
+<section class="single container">
+    <h1 class="post-title">使用 Gulp 加速 HTML 邮件开发</h1>
+    <div class="tac">
+        <time>2015年8月6日</time>
+    </div>
+
+    <article class="single-content">
+        <p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2015/0806/mailcheck-hd.jpg"
+    alt="mailcheck dribbble@Eddie Lobanovskiy "
+    
+    
+    
+    
+    
+    width="1200"
+    height="799"
+    layout="responsive"
+    on="tap: 182 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="182"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+![]()
+如果说前端里最痛苦的事情是什么，那一定是用行内样式和 table 写响应式的 HTML 邮件了。</p>
+
+<p>既然是痛点，那就解决它。</p>
+
+<h3 id="第一步-解决行内样式引用的问题">第一步，解决行内样式引用的问题</h3>
+
+<p>邮件内不能使用 <code>&lt;link&gt;</code> 来引入 CSS 样式，因此写邮件就十分痛苦。行内样式无法公用 CSS 而且写起来也很费劲，维护起来更痛苦。因此我们需要外链的样式。</p>
+
+<p>通过 <a href="https://www.npmjs.com/package/gulp-inline-css">gulp-inline-css</a> 这个插件可以很方便的将外链样式转化为行内样式。</p>
+
+<p>这个插件很屌，不过仍然有坑。后面再说。</p>
+
+<h3 id="如果-html-也能复用">如果 HTML 也能复用</h3>
+
+<p>对于相同的部分例如头部和底部，当然是抽出模板来写更方便。邮件编写这么小的事情想当然用不上 <code>swig</code> <code>jade</code> 这种东西，Break a fly upon a wheel。</p>
+
+<p><a href="https://www.npmjs.com/package/gulp-file-include">gulp-file-include</a> 就是我们想要的东西，虽然是简单的 file inlcude，但是对于编写邮件已经足够了。</p>
+
+<h3 id="看起来已经够了-如果再加一些调料">看起来已经够了，如果再加一些调料</h3>
+
+<p>再加上 <code>stylus</code> CSS 预处理器，本地文件服务器以及浏览器自动刷新(Livereload) &hellip;</p>
+
+<p>Perfect，比起以前直接写静态好了太多。</p>
+
+<h3 id="inline-css-的一些坑">inline-css 的一些坑</h3>
+
+<p>在开发过程中发现如果嵌入 <code>&lt;%= @user.username%&gt;</code> 这样的语句是编译后就成了 <code>&lt;%= @user.username=&quot;&quot;%&gt;</code>，这样放到 Ruby erb 中显然无法运行。经过排除发现是 <code>inline-css</code> 这个包的问题。其实仔细思考这样的结果也在情理之中，<code>&lt;abc</code> 本身就是 HTML 的标签形式。默认给属性加了空值其实也能理解，虽然 HTML5 推荐 <code>disabled=&quot;disabled&quot;</code> 直接写成 <code>disabled</code>。那么如何解决呢？</p>
+
+<p>写的时候写成 <code>|%</code> 最后全局搜索替换成 <code>&lt;%</code> 不就好了。这是我最初的想法，确实挺 low 。这种事情就不应该手动去做，不如写个 Gulp 函数来处理这件事情。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">replaceStr</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">function</span> <span class="nx">transform</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">type</span> <span class="o">===</span> <span class="s1">&#39;replace&#39;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">file</span><span class="p">.</span><span class="nx">contents</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Buffer</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">contents</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;%/g</span><span class="p">,</span> <span class="s1">&#39;|%&#39;</span><span class="p">));</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">file</span><span class="p">.</span><span class="nx">contents</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Buffer</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">contents</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\|%/g</span><span class="p">,</span> <span class="s1">&#39;&lt;%&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">file</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;event-stream&#39;</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nx">transform</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// ...
+</span><span class="c1"></span>    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">replaceStr</span><span class="p">(</span><span class="s1">&#39;replace&#39;</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">inlineCss</span><span class="p">({</span>
+      <span class="nx">applyStyleTags</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nx">removeStyleTags</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">}))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">replaceStr</span><span class="p">(</span><span class="s1">&#39;fix&#39;</span><span class="p">))</span>
+
+<span class="c1">// ...
+</span><span class="c1"></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>并没有什么难度的一个功能，但确实方便了不少。</p>
+
+<p>完整的DEMO <a href="https://github.com/liyaodong/gulp_mail_workflow">github@liyaodong/gulp_mail_workflow</a></p>
+
+<p>头图来自 <a href="https://dribbble.com/shots/654389-mailcheck">dribbble@Eddie Lobanovskiy</a> 侵删</p>
+
+<blockquote class="blockquote-center">
+I prefer my history dead. Dead history is writ in ink, the living sort in blood.
+</blockquote>
+    </article>
+
+    <amp-addthis
+        width="320"
+        height="92"
+        layout="responsive"
+
+        data-pub-id="ra-5c09c9760bf7e3b3"
+        data-widget-id="861l"></amp-addthis>
+
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with &#10084;.
+</footer>
+
+
+
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-30027709-1"
+            },
+            "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
+        }
+    </script>
+</amp-analytics>
+
+</body>
+</html>
+
