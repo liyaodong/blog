@@ -6,10 +6,43 @@
     <description>Recent content on 晓风博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
-    <lastBuildDate>Wed, 08 Feb 2017 04:27:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2018 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.liyaodong.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>写在24岁的扯淡</title>
+      <link>https://blog.liyaodong.com/posts/essays-in-24-birthday/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/essays-in-24-birthday/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/2018/essays-in-24-birthday.jpeg&#34;
+    alt=&#34;essays-in-24-birthday &#34;
+    
+    
+    
+    
+    
+    width=&#34;1024&#34;
+    height=&#34;768&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 227 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;227&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;二十四岁，又一个黄金十二年要来了。在这个时间点上写点东西，希望以后的自己在回忆年轻时能对二十四岁有个印象。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>生命的意义</title>
@@ -30,14 +63,14 @@
     width=&#34;3264&#34;
     height=&#34;2448&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 406 &#34;
+    on=&#34;tap: 367 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;406&#34;
+    id=&#34;367&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -62,20 +95,29 @@
     width=&#34;640&#34;
     height=&#34;404&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 407 &#34;
+    on=&#34;tap: 406 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;407&#34;
+    id=&#34;406&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 
 &lt;p&gt;我曾经很好奇，为什么在历史的潮流中，不同种族不同地域的人都有一个共同的特点，那就是信仰。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>聊聊信息渠道这件事</title>
+      <link>https://blog.liyaodong.com/posts/how-to-get-valueable-information/</link>
+      <pubDate>Tue, 12 Jan 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/how-to-get-valueable-information/</guid>
+      <description>&lt;p&gt;想想真是件可怕的事情，媒体一直以来都是件很重要的工具——法西斯用来控制人心、宗教用来控制思想、百度告诉你什么是「最好的」医院，朋友圈告诉你，什么是「最好的」祖传秘方。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -97,14 +139,14 @@
     width=&#34;1440&#34;
     height=&#34;677&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 111 &#34;
+    on=&#34;tap: 215 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;111&#34;
+    id=&#34;215&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -131,14 +173,14 @@
     width=&#34;800&#34;
     height=&#34;600&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 379 &#34;
+    on=&#34;tap: 258 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;379&#34;
+    id=&#34;258&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -163,14 +205,14 @@
     width=&#34;800&#34;
     height=&#34;600&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 78 &#34;
+    on=&#34;tap: 16 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;78&#34;
+    id=&#34;16&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -196,14 +238,14 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 444 &#34;
+    on=&#34;tap: 165 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;444&#34;
+    id=&#34;165&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -231,14 +273,14 @@
     width=&#34;1000&#34;
     height=&#34;500&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 304 &#34;
+    on=&#34;tap: 451 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;304&#34;
+    id=&#34;451&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -265,14 +307,14 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 15 &#34;
+    on=&#34;tap: 405 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;15&#34;
+    id=&#34;405&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -297,14 +339,14 @@
     width=&#34;1024&#34;
     height=&#34;512&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 21 &#34;
+    on=&#34;tap: 17 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;21&#34;
+    id=&#34;17&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -330,14 +372,14 @@
     width=&#34;1440&#34;
     height=&#34;900&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 230 &#34;
+    on=&#34;tap: 443 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;230&#34;
+    id=&#34;443&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;

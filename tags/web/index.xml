@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on 晓风博客</title>
+    <link>https://blog.liyaodong.com/tags/web/</link>
+    <description>Recent content in Web on 晓风博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Tue, 12 Jan 2016 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.liyaodong.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>聊聊信息渠道这件事</title>
+      <link>https://blog.liyaodong.com/posts/how-to-get-valueable-information/</link>
+      <pubDate>Tue, 12 Jan 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/how-to-get-valueable-information/</guid>
+      <description>&lt;p&gt;想想真是件可怕的事情，媒体一直以来都是件很重要的工具——法西斯用来控制人心、宗教用来控制思想、百度告诉你什么是「最好的」医院，朋友圈告诉你，什么是「最好的」祖传秘方。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
