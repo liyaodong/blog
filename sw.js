@@ -5,7 +5,7 @@ AMP_SW.init({
     cachingStrategy: 'CACHE_FIRST',
   }],
   offlinePageOptions: {
-    url: '/offline.html',
+    url: '/index.html',
     assets: [],
   },
 });
