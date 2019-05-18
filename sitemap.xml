@@ -7,6 +7,11 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/posts/about-front-end-basic-concept/</loc>
+        <lastmod>2018-02-10T21:11:00+08:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/posts/essays-in-24-birthday/</loc>
         <lastmod>2018-02-02T00:00:00+08:00</lastmod>
     </url>
@@ -22,8 +27,18 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/posts/how-to-keep-grouth/</loc>
+        <lastmod>2016-02-28T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/posts/how-to-get-valueable-information/</loc>
         <lastmod>2016-01-12T00:00:00+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/thanks-to-passed-your-self/</loc>
+        <lastmod>2015-12-26T23:01:00+08:00</lastmod>
     </url>
     
     <url>
@@ -67,13 +82,33 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/posts/using-html5-to-crop-images/</loc>
+        <lastmod>2015-03-31T12:52:37+08:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/posts/project-review-for-geekpark-volvo/</loc>
         <lastmod>2015-03-31T12:47:17+08:00</lastmod>
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/posts/sae-version-wordpress-open-qiniu-cdn/</loc>
+        <lastmod>2015-02-02T16:09:22+08:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/posts/new-chrome-extension-url2qr/</loc>
         <lastmod>2015-01-30T01:45:18+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/font-face-cross-site-issue/</loc>
+        <lastmod>2015-01-30T01:16:46+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/use-chrome-like-a-hacker/</loc>
+        <lastmod>2015-01-10T12:49:45+08:00</lastmod>
     </url>
     
     <url>
@@ -89,6 +124,11 @@
     <url>
         <loc>https://blog.liyaodong.com/posts/third-order-rubiks-cube/</loc>
         <lastmod>2014-08-15T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/everyday-is-unique-day/</loc>
+        <lastmod>2014-08-11T09:17:06+08:00</lastmod>
     </url>
     
     <url>
@@ -112,8 +152,18 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/posts/windows-blue-8-1-review/</loc>
+        <lastmod>2013-06-29T08:28:14+08:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/posts/introduce-to-baowenli/</loc>
         <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/diy-your-404-not-found-page/</loc>
+        <lastmod>2013-06-24T23:42:14+08:00</lastmod>
     </url>
     
     <url>
@@ -122,13 +172,43 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/posts/happiness/</loc>
+        <lastmod>2013-05-12T22:13:05+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/the-second-year-of-college/</loc>
+        <lastmod>2013-03-09T23:52:36+08:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/posts/sticker-wall-build-by-html5-localstorage/</loc>
         <lastmod>2013-02-06T06:54:51+08:00</lastmod>
     </url>
     
     <url>
-        <loc>https://blog.liyaodong.com/posts/css-for-browser-scroller/</loc>
-        <lastmod>2013-01-09T00:00:00+00:00</lastmod>
+        <loc>https://blog.liyaodong.com/posts/use-css-to-optimize-browser-scrollbar/</loc>
+        <lastmod>2013-01-09T21:28:22+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/booknote-meet-unknow-yourself/</loc>
+        <lastmod>2013-01-03T18:33:32+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/windows-server-2003-svn-apache-php-mysql/</loc>
+        <lastmod>2012-10-30T00:13:16+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/high-school-huxian-fifth-scroll-is-changed/</loc>
+        <lastmod>2012-10-21T11:21:47+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/rgb-vs-cmyk/</loc>
+        <lastmod>2012-08-19T19:54:25+08:00</lastmod>
     </url>
     
     <url>
@@ -137,8 +217,18 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/posts/use-chrome-inspector-to-speed-up-video/</loc>
+        <lastmod>2012-02-25T18:00:27+08:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/posts/dont-give-up-early/</loc>
         <lastmod>2012-02-05T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/posts/101-of-my-blog/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
     </url>
     
     <url>
@@ -149,25 +239,43 @@
     
     <url>
         <loc>https://blog.liyaodong.com/tags/02/</loc>
-        <lastmod>2013-02-06T06:54:51+08:00</lastmod>
+        <lastmod>2018-02-10T21:11:00+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://blog.liyaodong.com/tags/03/</loc>
-        <lastmod>2015-03-31T12:47:17+08:00</lastmod>
+        <lastmod>2015-03-31T12:52:37+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/05/</loc>
+        <lastmod>2013-05-12T22:13:05+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/06/</loc>
+        <lastmod>2013-06-29T08:28:14+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://blog.liyaodong.com/tags/08/</loc>
-        <lastmod>2014-08-10T22:46:04+08:00</lastmod>
+        <lastmod>2014-08-11T09:17:06+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://blog.liyaodong.com/tags/10/</loc>
         <lastmod>2014-10-30T23:39:46+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/12/</loc>
+        <lastmod>2015-12-26T23:01:00+08:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -184,20 +292,26 @@
     </url>
     
     <url>
-        <loc>https://blog.liyaodong.com/tags/css/</loc>
-        <lastmod>2013-01-09T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
         <loc>https://blog.liyaodong.com/tags/design/</loc>
         <lastmod>2014-08-04T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/tags/frontend/</loc>
+        <lastmod>2018-02-10T21:11:00+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/http%E6%B5%81/</loc>
+        <lastmod>2012-02-25T18:00:27+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/tags/life/</loc>
-        <lastmod>2014-10-28T00:00:00+00:00</lastmod>
+        <lastmod>2015-12-26T23:01:00+08:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -232,14 +346,68 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/tags/web2.0/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/tags/wordpress/</loc>
         <lastmod>2014-08-04T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/tags/%E4%B8%8B%E8%BD%BD/</loc>
+        <lastmod>2012-02-25T18:00:27+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E5%88%86%E4%BA%AB/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E5%8D%A1/</loc>
+        <lastmod>2012-02-25T18:00:27+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E5%9C%B0%E7%90%86/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/tags/%E5%AE%9D%E6%96%87%E7%90%86/</loc>
         <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E5%BF%83%E8%B7%AF%E6%97%85%E7%A8%8B/</loc>
+        <lastmod>2014-08-11T09:17:06+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E6%88%B7%E5%8E%BF%E4%BA%94%E4%B8%AD/</loc>
+        <lastmod>2012-10-21T11:21:47+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E6%99%93%E9%A3%8E%E4%B8%9C%E4%B8%9C/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -256,6 +424,12 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/tags/%E6%99%93%E9%A3%8E%E6%AE%8B%E6%9C%88/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91/</loc>
         <lastmod>2012-07-25T00:00:00+00:00</lastmod>
         <priority>0</priority>
@@ -268,8 +442,32 @@
     </url>
     
     <url>
+        <loc>https://blog.liyaodong.com/tags/%E7%9B%91%E6%8E%A7/</loc>
+        <lastmod>2012-02-25T18:00:27+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80/</loc>
+        <lastmod>2012-02-03T13:41:13+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://blog.liyaodong.com/tags/%E7%A7%91%E6%8A%80%E6%94%B9%E5%8F%98%E7%94%9F%E6%B4%BB/</loc>
-        <lastmod>2015-03-31T12:47:17+08:00</lastmod>
+        <lastmod>2015-03-31T12:52:37+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E7%BD%91%E9%80%9F%E6%85%A2/</loc>
+        <lastmod>2012-02-25T18:00:27+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E8%A7%86%E9%A2%91/</loc>
+        <lastmod>2012-02-25T18:00:27+08:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -282,6 +480,12 @@
     <url>
         <loc>https://blog.liyaodong.com/tags/%E9%94%90%E6%8D%B7/</loc>
         <lastmod>2012-07-25T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://blog.liyaodong.com/tags/%E9%A6%96%E9%A1%B5%E5%B9%BB%E7%81%AF/</loc>
+        <lastmod>2013-05-12T22:13:05+08:00</lastmod>
         <priority>0</priority>
     </url>
     

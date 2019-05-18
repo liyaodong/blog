@@ -6,10 +6,43 @@
     <description>Recent content in 03 on 晓风博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
-    <lastBuildDate>Tue, 31 Mar 2015 12:47:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2015 12:52:37 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.liyaodong.com/tags/03/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>【HTML5】基于客户端的图片裁剪及水印添加功能</title>
+      <link>https://blog.liyaodong.com/posts/using-html5-to-crop-images/</link>
+      <pubDate>Tue, 31 Mar 2015 12:52:37 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/using-html5-to-crop-images/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/canvascrop.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;800&#34;
+    height=&#34;536&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 390 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;390&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;首先来说说图片裁剪这件事情。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>项目总结什么的必须是要有的</title>
@@ -28,20 +61,53 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 207 &#34;
+    on=&#34;tap: 389 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;207&#34;
+    id=&#34;389&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 
 &lt;p&gt;沃尔沃项目总结&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>青春，就应该无怨无悔</title>
+      <link>https://blog.liyaodong.com/posts/the-second-year-of-college/</link>
+      <pubDate>Sat, 09 Mar 2013 23:52:36 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/the-second-year-of-college/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2013/03/timthumb.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;630&#34;
+    height=&#34;300&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 117 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;117&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;转眼间就到了2013年了，转眼间，大学已经上了一年半了，转眼间，已经大二下半学期了。&lt;/p&gt;</description>
     </item>
     
   </channel>

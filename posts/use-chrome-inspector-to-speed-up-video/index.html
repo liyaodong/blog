@@ -1,0 +1,194 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html amp lang="cn-zh" class="no-js">
+<head>
+    <title>学校网速太慢？想看视频太卡？用这招解决！</title>
+    <meta charset="utf-8">
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+
+
+
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/use-chrome-inspector-to-speed-up-video/">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+
+    <meta name="theme-color" content="#112233" />
+    <meta name="msvalidate.01" content="3C6C979DB103D784162934B1AC452B4B" />
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "晓风博客",
+    "alternateName": "Xiaofeng Blog",
+    "url": "https://blog.liyaodong.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://blog.liyaodong.com"
+  , "sameAs": [https://www.facebook.com/lydxfdd https://www.instagram.com/vvvvanilla https://www.linkedin.com/in/yaodong-li-8223a385/ https://twitter.com/xiaofengdong]
+  
+  
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://blog.liyaodong.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://blog.liyaodong.com/posts/",
+          "name": "posts"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@id": "https://blog.liyaodong.com/posts/use-chrome-inspector-to-speed-up-video/",
+          "name": "use-chrome-inspector-to-speed-up-video"
+        }
+    }]
+}
+</script>
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        .chroma{background-color:#eeeedd}.chroma .err{color:#a61717;background-color:#e3d2d2}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffffcc}.chroma .lnt{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .ln{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .k{color:#8b008b;font-weight:bold}.chroma .kc{color:#8b008b;font-weight:bold}.chroma .kd{color:#8b008b;font-weight:bold}.chroma .kn{color:#8b008b;font-weight:bold}.chroma .kp{color:#8b008b;font-weight:bold}.chroma .kr{color:#8b008b;font-weight:bold}.chroma .kt{color:#00688b;font-weight:bold}.chroma .na{color:#658b00}.chroma .nb{color:#658b00}.chroma .nc{color:#008b45;font-weight:bold}.chroma .no{color:#00688b}.chroma .nd{color:#707a7c}.chroma .ne{color:#008b45;font-weight:bold}.chroma .nf{color:#008b45}.chroma .nn{color:#008b45;text-decoration:underline}.chroma .nt{color:#8b008b;font-weight:bold}.chroma .nv{color:#00688b}.chroma .s{color:#cd5555}.chroma .sa{color:#cd5555}.chroma .sb{color:#cd5555}.chroma .sc{color:#cd5555}.chroma .dl{color:#cd5555}.chroma .sd{color:#cd5555}.chroma .s2{color:#cd5555}.chroma .se{color:#cd5555}.chroma .sh{color:#1c7e71;font-style:italic}.chroma .si{color:#cd5555}.chroma .sx{color:#cb6c20}.chroma .sr{color:#1c7e71}.chroma .s1{color:#cd5555}.chroma .ss{color:#cd5555}.chroma .m{color:#b452cd}.chroma .mb{color:#b452cd}.chroma .mf{color:#b452cd}.chroma .mh{color:#b452cd}.chroma .mi{color:#b452cd}.chroma .il{color:#b452cd}.chroma .mo{color:#b452cd}.chroma .ow{color:#8b008b}.chroma .c{color:#228b22}.chroma .ch{color:#228b22}.chroma .cm{color:#228b22}.chroma .c1{color:#228b22}.chroma .cs{color:#8b008b;font-weight:bold}.chroma .cp{color:#1e889b}.chroma .cpf{color:#1e889b}.chroma .gd{color:#aa0000}.chroma .ge{font-style:italic}.chroma .gr{color:#aa0000}.chroma .gh{color:#000080;font-weight:bold}.chroma .gi{color:#00aa00}.chroma .go{color:#888888}.chroma .gp{color:#555555}.chroma .gs{font-weight:bold}.chroma .gu{color:#800080;font-weight:bold}.chroma .gt{color:#aa0000}.chroma .gl{text-decoration:underline}.chroma .w{color:#bbbbbb}body{background-color:#f9f8f0;color:#222;font-family:"Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif}.tac{text-align:center}a{color:#222;text-decoration:none}.container{max-width:960px;margin-left:auto;margin-right:auto;padding:15px}.container img,.container amp-img{max-width:100%}.site-header{text-align:center;margin-top:40px;font-family:"Songti SC"}.site-title{margin:0;display:inline-block;vertical-align:middle}.site-subtitle{margin:5px;font-size:14px}.site-header--float{font-family:"Songti SC";padding:15px 30px;background:#fff;border-bottom:1px solid #dcdcdc}.site-header--float a{display:flex;align-items:center}.site-title--float{font-size:20px;margin:0px;margin-right:20px}.site-subtitle--float{font-size:12px;margin:0px}.site-footer{padding:10px;margin:20px;text-align:center}.site-footer em{color:#d82222}.article-item-title{font-size:24px;font-weight:bold;display:inline-block;vertical-align:middle;font-family:"Songti SC";margin:0}.article-item-title:hover{text-decoration:underline}.article-item-date{font-size:12px;display:block;color:#555}.article-item-summary{margin-top:20px;color:#555}.article-item-link{color:#222;text-decoration:none;margin:30px 0 5px}.article-item{max-width:700px;padding-bottom:40px;margin:0 auto 40px auto}.article-item:not(:last-of-type){border-bottom:1px solid #efefef}.article-item amp-img{margin-bottom:20px}.post-title{text-align:center;font-family:"Songti SC";font-size:32px;margin-bottom:5px}.single{line-height:1.625;color:#4a4a4a;max-width:700px}.single amp-img{margin:15px auto;text-align:center}.single code{color:#AA8D5B;font-size:14px;font-weight:bold;margin:5px}.single pre>code{font-weight:600;margin:0}.single div.highlight{box-shadow:0 3px 3px 1px #d2c7b5}.single .chroma{background-color:transparent}.single a{text-decoration:underline}.single a:hover{color:#000}.single-content{margin-bottom:20px}.pagination{display:flex;justify-content:center;margin:20px 0;padding:0}.pagination .page-item{list-style-type:none}.pagination .page-item a{font-size:16px;margin:0 5px;display:inline-block;padding:5px 10px;cursor:pointer;border-radius:2px}.pagination .page-item.active,.pagination .page-item:hover{color:#fff;transition:all 200ms}.pagination .page-item.active a,.pagination .page-item:hover a{color:#fff;background:#ad9616;transition:all 200ms}
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+<header class="site-header--float">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
+
+
+<section class="single container">
+    <h1 class="post-title">学校网速太慢？想看视频太卡？用这招解决！</h1>
+    <div class="tac">
+        <time>2012年2月25日</time>
+    </div>
+
+    <article class="single-content">
+        <p>刚刚想在土豆上看一个视频，无奈发现网速太不给力了，缓冲半天只缓冲了一点。最后想了想校园网的特点，还是总结出了一个办法，分享给校园网的用户们。</p>
+
+<p>我们学校的校园网的特点就是下载东西特别快，玩游戏不卡。但是看网页。。那速度真不敢恭维啊。想在土豆上看个视频什么的速度慢的着急，刚刚找到了一个方法，各位童鞋可以试试。</p>
+
+<p>首先，前提条件就是你的浏览器要是Chrome浏览器。没有？没关系，<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html" title="获得Chrome浏览器">点击这里！</a>只需要点击就可以开始安装了，很快的！下载好Chrome浏览器后打开你要看的视频的页面，然后在页面上<strong>点击右键</strong>-<strong>审查元素</strong>，是不是被吓着了？看着好复杂呢。没关系，我们只需要用到她很小的一个功能。恩，现在再在空白处点击<strong>鼠标右键</strong>-<strong>重新载入</strong>然后点击底下那一串串代码栏中的<strong>Network</strong>栏目，这个选项卡是用来检测你的浏览器当前正在载入什么、载入了多久、载入地址是什么。那，我们现在呢就需要知道这个视频的文件地址在哪里，现在点击你要看的视频，让它开始播放。当浏览器接受到开始播放的命令时它才会开始加载视频。这个时候你的监控窗口会有一个很长的栏目，因为它就是视频，加载时间最长。</p>
+
+<p>好了，现在我们已经顺利的找到视频地址了。现在要做的就是<strong>打开迅雷</strong>-<strong>新建任务（Ctrl+N）</strong>然后在那个最长的加载项上点击鼠标右键-<strong>Copy link address</strong>这样下载地址就复制到了剪贴板上了。然后在迅雷中粘贴地址，开始下载~！用下载工具去下载视频总好过于用浏览器下载吧！下载后为f4v格式，这种格式是网页上常见格式，你可以用QQ影音、暴风影音等等去打开它。如果你还想在移动设备上打开它，那么就用格式工厂转化格式吧！这些不在本文讨论范围之内，有兴趣可以百度一下！呵呵，看视频去咯~！</p>
+
+<p>P.S:</p>
+
+<p>如果你乐意的话，用这种方法可以下载到你在浏览器中看到的90%的元素。现在不用愁找不到视频、音乐、图片的下载地址啦！嘿嘿，只要可以在网上看见、听见的统统可以下载下来咯~！好了，快点体验吧~！</p>
+
+<p>The End ，欢迎下次再来！</p>
+    </article>
+
+    <amp-iframe width="700" height="163"
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="https://liyaodong.com/disqus.html#use-chrome-inspector-to-speed-up-video.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fuse-chrome-inspector-to-speed-up-video%2f">
+        <div overflow tabindex=0 role=button aria-label=""></div>
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with <em>&#10084;</em>
+</footer>
+
+<amp-install-serviceworker
+    src="https://blog.liyaodong.com/sw.js"
+    layout="nodisplay">
+</amp-install-serviceworker>
+
+
+
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-30027709-1"
+            },
+            "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
+        }
+    </script>
+</amp-analytics>
+
+</body>
+</html>
+

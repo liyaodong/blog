@@ -6,10 +6,46 @@
     <description>Recent content in Life on 晓风博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
-    <lastBuildDate>Tue, 28 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Dec 2015 23:01:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.liyaodong.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>谢谢过去的自己</title>
+      <link>https://blog.liyaodong.com/posts/thanks-to-passed-your-self/</link>
+      <pubDate>Sat, 26 Dec 2015 23:01:00 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/thanks-to-passed-your-self/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/759816-b7debb4a15a19734.jpg&#34;
+    alt=&#34;Thanks to yourself &#34;
+    
+    
+    
+    
+    
+    width=&#34;630&#34;
+    height=&#34;300&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 102 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;102&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+你好，谢谢你。&lt;/p&gt;
+
+&lt;p&gt;我穿越回过去，对那时的自己说。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>在北上广，我们到底在追求什么？</title>
@@ -28,14 +64,14 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 417 &#34;
+    on=&#34;tap: 194 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;417&#34;
+    id=&#34;194&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -61,14 +97,14 @@
     width=&#34;735&#34;
     height=&#34;456&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 298 &#34;
+    on=&#34;tap: 66 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;298&#34;
+    id=&#34;66&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -96,14 +132,14 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 288 &#34;
+    on=&#34;tap: 261 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;288&#34;
+    id=&#34;261&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;

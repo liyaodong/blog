@@ -21,6 +21,39 @@
     </item>
     
     <item>
+      <title>关于前端的一些名词解释</title>
+      <link>https://blog.liyaodong.com/posts/about-front-end-basic-concept/</link>
+      <pubDate>Sat, 10 Feb 2018 21:11:00 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/about-front-end-basic-concept/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/759816-ef92901b62201425.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;1000&#34;
+    height=&#34;621&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 169 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;169&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;一些简单通俗的前端领域相关名词解释，帮助各位想学前端的同学尽快入门。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>写在24岁的扯淡</title>
       <link>https://blog.liyaodong.com/posts/essays-in-24-birthday/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0800</pubDate>
@@ -37,14 +70,14 @@
     width=&#34;1024&#34;
     height=&#34;768&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 302 &#34;
+    on=&#34;tap: 492 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;302&#34;
+    id=&#34;492&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -72,14 +105,14 @@
     width=&#34;3264&#34;
     height=&#34;2448&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 193 &#34;
+    on=&#34;tap: 432 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;193&#34;
+    id=&#34;432&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -104,14 +137,14 @@
     width=&#34;640&#34;
     height=&#34;404&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 418 &#34;
+    on=&#34;tap: 108 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;418&#34;
+    id=&#34;108&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -121,12 +154,85 @@
     </item>
     
     <item>
+      <title>如何保持不断成长？</title>
+      <link>https://blog.liyaodong.com/posts/how-to-keep-grouth/</link>
+      <pubDate>Sun, 28 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/how-to-keep-grouth/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/keep-grouth.jpeg&#34;
+    alt=&#34;头图来自 Nemanja Pesic@dribbble 侵删 &#34;
+    
+    
+    
+    
+    
+    width=&#34;1200&#34;
+    height=&#34;799&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 54 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;54&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;头图来自 Nemanja Pesic@dribbble 侵删&lt;/p&gt;
+
+&lt;p&gt;鸡汤 -&amp;gt; 一种看完之后斗志满满却不知如何下手的文章。我的目标就是：不给大家喝鸡汤&lt;/p&gt;
+
+&lt;p&gt;作为一个青年人，正是不断学习成长的时候。回想这些年来自己的成长路线，这几点或许是最有帮助的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>聊聊信息渠道这件事</title>
       <link>https://blog.liyaodong.com/posts/how-to-get-valueable-information/</link>
       <pubDate>Tue, 12 Jan 2016 00:00:00 +0800</pubDate>
       
       <guid>https://blog.liyaodong.com/posts/how-to-get-valueable-information/</guid>
       <description>&lt;p&gt;想想真是件可怕的事情，媒体一直以来都是件很重要的工具——法西斯用来控制人心、宗教用来控制思想、百度告诉你什么是「最好的」医院，朋友圈告诉你，什么是「最好的」祖传秘方。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>谢谢过去的自己</title>
+      <link>https://blog.liyaodong.com/posts/thanks-to-passed-your-self/</link>
+      <pubDate>Sat, 26 Dec 2015 23:01:00 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/thanks-to-passed-your-self/</guid>
+      <description>&lt;p&gt;
+
+&lt;amp-img
+    src=&#34;https://image.liyaodong.com/759816-b7debb4a15a19734.jpg&#34;
+    alt=&#34;Thanks to yourself &#34;
+    
+    
+    
+    
+    
+    width=&#34;630&#34;
+    height=&#34;300&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 102 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;102&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+你好，谢谢你。&lt;/p&gt;
+
+&lt;p&gt;我穿越回过去，对那时的自己说。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -148,14 +254,14 @@
     width=&#34;1440&#34;
     height=&#34;677&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 129 &#34;
+    on=&#34;tap: 402 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;129&#34;
+    id=&#34;402&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -182,14 +288,14 @@
     width=&#34;1440&#34;
     height=&#34;875&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 23 &#34;
+    on=&#34;tap: 304 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;23&#34;
+    id=&#34;304&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -216,14 +322,14 @@
     width=&#34;1200&#34;
     height=&#34;799&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 331 &#34;
+    on=&#34;tap: 155 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;331&#34;
+    id=&#34;155&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -251,14 +357,14 @@
     width=&#34;800&#34;
     height=&#34;600&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 33 &#34;
+    on=&#34;tap: 193 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;33&#34;
+    id=&#34;193&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -285,14 +391,14 @@
     width=&#34;1600&#34;
     height=&#34;1200&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 24 &#34;
+    on=&#34;tap: 443 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;24&#34;
+    id=&#34;443&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -317,14 +423,14 @@
     width=&#34;800&#34;
     height=&#34;600&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 128 &#34;
+    on=&#34;tap: 293 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;128&#34;
+    id=&#34;293&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -352,14 +458,14 @@
     width=&#34;800&#34;
     height=&#34;514&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 286 &#34;
+    on=&#34;tap: 189 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;286&#34;
+    id=&#34;189&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -386,19 +492,52 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 387 &#34;
+    on=&#34;tap: 87 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;387&#34;
+    id=&#34;87&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 如果滚动仅仅是onscroll那么简单那么本文就没有存在的必要了，至于兼容这个老生常谈的问题&amp;hellip;&amp;hellip;还是呵呵吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【HTML5】基于客户端的图片裁剪及水印添加功能</title>
+      <link>https://blog.liyaodong.com/posts/using-html5-to-crop-images/</link>
+      <pubDate>Tue, 31 Mar 2015 12:52:37 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/using-html5-to-crop-images/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/canvascrop.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;800&#34;
+    height=&#34;536&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 390 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;390&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;首先来说说图片裁剪这件事情。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -418,20 +557,53 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 207 &#34;
+    on=&#34;tap: 389 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;207&#34;
+    id=&#34;389&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 
 &lt;p&gt;沃尔沃项目总结&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SAE版本Wordpress开启七牛云静态加速的一些坑</title>
+      <link>https://blog.liyaodong.com/posts/sae-version-wordpress-open-qiniu-cdn/</link>
+      <pubDate>Mon, 02 Feb 2015 16:09:22 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/sae-version-wordpress-open-qiniu-cdn/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2015/02/qiniu.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;350&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 363 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;363&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;如果你也和我一样，使用了插件之后发现只有部分图片被缓存过来了那就应该看看这些坑的地方了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -453,19 +625,85 @@
     width=&#34;1000&#34;
     height=&#34;500&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 364 &#34;
+    on=&#34;tap: 114 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;364&#34;
+    id=&#34;114&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 网上的二维码在线制作难道还不够多吗？为什么还要重复发明轮子？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于@font-face的跨域请求问题</title>
+      <link>https://blog.liyaodong.com/posts/font-face-cross-site-issue/</link>
+      <pubDate>Fri, 30 Jan 2015 01:16:46 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/font-face-cross-site-issue/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2015/01/icon.jpg&#34;
+    alt=&#34;font-icon &#34;
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;350&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 342 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;342&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;如果你网站上的图标在一个域名下正常，在另外一个域名下无法显示那你就需要看看这篇文章了。没有多少杂技，只有干货。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>像黑客一样使用Chrome</title>
+      <link>https://blog.liyaodong.com/posts/use-chrome-like-a-hacker/</link>
+      <pubDate>Sat, 10 Jan 2015 12:49:45 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/use-chrome-like-a-hacker/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;350&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 95 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;95&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;如果你不知道Chrome是什么还是别看这篇文章了，虽然标题有点水（这是有点吗 ¬_¬）。本文是讲述如何使用VIM的操作习惯来操作Chrome的。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -487,14 +725,14 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 448 &#34;
+    on=&#34;tap: 180 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;448&#34;
+    id=&#34;180&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -519,14 +757,14 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 417 &#34;
+    on=&#34;tap: 194 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;417&#34;
+    id=&#34;194&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -552,14 +790,14 @@
     width=&#34;735&#34;
     height=&#34;456&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 298 &#34;
+    on=&#34;tap: 66 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;298&#34;
+    id=&#34;66&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -568,6 +806,39 @@
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;以前看别人玩魔方自己老不会，去四川实习的时候玩了同学的魔方觉得不是很难。这不自己买了一个照着网上的公式，没想到很快就可以解出来。放出公式方便自己随时查看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>每一天都是生命中最独特的</title>
+      <link>https://blog.liyaodong.com/posts/everyday-is-unique-day/</link>
+      <pubDate>Mon, 11 Aug 2014 09:17:06 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/everyday-is-unique-day/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg&#34;
+    alt=&#34;groundhog-day &#34;
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;394&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 272 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;272&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;昨晚看了一部电影《Groundhog Day》（土拨鼠之日），讲述了一个气象预报员重复过一天的生活，颇有感触写此博文。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -587,14 +858,14 @@
     width=&#34;1024&#34;
     height=&#34;512&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 9 &#34;
+    on=&#34;tap: 254 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;9&#34;
+    id=&#34;254&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -620,14 +891,14 @@
     width=&#34;700&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 337 &#34;
+    on=&#34;tap: 315 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;337&#34;
+    id=&#34;315&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -655,14 +926,14 @@
     width=&#34;500&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 497 &#34;
+    on=&#34;tap: 80 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;497&#34;
+    id=&#34;80&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -687,20 +958,53 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 288 &#34;
+    on=&#34;tap: 261 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;288&#34;
+    id=&#34;261&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 
 &lt;p&gt;时光是琥珀，泪一滴滴被反锁，情书再不朽，也磨成沙漏。一整个宇宙，换一颗红豆，回忆如困兽，寂寞太久而渐渐温柔。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Blue (win 8.1)上手初体验</title>
+      <link>https://blog.liyaodong.com/posts/windows-blue-8-1-review/</link>
+      <pubDate>Sat, 29 Jun 2013 08:28:14 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/windows-blue-8-1-review/</guid>
+      <description>&lt;amp-img
+    src=&#34;http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png&#34;
+    alt=&#34;Win8.1初体验banner &#34;
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;250&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 374 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;374&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;昨天微软放出Win8.1，趁着今天早上网速好，Down下来了。一路安装下来，感觉这玩意真心鸡肋啊。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -720,20 +1024,55 @@
     width=&#34;700&#34;
     height=&#34;250&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 173 &#34;
+    on=&#34;tap: 298 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;173&#34;
+    id=&#34;298&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 
 &lt;p&gt;又是一年志愿时，各位亲们都为了忙志愿纠结的焦头烂额有木有？本文也帮不了你报志愿，这篇文章只是一个即将大三的学长带你认识一下宝文理，仅此而已。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY你的404页面（Apache&#43;PHP环境）</title>
+      <link>https://blog.liyaodong.com/posts/diy-your-404-not-found-page/</link>
+      <pubDate>Mon, 24 Jun 2013 23:42:14 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/diy-your-404-not-found-page/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2013/06/4041.png&#34;
+    alt=&#34;404 &#34;
+    
+    
+    
+    
+    
+    width=&#34;700&#34;
+    height=&#34;307&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 418 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;418&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;404是神马？404就是一种HTTP状态码，表示该页面没有找到，告诉浏览者：这页面丢了，你换别的页面看看吧。常看人家的404页面，今天咱也DIY一个！&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -753,17 +1092,85 @@
     width=&#34;700&#34;
     height=&#34;336&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 99 &#34;
+    on=&#34;tap: 495 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;99&#34;
+    id=&#34;495&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;</description>
+    </item>
+    
+    <item>
+      <title>幸福·未央</title>
+      <link>https://blog.liyaodong.com/posts/happiness/</link>
+      <pubDate>Sun, 12 May 2013 22:13:05 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/happiness/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2013/05/timthumb.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;630&#34;
+    height=&#34;300&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 206 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;206&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;原来幸福它是一种满足。是我以前苛求得太多，才让自己跌进痛的旋涡。我还很笨，以为将某些东西强留在自己身边，便会幸福。可是幸福它一如五彩的灵鹊，只有将它放开，才能看见美丽的弧线。&lt;/p&gt;
+
+&lt;p&gt;对于我，一个人，已足够。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>青春，就应该无怨无悔</title>
+      <link>https://blog.liyaodong.com/posts/the-second-year-of-college/</link>
+      <pubDate>Sat, 09 Mar 2013 23:52:36 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/the-second-year-of-college/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2013/03/timthumb.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;630&#34;
+    height=&#34;300&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 117 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;117&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;转眼间就到了2013年了，转眼间，大学已经上了一年半了，转眼间，已经大二下半学期了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -783,14 +1190,14 @@
     width=&#34;1440&#34;
     height=&#34;900&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 452 &#34;
+    on=&#34;tap: 73 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;452&#34;
+    id=&#34;73&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -801,11 +1208,143 @@
     
     <item>
       <title>利用CSS美化你的滚动条</title>
-      <link>https://blog.liyaodong.com/posts/css-for-browser-scroller/</link>
-      <pubDate>Wed, 09 Jan 2013 00:00:00 +0000</pubDate>
+      <link>https://blog.liyaodong.com/posts/use-css-to-optimize-browser-scrollbar/</link>
+      <pubDate>Wed, 09 Jan 2013 21:28:22 +0800</pubDate>
       
-      <guid>https://blog.liyaodong.com/posts/css-for-browser-scroller/</guid>
+      <guid>https://blog.liyaodong.com/posts/use-css-to-optimize-browser-scrollbar/</guid>
       <description>&lt;p&gt;前两天逛别人的网站，突然发现人家的网站还可以自定义浏览器的滚动条的，作为一名前端er，必须得兴奋一下么。遂F12了一下，把样式“拿来”了！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>遇见未知的自己【读书笔记分享】</title>
+      <link>https://blog.liyaodong.com/posts/booknote-meet-unknow-yourself/</link>
+      <pubDate>Thu, 03 Jan 2013 18:33:32 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/booknote-meet-unknow-yourself/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2013/01/20110812111920343_757_o.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;307&#34;
+    height=&#34;313&#34;
+    layout=&#34;intrinsic&#34;
+    on=&#34;tap: 416 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;416&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;亲爱的，外面没有别人，只有自己。一本身心灵小说，元旦放假回家读了两遍，读完之后，所感甚深。分享大家，还望共勉。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>windows server 2003下Subversion&#43;Apache&#43;PHP&#43;mySQL配置心得</title>
+      <link>https://blog.liyaodong.com/posts/windows-server-2003-svn-apache-php-mysql/</link>
+      <pubDate>Tue, 30 Oct 2012 00:13:16 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/windows-server-2003-svn-apache-php-mysql/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2012/10/subversion-logo.png&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;384&#34;
+    height=&#34;332&#34;
+    layout=&#34;intrinsic&#34;
+    on=&#34;tap: 108 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;108&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;之前用过新浪云计算（SAE）的空间，觉得使用SVN来管理代码很方便，代码可控制性很强。于是想自己架设一个SVN的WEB服务器，历尽艰辛总算配置成功了。贴出心得，以帮助有需要的人们，同时也算是备忘了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>许久不见，母校五中已面目一新</title>
+      <link>https://blog.liyaodong.com/posts/high-school-huxian-fifth-scroll-is-changed/</link>
+      <pubDate>Sun, 21 Oct 2012 11:21:47 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/high-school-huxian-fifth-scroll-is-changed/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2012/10/DSC_0000045.jpg&#34;
+    
+    
+    
+    
+    
+    
+    width=&#34;1280&#34;
+    height=&#34;960&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 88 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;88&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;还记得当时母校的样子吗？还记得一起吃过的烩豆腐吗？还记得一起争抢的五中第一碗吗？还记得那年的足球赛上拼搏的样子吗？还记得&amp;hellip;&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RGB色彩和CMYK色彩究竟有什么区别</title>
+      <link>https://blog.liyaodong.com/posts/rgb-vs-cmyk/</link>
+      <pubDate>Sun, 19 Aug 2012 19:54:25 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/rgb-vs-cmyk/</guid>
+      <description>&lt;amp-img
+    src=&#34;https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png&#34;
+    alt=&#34;rgb &amp;amp; cmyk &#34;
+    
+    
+    
+    
+    
+    width=&#34;668&#34;
+    height=&#34;328&#34;
+    layout=&#34;responsive&#34;
+    on=&#34;tap: 36 &#34;
+    role=&#34;button&#34;
+    tabindex=&#34;0&#34;
+&gt;
+&lt;/amp-img&gt;
+
+&lt;amp-image-lightbox
+    id=&#34;36&#34;
+    layout=&#34;nodisplay&#34;
+&gt;
+&lt;/amp-image-lightbox&gt;
+
+
+&lt;p&gt;接触过设计的朋友应该会经常听到诸如RGB、CMYK之类的名词，但是对于很多设计新手往往不知道RGB与CMYK之间到底有什么区别和联系，甚至还经常询问如rgb转cmyk、cmyk和rgb的区别、打印用cmyk还是rgb、怎么转换成rgb这样的问题。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -827,19 +1366,28 @@
     width=&#34;670&#34;
     height=&#34;502&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 45 &#34;
+    on=&#34;tap: 110 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;45&#34;
+    id=&#34;110&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 给即将到来的大一新生以及在校的各位兄弟姐妹！关于宝文理的网络生活，从不同的角度去了解我们的家——宝文理！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>学校网速太慢？想看视频太卡？用这招解决！</title>
+      <link>https://blog.liyaodong.com/posts/use-chrome-inspector-to-speed-up-video/</link>
+      <pubDate>Sat, 25 Feb 2012 18:00:27 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/use-chrome-inspector-to-speed-up-video/</guid>
+      <description>&lt;p&gt;刚刚想在土豆上看一个视频，无奈发现网速太不给力了，缓冲半天只缓冲了一点。最后想了想校园网的特点，还是总结出了一个办法，分享给校园网的用户们。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -851,6 +1399,15 @@
       <description>&lt;p&gt;记住，别轻易放弃抠门，成功会在你下一次抠门时，微笑着迎接你的。&lt;/p&gt;
 
 &lt;p&gt;昨天给去姐姐家修理电脑，遇到了些可笑的问题。分享给各位朋友，希望大家以后不再走弯路。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>我的博客生涯就此开始</title>
+      <link>https://blog.liyaodong.com/posts/101-of-my-blog/</link>
+      <pubDate>Fri, 03 Feb 2012 13:41:13 +0800</pubDate>
+      
+      <guid>https://blog.liyaodong.com/posts/101-of-my-blog/</guid>
+      <description>&lt;p&gt;首先，先介绍下自己吧。嘿嘿，我呢是一名很普通很普通的大学一年级小学生。很矛盾阿~世界本来就是矛盾的集合。咳咳，跑题啦。身高体重神马的就不说了，没啥意思。这是我的第一个博客，我建立它的意图就是想要给自己一片心灵的空间。&lt;/p&gt;</description>
     </item>
     
   </channel>
