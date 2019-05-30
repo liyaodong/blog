@@ -6,7 +6,7 @@
 
 <html amp lang="cn-zh" class="no-js">
 <head>
-    <title>DIY你的404页面（Apache&#43;PHP环境）</title>
+    <title>我眼中的极客精神</title>
     <meta charset="utf-8">
 
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script><script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
@@ -18,7 +18,7 @@
 
 
 
-    <link rel="canonical" href="https://blog.liyaodong.com/posts/diy-your-404-not-found-page/">
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/geek-in-my-mind/">
 
     <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
 
@@ -99,8 +99,8 @@
         "@type": "ListItem",
         "position": 4,
         "item": {
-          "@id": "https://blog.liyaodong.com/posts/diy-your-404-not-found-page/",
-          "name": "diy-your-404-not-found-page"
+          "@id": "https://blog.liyaodong.com/posts/geek-in-my-mind/",
+          "name": "geek-in-my-mind"
         }
     }]
 }
@@ -137,99 +137,362 @@
 
 
 <section class="single container has-header">
-    <h1 class="post-title">DIY你的404页面（Apache&#43;PHP环境）</h1>
+    <h1 class="post-title">我眼中的极客精神</h1>
     <div class="tac">
-        <time>2013年6月24日</time>
+        <time>2019年5月30日</time>
     </div>
 
     <article class="single-content">
         <amp-img
-    src="https://image.liyaodong.com/uploads/2013/06/4041.png"
-    alt="404 "
+    src="https://image.liyaodong.com/blog-2019-05-30/banner.jpg"
+    alt="geek "
     
     
     
     
     
-    width="700"
-    height="307"
+    width="4032"
+    height="3024"
     layout="responsive"
-    on="tap: 15 "
+    on="tap: 380 "
     role="button"
     tabindex="0"
 >
 </amp-img>
 
 <amp-image-lightbox
-    id="15"
+    id="380"
     layout="nodisplay"
 >
 </amp-image-lightbox>
 
 
-<p>&nbsp;</p>
+<p>我从小就喜欢拆东西，拆完了，就装不上去了。从满是齿轮的表到自己的玩具四驱车，这些小玩意的身上似乎总有一种魔力在吸引着我，让我不由自主地想要拆了又拆。虽然总是被骂拆完了就装不回去了，但是也有一些时候可以把拆下来的马达、名片以及电池组装在一起变成小伙伴们心奇羡慕的手持风扇，在炎炎的夏日里两节五号电池就能带来一整天的快乐。</p>
 
-<p>404是神马？404就是一种HTTP状态码，表示该页面没有找到，告诉浏览者：这页面丢了，你换别的页面看看吧。常看人家的404页面，今天咱也DIY一个！</p>
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/gear.jpg"
+    alt="gear "
+    
+    
+    
+    
+    
+    width="2048"
+    height="1536"
+    layout="responsive"
+    on="tap: 110 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
 
-<h3 id="来自百度百科的解释">来自百度百科的解释：</h3>
+<amp-image-lightbox
+    id="110"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
 
-<div>404页面就是当用户输入了错误的链接时，返回的页面。</div>
-<div>404页面的目的是：告诉浏览者其所请求的页面不存在或链接错误，同时引导用户使用网站其他页面而不是关闭窗口离开。</div>
 
-<h3 id="设计自己的404页面">设计自己的404页面：</h3>
+<p>小学的时候学过一篇课文叫《我家跨上了“信息高速路”》，自从那时起便对电脑这样一个神奇的东西充满好奇心。听说整个小学就只有一台电脑，在校长的办公室里放着，没人知道那是一个怎么样神奇的东西，只知道它很贵以至于整个学校都只有一台。</p>
 
-<p>先写个404的HTML文件，至于样式，随便你啦！POST几个知名网站的404页面，各位可以看着给自己借鉴借鉴！</p>
 
-<p>本博客的：<a href="http://liyaodong.com/564654">http://liyaodong.com/564654</a></p>
 
-<p>Google的：<a href="http://www.google.com.hk/404">http://www.google.com.hk/404</a></p>
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/my-family-have-internet.jpeg"
+    alt="internet "
+    
+    
+    
+    
+    
+    width="400"
+    height="635"
+    layout="intrinsic"
+    on="tap: 283 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
 
-<p>百度的：<a href="http://www.baidu.com/search/error.html">http://www.baidu.com/search/error.html</a></p>
+<amp-image-lightbox
+    id="283"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
 
-<p>淘宝的：<a href="http://err.taobao.com/error1.html">http://err.taobao.com/error1.html</a></p>
 
-<p>腾讯的：<a href="http://www.qq.com/404/">http://www.qq.com/404/</a></p>
+<p>第一次接触电脑，那是在初中时的第一节微机课。小心翼翼地套上脚套之后跟随着前面的同学走进了微机室，面对着一台陌生的“大屁股”心里充满了激动但也有一丝胆怯。不知道怎么开机的我默默地看着别人按哪里我就去按哪里。第一节课就已经有同学熟练地使用 Flash 制作三角遇到方块的动画时我还在琢磨鼠标这个神奇的东西，当我情不自禁地扣下了鼠标中的滚珠时就像第一次拆开机械表中的齿轮一样，一切都是那么的自然和顺理成章，仿佛这就是我的天性。后来的我家里有了电脑，自己也常常坐在电脑前研究把玩 Flash 到深夜，从简单的“补间动画”到后面的 ActionScript，从最简单的空间装扮到后来的纯 Flash QQ 空间，我总是喜欢把静静的夜晚“浪费”在琢磨一些好玩的东西上面。这样想来童年的时光是那么的悠闲有趣，总是有一些小东西等着自己去探索和发现。</p>
 
-<p>新浪的：<a href="http://www.sina.com.cn/404">http://www.sina.com.cn/404</a></p>
 
-<p>如果想盗取哪个404页面，只需要Ctrl+S保存就可以了。当然，自己设计最好。很多404页面都设计的很有特色，很值得借鉴。</p>
 
-<p>Post上我今天写的404页面：</p>
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/computer.jpg"
+    alt="computer "
+    
+    
+    
+    
+    
+    width="650"
+    height="537"
+    layout="responsive"
+    on="tap: 205 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
 
-<p><a href="http://pan.baidu.com/share/link?shareid=1796524635&amp;amp;uk=3171893396" title="我的404页面">http://pan.baidu.com/share/link?shareid=1796524635&amp;uk=3171893396</a></p>
+<amp-image-lightbox
+    id="205"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
 
-<h3 id="如何使404页面生效">如何使404页面生效：</h3>
 
-<p>设计好自己的404页面之后，下来如何让其生效？</p>
+<p>又是一个炎热的夏天，慵懒的大学生活和炎热的夏天般配极了。我坐在宿舍的椅子上不禁琢磨这样一个问题，除了去对面野区抢蓝爸爸以及在幽灵模式练习鬼跳之外我还能做些什么？“不如去找一堆人一起去抢蓝爸爸吧”。就这样我向学校递交了一个新的社团成立申请书，名字叫“网络极客”，主攻计算机学习以及电子竞技。事实证明我确实找到了一群“极客”，擅长拿五杀。</p>
 
-<p>Apache下只需要写一个.htaccess文件到网站的根目录：</p>
 
-<p>ErrorDocument 404 /404/index.html</p>
 
-<p>同理，其他错误类型也可以这样定义</p>
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/generate-log.jpeg"
+    alt="Make Logo "
+    
+    
+    
+    
+    
+    width="800"
+    height="600"
+    layout="responsive"
+    on="tap: 338 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
 
-<p>如果是新浪云计算这类云空间就比较二了。SAE是拒绝使用.htaccess来设置404重定向的。官方解释如下：</p>
+<amp-image-lightbox
+    id="338"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
 
-<p>1、传统htaccess效率不高，因为其针对所有目录进行递归merge</p>
 
-<p>2、传统htaccess过于复杂，学习成本高。AppConfig具有效率高而且学习成本低的特点，AppConfig只在App访问时针对根目录生成一次规则，而且AppConfig采用类自然语言的规则描述，开发者只需要参考几个简单的例子即可熟悉使用。</p>
 
-<p>说了这么多，实际上就是在SVN的根目录下找到config.yaml，然后编辑使其类似下面：</p>
 
-<pre><code>name: liyaodong
-version: 1
-handle:
-- errordoc:  404 /index.php?error=404
-其中/index.php?error=404就是你的404页面。
-简单的一个404，啰嗦了这么多，其实都是为了用户体验。用户体验，细节才是王道！
-</code></pre>
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/be98ad7bjw1e42t9n2gn7j20m80kxtfq.jpg"
+    alt="Logo "
+    
+    
+    
+    
+    
+    width="690"
+    height="649"
+    layout="responsive"
+    on="tap: 243 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="243"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+
+
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/webgeek-flag.jpeg"
+    alt="Flag "
+    
+    
+    
+    
+    
+    width="800"
+    height="600"
+    layout="responsive"
+    on="tap: 166 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="166"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+
+
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/webgeek-main-focus.png"
+    alt="Focus "
+    
+    
+    
+    
+    
+    width="800"
+    height="500"
+    layout="responsive"
+    on="tap: 423 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="423"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+<p>有了这个社团以后大学的生活也变得有趣了很多，从拉赞助到最后真的举办了电竞比赛，从给大家讲解装系统到最后的 HTML5 网页开发教学，从开发微博墙到最后的文理课程表挂科“大数据”。虽然没有真的做出来什么轰动的东西却也让慵懒的大学生活充实了很多。但我终究知道自己不属于这个落后的三线小城市，毕竟真的没有人学 HTML5。</p>
+
+
+
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/webgeek.jpeg"
+    alt="web app "
+    
+    
+    
+    
+    
+    width="1024"
+    height="512"
+    layout="responsive"
+    on="tap: 487 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="487"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+
+
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/webgeek-calendar.png"
+    alt="Calendar "
+    
+    
+    
+    
+    
+    width="350"
+    height="1084"
+    layout="intrinsic"
+    on="tap: 223 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="223"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+<p>后来的我决定要去北京，我发了这样的一封求职信给我当初认为做梦都不可能加入的公司:</p>
+
+<blockquote>
+<p>终于等到这一天了，买到了去北京的车票，启程梦想。</p>
+
+<p>我是一名前端开发工程师，目前大四。希望能寻求一份全职开发工作。</p>
+
+<p>从大一开始就关注极客公园，大二创办了校内的网络极客协会，毫不相瞒，LOGO都是模仿极客公园的。</p>
+
+<p>很喜欢极客这个名词，富有创新力，每个极客心中都有一颗改变世界的梦想。</p>
+
+<p>这一次我想真正加入极客公园，从这里实现自己改变世界的梦想。希望HR大人能看下我的简历，给我一次面试的机会。</p>
+
+<p>希望，能为极客公园献出自己的一份力量！</p>
+</blockquote>
+
+<p>我破天荒的拿到了面试邀请，在经过20分钟简单的面试后又破天荒的被告知下周一来上班。那个周末我彻夜无眠，我满心欢喜的等待着时间一分一秒的流逝，这一切仿佛像在做梦。</p>
+
+
+
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/geekpark.jpeg"
+    alt="GeekPark Wall "
+    
+    
+    
+    
+    
+    width="853"
+    height="640"
+    layout="responsive"
+    on="tap: 396 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="396"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+
+
+<amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/Google.JPG"
+    alt="Google "
+    
+    
+    
+    
+    
+    width="400"
+    height="533"
+    layout="intrinsic"
+    on="tap: 278 "
+    role="button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="278"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+
+<p>两年后，我从自己热爱的这家公司离职了。我还记得第一天去公司，我盯着旁边的 Neyo 大哥飞快的在键盘上飞舞着自己的手指，我以为我已经算是半个极客了却不曾想我竟然连他在干什么都不知道。后来的我学会了很多，我知道了使用 Zsh 学会了用 Vim，知道了 Tmux 也学会了 Arch。我的身边也不再是那些不知道 HTML 的同学了，相反的我们一起学习当时还没什么中文资料的 Meteor，一起加班到深夜只为了写一个<a href="https://github.com/liyaodong/url2qr">生成二维码的工具</a>玩，一起用 Electron 做基于 Socket.io 的签到客户端。虽然这些东西真的不是工作所需但是在一个有 Sonos 放着 Come and Get Your Love 的夜晚，喝着啤酒飞快的游走在青轴的键盘上一切却又是那么的美好。原来我还是那个在电脑前待到十二点玩 Flash 的小孩。</p>
+
+<p>再后来我就回到了西安这座城市，我依然用着那把跟了我几年的青轴键盘，但却不再飞快的游走在 tmux 之上。我开始使用 Windows，也开始使用曾经嗤之以鼻的 IDE。我已经几乎找不到一起使用 Emacs 的小伙伴，甚至会遇到不断找我来问 Git 基础问题的老码农。我尝试找回那个放着 Come and Get Your Love 的夜晚，却发现我得到的只有 Lost Connection 灰白屏幕。我已经不知道那些还在 Beta 版的新奇玩意了。</p>
+
+<p>或许，是我老了。也或许我已经不再对那些小齿轮感到着迷了。也或许&hellip;</p>
+
+<p>后来我终于发现，我还是能坚持学自己想学的东西，用别人嗤之以鼻的“过时”的工具。而其实我和那个坐在电脑前玩弄 Flash 到深夜的男孩也没什么不同。我也开始慢慢相信，即便我变成了一个白发苍苍的老头，我也会因为那些小玩意而着迷。因为我知道，这才是那个男孩的天性啊。</p>
     </article>
 
     <amp-iframe width="700" height="163"
                 layout="responsive"
                 sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
                 resizable
-                src="https://liyaodong.com/disqus.html#diy-your-404-not-found-page.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fdiy-your-404-not-found-page%2f">
+                src="https://liyaodong.com/disqus.html#geek-in-my-mind.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fgeek-in-my-mind%2f">
         <div overflow tabindex=0 role=button aria-label=""></div>
     </amp-iframe>
 </section>
