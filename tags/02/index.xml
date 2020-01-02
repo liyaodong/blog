@@ -28,14 +28,14 @@
     width=&#34;1000&#34;
     height=&#34;621&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 379 &#34;
+    on=&#34;tap: 407 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;379&#34;
+    id=&#34;407&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -61,14 +61,14 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 389 &#34;
+    on=&#34;tap: 310 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;389&#34;
+    id=&#34;310&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -94,14 +94,14 @@
     width=&#34;1440&#34;
     height=&#34;900&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 192 &#34;
+    on=&#34;tap: 261 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;192&#34;
+    id=&#34;261&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
