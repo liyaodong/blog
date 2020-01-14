@@ -6,7 +6,7 @@
 
 <html amp lang="cn-zh" class="no-js">
 <head>
-    <title>项目总结什么的必须是要有的</title>
+    <title>网站性能优化之加载篇</title>
     <meta charset="utf-8">
 
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script><script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
@@ -18,7 +18,7 @@
 
 
 
-    <link rel="canonical" href="https://blog.liyaodong.com/posts/project-review-for-geekpark-volvo/">
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/website-performance-load-assets/">
 
     <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
 
@@ -99,8 +99,8 @@
         "@type": "ListItem",
         "position": 4,
         "item": {
-          "@id": "https://blog.liyaodong.com/posts/project-review-for-geekpark-volvo/",
-          "name": "project-review-for-geekpark-volvo"
+          "@id": "https://blog.liyaodong.com/posts/website-performance-load-assets/",
+          "name": "website-performance-load-assets"
         }
     }]
 }
@@ -137,59 +137,94 @@
 
 
 <section class="single container has-header">
-    <h1 class="post-title">项目总结什么的必须是要有的</h1>
+    <h1 class="post-title">网站性能优化之加载篇</h1>
     <div class="tac">
-        <time>2015年3月31日</time>
+        <time>2020年1月14日</time>
     </div>
 
     <article class="single-content">
         <amp-img
-    src="https://image.liyaodong.com/canvasbanner.jpg"
-    alt="canvas "
+    src="https://image.liyaodong.com/2020/dog-web-performance.jpg"
     
     
     
     
     
-    width="700"
-    height="350"
+    
+    width="1920"
+    height="1267"
     layout="responsive"
-    on="tap: 97 "
+    on="tap: 450 "
     role="button"
     tabindex="0"
 >
 </amp-img>
 
 <amp-image-lightbox
-    id="97"
+    id="450"
     layout="nodisplay"
 >
 </amp-image-lightbox>
 
 
-<p>沃尔沃项目总结&hellip;</p>
+<p>影响网站加载速度的因素有很多，我希望能通过自己对于网站速度加载优化的一系列总结来加深自己对网站性能优化的思考，同时分享出来希望能对你有一些收获。</p>
 
-<div>项目线上地址？还是算了吧....</div>
+<p>当我们在讨论加载的时候，我们讨论的更多的时候加载网站上的资源。那一个普通的网站有哪些所谓的“资源”呢？</p>
 
-<p><a href="http://www.geekpark.net/zhuanti/volvo/">手误，别点</a></p>
+<h2 id="关于-js-css-的加载和解析">关于 JS/CSS 的加载和解析</h2>
 
-<ol>
-<li>.container 类是必须要有的，这个很有必要。</li>
-<li>少用position来定位，在各种平台上表现很不一。（Bootstrap是区间分割法，而且<code>.container</code>有15px的<code>padding</code>）</li>
-<li>设计图中实现能用文字的尽量用文字，图片不好维护，改起来特别痛苦，而且显示不清晰，加载慢。</li>
-<li>移动端和PC端是否可以应用一个样式？判定标准是PC端是否足够复杂，如果PC端非常复杂，和移动端代码重用太少那就应该另起一个项目。好的方法是通过Ajax动态插入，不好的方法是在<code>&amp;lt;head&amp;gt;</code>中写跳转（万不得已会用？）。</li>
-<li>Grunt有性能优化的地方，目前JS压缩耗时太长（7s），简直了。</li>
-<li>尽量多用Lazyload，否则性能体验会不够好，尤其会造成JS data数据的阻塞。</li>
-<li>静态项目可以抽象出Partial模板，然后在JS中进行填充，这样的好处是移动端PC端公用一份数据。（探寻更好的方法，框架是如何去做的）</li>
-<li>微信JS签名校验，其中<code>access_toke</code>和<code>js_ticket</code>是需要缓存的，其他的不需要。往后端传url参数的时候要同域，且推荐使用post请求。因为url中如果微信分享过会增加 <code>?from=groupmessage&amp;amp;isappinstalled=0</code> ，get请求会将 &amp; 左右两次分成两个params 。但如果是post就尽量要求在同一个域，跨域post似乎不太好搞定。而JSONP因其实现原理是 <code>srcript src</code> 所以永远不可能实现JSONP 的post请求。</li>
-</ol>
+<p>如我们所知，最先加载的是 HTML 文件，然后根据你在 HTML <code>&lt;head&gt;</code> 标签中所定义的一系列 <code>&lt;link&gt;</code> 或是 <code>&lt;script src&gt;</code> 浏览器会开始加载并解析 JS 文件或是 CSS 文件。当然你的 CSS/JS 文件有可能在 <code>&lt;head&gt;</code> 加载并解析，也有可能会在 <code>&lt;body&gt;</code> 中加载并解析。</p>
+
+<p>在这个过程中我们已经遇到了一些常见的问题，当浏览器加载 JS 文件时浏览器的主线程会被阻塞吗？我们应该在 <code>&lt;head&gt;</code> 标签中加载 JS 还是在 <code>&lt;body&gt;</code> 最底部加载 JS？你是否应该使用 <code>&lt;script async&gt;</code> 或是 <code>&lt;script defer&gt;</code> 来对你的 JS 资源加载做出调整？我没有一个标准答案，随着项目的不同策略也应该是不同的。但如果你还不清楚这些问题那关于浏览器加载优化的第一步则是搞清楚这几个问题：</p>
+
+<ul>
+<li>JS Script 加载和执行是否阻塞，阻塞了浏览器做什么？</li>
+<li><code>&lt;script&gt;</code> 标签的 async/await 如何使用？</li>
+<li>CSS 的加载和解析是否阻塞？阻塞了浏览器做什么？</li>
+<li>其他资源例如图片、视频的加载是否阻塞浏览器？</li>
+</ul>
+
+<h2 id="你真的需要加载全部吗">你真的需要加载全部吗？</h2>
+
+<p>想象一下你有一个图片分享网站，很不幸50%的用户只是点进来看一下首屏的内容然后就关掉了网页，剩下30%的用户会滑动屏幕到第二屏，最后20%的用户会滑动到页尾。此时你是否有必要给 100% 的用户都加载所有的图片呢？</p>
+
+<p>带宽就像一根水管，如果你有大量的内容想要给用户，此时你所需要考虑的是哪些内容是用户迫切需要的，哪些内容是用户可能不需要的。举例来说：</p>
+
+<ul>
+<li>用户可能不需要非常迫切的看到首屏之外的图片和视频，所以你可以使用浏览器提供的 <code>&lt;img/iframe loading=&quot;lazy&quot;&gt;</code> 来对不需要的资源进行懒加载。把水管留给更重要的资源。</li>
+<li>用户也不需要你下次跳转才能用到的 CSS 和 JS，这也是为什么 webpack 有 <code>code splitting</code> 以及 React 会有 <code>React.lazy</code> 以及 <code>Suspense</code> 。对于 CSS 你可以考虑 Critical CSS 优化，相信你可以通过关键字找到更优质的相关文章。</li>
+<li>不同的资源有不同的优先级，当前页面所能使用到的 HTML 和 CSS 的优先级可能比 JS 更高。而 JS 又比图片、视频的优先级更高。于此同时也要考虑不同在资源加载执行的成本也是不同的，加载解析图片的成本显然要比同等大小的 JS 要低很多。所以在不同文件类型之间对比大小是没有意义的。</li>
+</ul>
+
+<h2 id="水管固定的情况下如何流更多的水">水管固定的情况下如何流更多的水？</h2>
+
+<p>你可以加大水管的水压，上一台更好的发动机引擎，而这台引擎就是 CDN。</p>
+
+<p>如果你已经有 CDN 了那还能做什么？如之前所说你需要把不用的资源推迟加载，把重要的资源提前加载。其实这也正是你要做的事情 —— 对资源进行优先级划分。</p>
+
+<p>划分优先级的时候可以遵循如下规则：</p>
+
+<ul>
+<li>提前加载最重要的资源（可能是 HTML/CSS） <code>Push</code> (or <code>preload</code>) the most important resources.</li>
+<li>尽可能快的渲染首屏内容，如果是 SPA 则是尽快渲染第一个路由的内容。 <code>Render</code> the initial route as soon as possible.</li>
+<li>缓存其他资源。(当浏览器再次加载相同的内容时完全没有必要重复从服务器上下载) <code>Pre-cache</code> remaining assets.</li>
+<li>懒加载其他页面的内容或是不重要的内容（比如图片视频 iframe 或是网站的评论框）~Lazy load~ other routes and non-critical assets.</li>
+</ul>
+
+<p>上面的这四个原则被 Google 称之为 PRPL(Push/Render/PreCache/Lazyload) 原则，如果你英文过关的话 <a href="https://web.dev/apply-instant-loading-with-prpl/">Google 的文章</a> 可能讲的更好。</p>
+
+<h2 id="我如何知道我所做是事情是有用的">我如何知道我所做是事情是有用的？</h2>
+
+<p>当你设置了图片的 lazyload 在浏览器上之后你一定想知道对你的网站产生了怎样的影响，下一篇文章会继续讲述你如何量化你的网站性能？满分100分的话你能得几分？有哪些重要的指标是我们应该关注的。希望我能坚持写下去，</p>
+
+<p>如果你很耐心地看完了这篇文章并且觉得有收获的话，欢迎留言和分享。期待下次再见。</p>
     </article>
 
     <amp-iframe width="700" height="163"
                 layout="responsive"
                 sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
                 resizable
-                src="https://liyaodong.com/disqus.html#Project-review-for-GeekPark-Volvo.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fproject-review-for-geekpark-volvo%2f">
+                src="https://liyaodong.com/disqus.html#website-performance-load-assets.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fwebsite-performance-load-assets%2f">
         <div overflow tabindex=0 role=button aria-label=""></div>
     </amp-iframe>
 </section>
