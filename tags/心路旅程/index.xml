@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>心路旅程 on 晓风博客</title>
@@ -28,18 +28,17 @@
     width=&#34;700&#34;
     height=&#34;394&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 176 &#34;
+    on=&#34;tap: 151 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;176&#34;
+    id=&#34;151&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;昨晚看了一部电影《Groundhog Day》（土拨鼠之日），讲述了一个气象预报员重复过一天的生活，颇有感触写此博文。&lt;/p&gt;</description>
     </item>
@@ -61,21 +60,19 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 490 &#34;
+    on=&#34;tap: 395 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;490&#34;
+    id=&#34;395&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
-
 &lt;p&gt;原来幸福它是一种满足。是我以前苛求得太多，才让自己跌进痛的旋涡。我还很笨，以为将某些东西强留在自己身边，便会幸福。可是幸福它一如五彩的灵鹊，只有将它放开，才能看见美丽的弧线。&lt;/p&gt;
-
 &lt;p&gt;对于我，一个人，已足够。&lt;/p&gt;</description>
     </item>
     
@@ -96,18 +93,17 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 277 &#34;
+    on=&#34;tap: 475 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;277&#34;
+    id=&#34;475&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;转眼间就到了2013年了，转眼间，大学已经上了一年半了，转眼间，已经大二下半学期了。&lt;/p&gt;</description>
     </item>
@@ -129,18 +125,17 @@
     width=&#34;307&#34;
     height=&#34;313&#34;
     layout=&#34;intrinsic&#34;
-    on=&#34;tap: 138 &#34;
+    on=&#34;tap: 307 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;138&#34;
+    id=&#34;307&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;亲爱的，外面没有别人，只有自己。一本身心灵小说，元旦放假回家读了两遍，读完之后，所感甚深。分享大家，还望共勉。&lt;/p&gt;</description>
     </item>
@@ -162,18 +157,17 @@
     width=&#34;1280&#34;
     height=&#34;960&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 385 &#34;
+    on=&#34;tap: 419 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;385&#34;
+    id=&#34;419&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;还记得当时母校的样子吗？还记得一起吃过的烩豆腐吗？还记得一起争抢的五中第一碗吗？还记得那年的足球赛上拼搏的样子吗？还记得&amp;hellip;&amp;hellip;.&lt;/p&gt;</description>
     </item>

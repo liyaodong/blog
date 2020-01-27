@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>01 on 晓风博客</title>
@@ -30,14 +30,14 @@
     width=&#34;1000&#34;
     height=&#34;500&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 499 &#34;
+    on=&#34;tap: 350 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;499&#34;
+    id=&#34;350&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -62,18 +62,17 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 249 &#34;
+    on=&#34;tap: 293 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;249&#34;
+    id=&#34;293&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;如果你网站上的图标在一个域名下正常，在另外一个域名下无法显示那你就需要看看这篇文章了。没有多少杂技，只有干货。&lt;/p&gt;</description>
     </item>
@@ -95,18 +94,17 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 57 &#34;
+    on=&#34;tap: 376 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;57&#34;
+    id=&#34;376&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;如果你不知道Chrome是什么还是别看这篇文章了，虽然标题有点水（这是有点吗 ¬_¬）。本文是讲述如何使用VIM的操作习惯来操作Chrome的。&lt;/p&gt;</description>
     </item>
@@ -137,18 +135,17 @@
     width=&#34;307&#34;
     height=&#34;313&#34;
     layout=&#34;intrinsic&#34;
-    on=&#34;tap: 138 &#34;
+    on=&#34;tap: 307 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;138&#34;
+    id=&#34;307&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;亲爱的，外面没有别人，只有自己。一本身心灵小说，元旦放假回家读了两遍，读完之后，所感甚深。分享大家，还望共勉。&lt;/p&gt;</description>
     </item>

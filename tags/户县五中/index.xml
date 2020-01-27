@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>户县五中 on 晓风博客</title>
@@ -28,18 +28,17 @@
     width=&#34;1280&#34;
     height=&#34;960&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 385 &#34;
+    on=&#34;tap: 419 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;385&#34;
+    id=&#34;419&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;还记得当时母校的样子吗？还记得一起吃过的烩豆腐吗？还记得一起争抢的五中第一碗吗？还记得那年的足球赛上拼搏的样子吗？还记得&amp;hellip;&amp;hellip;.&lt;/p&gt;</description>
     </item>

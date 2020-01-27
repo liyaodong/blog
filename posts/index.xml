@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 晓风博客</title>
@@ -28,18 +28,17 @@
     width=&#34;1920&#34;
     height=&#34;1267&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 444 &#34;
+    on=&#34;tap: 318 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;444&#34;
+    id=&#34;318&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;影响网站加载速度的因素有很多，我希望能通过自己对于网站速度加载优化的一系列总结来加深自己对网站性能优化的思考，同时分享出来希望能对你有一些收获。&lt;/p&gt;</description>
     </item>
@@ -61,18 +60,17 @@
     width=&#34;1920&#34;
     height=&#34;1281&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 135 &#34;
+    on=&#34;tap: 351 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;135&#34;
+    id=&#34;351&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;2019年买了相机，去了很多自己一直想去的地方，分享出来这些照片和记忆希望能让更多的人看到这些照片。&lt;/p&gt;</description>
     </item>
@@ -94,18 +92,17 @@
     width=&#34;5472&#34;
     height=&#34;3648&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 486 &#34;
+    on=&#34;tap: 383 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;486&#34;
+    id=&#34;383&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;谈起编程很多人会觉得很难，但看到别人飞快地的在键盘上对着黑色屏幕舞动手指时又会觉得非常酷，甚至在自己内心萌生出一个想法 —— 我要不要也去学一下编程。&lt;/p&gt;</description>
     </item>
@@ -127,18 +124,17 @@
     width=&#34;4032&#34;
     height=&#34;3024&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 5 &#34;
+    on=&#34;tap: 422 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;5&#34;
+    id=&#34;422&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;我从小就喜欢拆东西，拆完了，就装不上去了。从满是齿轮的表到自己的玩具四驱车，这些小玩意的身上似乎总有一种魔力在吸引着我，让我不由自主地想要拆了又拆。虽然总是被骂拆完了就装不回去了，但是也有一些时候可以把拆下来的马达、名片以及电池组装在一起变成小伙伴们心奇羡慕的手持风扇，在炎炎的夏日里两节五号电池就能带来一整天的快乐。&lt;/p&gt;</description>
     </item>
@@ -160,18 +156,17 @@
     width=&#34;1200&#34;
     height=&#34;800&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 116 &#34;
+    on=&#34;tap: 39 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;116&#34;
+    id=&#34;39&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;1984年的1月，在苹果的办公室内，已经凌晨的办公室内仍然灯火通明。因为新的Macintosh电脑即将在几天之后向公众展示，大家看起来都非常疲倦，所有人的心头都是一片乌云。整个团队甚至从去年圣诞节工作到了现在，但新的系统仍然有很多问题。虽然这栋大楼里的每一个人都已经在帮助团队进行软件的测试了，但新系统的发布看起来仍然遥遥无期。&lt;/p&gt;</description>
     </item>
@@ -202,18 +197,17 @@
     width=&#34;1000&#34;
     height=&#34;621&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 50 &#34;
+    on=&#34;tap: 69 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;50&#34;
+    id=&#34;69&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;一些简单通俗的前端领域相关名词解释，帮助各位想学前端的同学尽快入门。&lt;/p&gt;</description>
     </item>
@@ -235,18 +229,17 @@
     width=&#34;1024&#34;
     height=&#34;768&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 265 &#34;
+    on=&#34;tap: 281 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;265&#34;
+    id=&#34;281&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;二十四岁，又一个黄金十二年要来了。在这个时间点上写点东西，希望以后的自己在回忆年轻时能对二十四岁有个印象。&lt;/p&gt;</description>
     </item>
@@ -270,14 +263,14 @@
     width=&#34;3264&#34;
     height=&#34;2448&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 105 &#34;
+    on=&#34;tap: 431 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;105&#34;
+    id=&#34;431&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -302,18 +295,17 @@
     width=&#34;640&#34;
     height=&#34;404&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 143 &#34;
+    on=&#34;tap: 8 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;143&#34;
+    id=&#34;8&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;我曾经很好奇，为什么在历史的潮流中，不同种族不同地域的人都有一个共同的特点，那就是信仰。&lt;/p&gt;</description>
     </item>
@@ -335,23 +327,20 @@
     width=&#34;1200&#34;
     height=&#34;799&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 339 &#34;
+    on=&#34;tap: 255 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;339&#34;
+    id=&#34;255&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
-
 &lt;p&gt;头图来自 Nemanja Pesic@dribbble 侵删&lt;/p&gt;
-
 &lt;p&gt;鸡汤 -&amp;gt; 一种看完之后斗志满满却不知如何下手的文章。我的目标就是：不给大家喝鸡汤&lt;/p&gt;
-
 &lt;p&gt;作为一个青年人，正是不断学习成长的时候。回想这些年来自己的成长路线，这几点或许是最有帮助的。&lt;/p&gt;</description>
     </item>
     
@@ -383,20 +372,19 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 44 &#34;
+    on=&#34;tap: 226 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;44&#34;
+    id=&#34;226&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
 你好，谢谢你。&lt;/p&gt;
-
 &lt;p&gt;我穿越回过去，对那时的自己说。&lt;/p&gt;</description>
     </item>
     
@@ -419,14 +407,14 @@
     width=&#34;1440&#34;
     height=&#34;677&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 28 &#34;
+    on=&#34;tap: 109 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;28&#34;
+    id=&#34;109&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -453,14 +441,14 @@
     width=&#34;1440&#34;
     height=&#34;875&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 297 &#34;
+    on=&#34;tap: 284 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;297&#34;
+    id=&#34;284&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -487,19 +475,19 @@
     width=&#34;1200&#34;
     height=&#34;799&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 62 &#34;
+    on=&#34;tap: 32 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;62&#34;
+    id=&#34;32&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
-![]()
+&lt;img src=&#34;&#34; alt=&#34;&#34;&gt;
 如果说前端里最痛苦的事情是什么，那一定是用行内样式和 table 写响应式的 HTML 邮件了。&lt;/p&gt;</description>
     </item>
     
@@ -522,14 +510,14 @@
     width=&#34;800&#34;
     height=&#34;600&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 261 &#34;
+    on=&#34;tap: 143 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;261&#34;
+    id=&#34;143&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -556,14 +544,14 @@
     width=&#34;1600&#34;
     height=&#34;1200&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 177 &#34;
+    on=&#34;tap: 441 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;177&#34;
+    id=&#34;441&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -588,18 +576,17 @@
     width=&#34;800&#34;
     height=&#34;600&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 12 &#34;
+    on=&#34;tap: 193 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;12&#34;
+    id=&#34;193&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;微信内调试这件头疼的事情终于有一些靠谱的解决办法了。&lt;/p&gt;</description>
     </item>
@@ -623,14 +610,14 @@
     width=&#34;800&#34;
     height=&#34;514&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 434 &#34;
+    on=&#34;tap: 411 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;434&#34;
+    id=&#34;411&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -657,14 +644,14 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 287 &#34;
+    on=&#34;tap: 64 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;287&#34;
+    id=&#34;64&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -689,18 +676,17 @@
     width=&#34;800&#34;
     height=&#34;536&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 205 &#34;
+    on=&#34;tap: 417 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;205&#34;
+    id=&#34;417&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;首先来说说图片裁剪这件事情。&lt;/p&gt;</description>
     </item>
@@ -722,18 +708,17 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 215 &#34;
+    on=&#34;tap: 473 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;215&#34;
+    id=&#34;473&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;沃尔沃项目总结&amp;hellip;&lt;/p&gt;</description>
     </item>
@@ -755,18 +740,17 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 78 &#34;
+    on=&#34;tap: 199 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;78&#34;
+    id=&#34;199&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;如果你也和我一样，使用了插件之后发现只有部分图片被缓存过来了那就应该看看这些坑的地方了。&lt;/p&gt;</description>
     </item>
@@ -790,14 +774,14 @@
     width=&#34;1000&#34;
     height=&#34;500&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 499 &#34;
+    on=&#34;tap: 350 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;499&#34;
+    id=&#34;350&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -822,18 +806,17 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 249 &#34;
+    on=&#34;tap: 293 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;249&#34;
+    id=&#34;293&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;如果你网站上的图标在一个域名下正常，在另外一个域名下无法显示那你就需要看看这篇文章了。没有多少杂技，只有干货。&lt;/p&gt;</description>
     </item>
@@ -855,18 +838,17 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 57 &#34;
+    on=&#34;tap: 376 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;57&#34;
+    id=&#34;376&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;如果你不知道Chrome是什么还是别看这篇文章了，虽然标题有点水（这是有点吗 ¬_¬）。本文是讲述如何使用VIM的操作习惯来操作Chrome的。&lt;/p&gt;</description>
     </item>
@@ -890,14 +872,14 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 128 &#34;
+    on=&#34;tap: 60 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;128&#34;
+    id=&#34;60&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -922,18 +904,17 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 289 &#34;
+    on=&#34;tap: 144 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;289&#34;
+    id=&#34;144&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;一个人静静的在房间里插上耳机，带上耳机听着豆瓣FM，没有咖啡也没有绿茶，一丝丝凉意从灯火通明的窗外传来，不禁去想我们到底为什么离开了家乡来到这繁华的都市&amp;hellip;&lt;/p&gt;</description>
     </item>
@@ -955,21 +936,19 @@
     width=&#34;735&#34;
     height=&#34;456&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 247 &#34;
+    on=&#34;tap: 277 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;247&#34;
+    id=&#34;277&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
+&lt;p&gt; &lt;/p&gt;
 &lt;p&gt;以前看别人玩魔方自己老不会，去四川实习的时候玩了同学的魔方觉得不是很难。这不自己买了一个照着网上的公式，没想到很快就可以解出来。放出公式方便自己随时查看。&lt;/p&gt;</description>
     </item>
     
@@ -990,18 +969,17 @@
     width=&#34;700&#34;
     height=&#34;394&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 176 &#34;
+    on=&#34;tap: 151 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;176&#34;
+    id=&#34;151&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;昨晚看了一部电影《Groundhog Day》（土拨鼠之日），讲述了一个气象预报员重复过一天的生活，颇有感触写此博文。&lt;/p&gt;</description>
     </item>
@@ -1023,18 +1001,17 @@
     width=&#34;1024&#34;
     height=&#34;512&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 67 &#34;
+    on=&#34;tap: 71 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;67&#34;
+    id=&#34;71&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。&lt;/p&gt;</description>
     </item>
@@ -1056,18 +1033,17 @@
     width=&#34;700&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 418 &#34;
+    on=&#34;tap: 367 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;418&#34;
+    id=&#34;367&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;很久之前就想着要给自己写一个主题了，但屡屡没有坚持写下去，最近暑假闲了下来，静下心来总算写了一个还算满意的主题，开源出来大家共同改进！&lt;/p&gt;</description>
     </item>
@@ -1091,14 +1067,14 @@
     width=&#34;500&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 249 &#34;
+    on=&#34;tap: 113 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;249&#34;
+    id=&#34;113&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1123,18 +1099,17 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 259 &#34;
+    on=&#34;tap: 252 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;259&#34;
+    id=&#34;252&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;时光是琥珀，泪一滴滴被反锁，情书再不朽，也磨成沙漏。一整个宇宙，换一颗红豆，回忆如困兽，寂寞太久而渐渐温柔。&lt;/p&gt;</description>
     </item>
@@ -1156,18 +1131,17 @@
     width=&#34;700&#34;
     height=&#34;250&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 135 &#34;
+    on=&#34;tap: 263 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;135&#34;
+    id=&#34;263&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;昨天微软放出Win8.1，趁着今天早上网速好，Down下来了。一路安装下来，感觉这玩意真心鸡肋啊。&lt;/p&gt;</description>
     </item>
@@ -1189,18 +1163,17 @@
     width=&#34;700&#34;
     height=&#34;250&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 493 &#34;
+    on=&#34;tap: 456 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;493&#34;
+    id=&#34;456&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;又是一年志愿时，各位亲们都为了忙志愿纠结的焦头烂额有木有？本文也帮不了你报志愿，这篇文章只是一个即将大三的学长带你认识一下宝文理，仅此而已。&lt;/p&gt;</description>
     </item>
@@ -1222,21 +1195,19 @@
     width=&#34;700&#34;
     height=&#34;307&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 208 &#34;
+    on=&#34;tap: 41 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;208&#34;
+    id=&#34;41&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
+&lt;p&gt; &lt;/p&gt;
 &lt;p&gt;404是神马？404就是一种HTTP状态码，表示该页面没有找到，告诉浏览者：这页面丢了，你换别的页面看看吧。常看人家的404页面，今天咱也DIY一个！&lt;/p&gt;</description>
     </item>
     
@@ -1257,14 +1228,14 @@
     width=&#34;700&#34;
     height=&#34;336&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 404 &#34;
+    on=&#34;tap: 424 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;404&#34;
+    id=&#34;424&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;</description>
@@ -1287,21 +1258,19 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 490 &#34;
+    on=&#34;tap: 395 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;490&#34;
+    id=&#34;395&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
 
-
 &lt;p&gt;原来幸福它是一种满足。是我以前苛求得太多，才让自己跌进痛的旋涡。我还很笨，以为将某些东西强留在自己身边，便会幸福。可是幸福它一如五彩的灵鹊，只有将它放开，才能看见美丽的弧线。&lt;/p&gt;
-
 &lt;p&gt;对于我，一个人，已足够。&lt;/p&gt;</description>
     </item>
     
@@ -1322,18 +1291,17 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 277 &#34;
+    on=&#34;tap: 475 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;277&#34;
+    id=&#34;475&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;转眼间就到了2013年了，转眼间，大学已经上了一年半了，转眼间，已经大二下半学期了。&lt;/p&gt;</description>
     </item>
@@ -1355,18 +1323,17 @@
     width=&#34;1440&#34;
     height=&#34;900&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 171 &#34;
+    on=&#34;tap: 169 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;171&#34;
+    id=&#34;169&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;放寒假了，整日昏昏欲睡，实在无聊。今天看了一会书，忽然发现一个让自己感兴趣的玩意——HTML5 localStorage，于是花了一下午加半晚上的时间完成了这个应用。&lt;/p&gt;</description>
     </item>
@@ -1397,18 +1364,17 @@
     width=&#34;307&#34;
     height=&#34;313&#34;
     layout=&#34;intrinsic&#34;
-    on=&#34;tap: 138 &#34;
+    on=&#34;tap: 307 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;138&#34;
+    id=&#34;307&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;亲爱的，外面没有别人，只有自己。一本身心灵小说，元旦放假回家读了两遍，读完之后，所感甚深。分享大家，还望共勉。&lt;/p&gt;</description>
     </item>
@@ -1430,18 +1396,17 @@
     width=&#34;384&#34;
     height=&#34;332&#34;
     layout=&#34;intrinsic&#34;
-    on=&#34;tap: 127 &#34;
+    on=&#34;tap: 311 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;127&#34;
+    id=&#34;311&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;之前用过新浪云计算（SAE）的空间，觉得使用SVN来管理代码很方便，代码可控制性很强。于是想自己架设一个SVN的WEB服务器，历尽艰辛总算配置成功了。贴出心得，以帮助有需要的人们，同时也算是备忘了。&lt;/p&gt;</description>
     </item>
@@ -1463,18 +1428,17 @@
     width=&#34;1280&#34;
     height=&#34;960&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 385 &#34;
+    on=&#34;tap: 419 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;385&#34;
+    id=&#34;419&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;还记得当时母校的样子吗？还记得一起吃过的烩豆腐吗？还记得一起争抢的五中第一碗吗？还记得那年的足球赛上拼搏的样子吗？还记得&amp;hellip;&amp;hellip;.&lt;/p&gt;</description>
     </item>
@@ -1496,18 +1460,17 @@
     width=&#34;668&#34;
     height=&#34;328&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 176 &#34;
+    on=&#34;tap: 437 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;176&#34;
+    id=&#34;437&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
-
 
 &lt;p&gt;接触过设计的朋友应该会经常听到诸如RGB、CMYK之类的名词，但是对于很多设计新手往往不知道RGB与CMYK之间到底有什么区别和联系，甚至还经常询问如rgb转cmyk、cmyk和rgb的区别、打印用cmyk还是rgb、怎么转换成rgb这样的问题。&lt;/p&gt;</description>
     </item>
@@ -1531,14 +1494,14 @@
     width=&#34;670&#34;
     height=&#34;502&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 257 &#34;
+    on=&#34;tap: 33 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;257&#34;
+    id=&#34;33&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1562,7 +1525,6 @@
       
       <guid>https://blog.liyaodong.com/posts/dont-give-up-early/</guid>
       <description>&lt;p&gt;记住，别轻易放弃抠门，成功会在你下一次抠门时，微笑着迎接你的。&lt;/p&gt;
-
 &lt;p&gt;昨天给去姐姐家修理电脑，遇到了些可笑的问题。分享给各位朋友，希望大家以后不再走弯路。&lt;/p&gt;</description>
     </item>
     
@@ -1582,7 +1544,6 @@
       
       <guid>https://blog.liyaodong.com/posts/blog/</guid>
       <description>&lt;h2 id=&#34;聊聊信息渠道这件事&#34;&gt;聊聊信息渠道这件事&lt;/h2&gt;
-
 &lt;p&gt;想想真是件可怕的事情，媒体一直以来都是件很重要的工具——法西斯用来控制人心、宗教用来控制思想、百度告诉你什么是「最好的」医院，朋友圈告诉你，什么是「最好的」祖传秘方。&lt;/p&gt;</description>
     </item>
     
