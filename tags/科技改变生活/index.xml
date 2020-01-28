@@ -21,6 +21,14 @@
     src=&#34;https://image.liyaodong.com/canvascrop.jpg&#34;
     
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 1500w,
+      https://image.liyaodong.com/canvascrop.jpg&#34;
     
     
     
@@ -28,14 +36,14 @@
     width=&#34;800&#34;
     height=&#34;536&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 417 &#34;
+    on=&#34;tap: 319 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;417&#34;
+    id=&#34;319&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -53,6 +61,14 @@
     src=&#34;https://image.liyaodong.com/canvasbanner.jpg&#34;
     alt=&#34;canvas &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvasbanner.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvasbanner.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvasbanner.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvasbanner.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvasbanner.jpg 1500w,
+      https://image.liyaodong.com/canvasbanner.jpg&#34;
     
     
     
@@ -60,14 +76,14 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 473 &#34;
+    on=&#34;tap: 419 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;473&#34;
+    id=&#34;419&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -85,6 +101,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2015/02/qiniu.jpg&#34;
     
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/02/qiniu.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/02/qiniu.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/02/qiniu.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/02/qiniu.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/02/qiniu.jpg 1500w,
+      https://image.liyaodong.com/uploads/2015/02/qiniu.jpg&#34;
     
     
     
@@ -92,14 +116,14 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 199 &#34;
+    on=&#34;tap: 468 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;199&#34;
+    id=&#34;468&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -117,6 +141,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2015/01/icon.jpg&#34;
     alt=&#34;font-icon &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/icon.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/icon.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/icon.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/icon.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/icon.jpg 1500w,
+      https://image.liyaodong.com/uploads/2015/01/icon.jpg&#34;
     
     
     
@@ -124,14 +156,14 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 293 &#34;
+    on=&#34;tap: 459 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;293&#34;
+    id=&#34;459&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -149,6 +181,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg&#34;
     
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg 1500w,
+      https://image.liyaodong.com/uploads/2015/01/%e6%9c%aa%e6%a0%87%e9%a2%98-2.jpg&#34;
     
     
     
@@ -156,14 +196,14 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 376 &#34;
+    on=&#34;tap: 243 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;376&#34;
+    id=&#34;243&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -183,6 +223,14 @@
     src=&#34;https://image.liyaodong.com/vimbanner.jpg&#34;
     alt=&#34;vim banner &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 1500w,
+      https://image.liyaodong.com/vimbanner.jpg&#34;
     
     
     
@@ -190,14 +238,14 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 60 &#34;
+    on=&#34;tap: 288 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;60&#34;
+    id=&#34;288&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -215,6 +263,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2014/08/banner1.jpg&#34;
     alt=&#34;web-app-dev &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 1500w,
+      https://image.liyaodong.com/uploads/2014/08/banner1.jpg&#34;
     
     
     
@@ -222,14 +278,14 @@
     width=&#34;1024&#34;
     height=&#34;512&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 71 &#34;
+    on=&#34;tap: 159 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;71&#34;
+    id=&#34;159&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -247,6 +303,14 @@
     src=&#34;http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png&#34;
     alt=&#34;Win8.1初体验banner &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 1500w,
+      http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png&#34;
     
     
     
@@ -254,14 +318,14 @@
     width=&#34;700&#34;
     height=&#34;250&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 263 &#34;
+    on=&#34;tap: 406 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;263&#34;
+    id=&#34;406&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -279,6 +343,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg&#34;
     alt=&#34;应用截图 &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg 1500w,
+      https://image.liyaodong.com/uploads/2013/02/application-screenshot.jpg&#34;
     
     
     
@@ -286,14 +358,14 @@
     width=&#34;1440&#34;
     height=&#34;900&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 169 &#34;
+    on=&#34;tap: 59 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;169&#34;
+    id=&#34;59&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -320,6 +392,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2012/10/subversion-logo.png&#34;
     
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/10/subversion-logo.png 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/10/subversion-logo.png 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/10/subversion-logo.png 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/10/subversion-logo.png 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/10/subversion-logo.png 1500w,
+      https://image.liyaodong.com/uploads/2012/10/subversion-logo.png&#34;
     
     
     
@@ -327,14 +407,14 @@
     width=&#34;384&#34;
     height=&#34;332&#34;
     layout=&#34;intrinsic&#34;
-    on=&#34;tap: 311 &#34;
+    on=&#34;tap: 68 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;311&#34;
+    id=&#34;68&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;

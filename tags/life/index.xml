@@ -23,6 +23,14 @@
     src=&#34;https://image.liyaodong.com/759816-b7debb4a15a19734.jpg&#34;
     alt=&#34;Thanks to yourself &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 1500w,
+      https://image.liyaodong.com/759816-b7debb4a15a19734.jpg&#34;
     
     
     
@@ -30,14 +38,14 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 226 &#34;
+    on=&#34;tap: 3 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;226&#34;
+    id=&#34;3&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -56,6 +64,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2014/10/alone.jpg&#34;
     alt=&#34;alone &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/10/alone.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/10/alone.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/10/alone.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/10/alone.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/10/alone.jpg 1500w,
+      https://image.liyaodong.com/uploads/2014/10/alone.jpg&#34;
     
     
     
@@ -63,14 +79,14 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 144 &#34;
+    on=&#34;tap: 390 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;144&#34;
+    id=&#34;390&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -88,6 +104,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2014/08/rubiks-cube.jpg&#34;
     alt=&#34;rubiks-cube &#34;
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/rubiks-cube.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/rubiks-cube.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/rubiks-cube.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/rubiks-cube.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/rubiks-cube.jpg 1500w,
+      https://image.liyaodong.com/uploads/2014/08/rubiks-cube.jpg&#34;
     
     
     
@@ -95,14 +119,14 @@
     width=&#34;735&#34;
     height=&#34;456&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 277 &#34;
+    on=&#34;tap: 105 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;277&#34;
+    id=&#34;105&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -121,6 +145,14 @@
     src=&#34;https://image.liyaodong.com/uploads/2013/08/timthumb.jpg&#34;
     
     
+    sizes=&#34;(min-width: 720px) 700px, 100vw&#34;
+    srcset=&#34;
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 1500w,
+      https://image.liyaodong.com/uploads/2013/08/timthumb.jpg&#34;
     
     
     
@@ -128,14 +160,14 @@
     width=&#34;630&#34;
     height=&#34;300&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 252 &#34;
+    on=&#34;tap: 50 &#34;
     role=&#34;button&#34;
     tabindex=&#34;0&#34;
 &gt;
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;252&#34;
+    id=&#34;50&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
