@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html amp lang="zh-cn" class="no-js">
+<head>
+    <title>RGB色彩和CMYK色彩究竟有什么区别</title>
+    <meta charset="utf-8">
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script><script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+
+
+
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/rgb-vs-cmyk/">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+
+    <meta name="theme-color" content="#112233" />
+    <meta name="msvalidate.01" content="3C6C979DB103D784162934B1AC452B4B" />
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "晓风博客",
+    "alternateName": "Xiaofeng Blog",
+    "url": "https:\/\/blog.liyaodong.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/blog.liyaodong.com"
+  , "sameAs": ["https://www.facebook.com/lydxfdd","https://www.instagram.com/vvvvanilla","https://www.linkedin.com/in/yaodong-li-8223a385/","https://twitter.com/xiaofengdong"]
+  
+  
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/",
+          "name": "posts"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  4 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/rgb-vs-cmyk\/",
+          "name": "rgb-vs-cmyk"
+        }
+    }]
+}
+</script>
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        .chroma{background-color:#eeeedd}.chroma .err{color:#a61717;background-color:#e3d2d2}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffffcc}.chroma .lnt{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .ln{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .k{color:#8b008b;font-weight:bold}.chroma .kc{color:#8b008b;font-weight:bold}.chroma .kd{color:#8b008b;font-weight:bold}.chroma .kn{color:#8b008b;font-weight:bold}.chroma .kp{color:#8b008b;font-weight:bold}.chroma .kr{color:#8b008b;font-weight:bold}.chroma .kt{color:#00688b;font-weight:bold}.chroma .na{color:#658b00}.chroma .nb{color:#658b00}.chroma .nc{color:#008b45;font-weight:bold}.chroma .no{color:#00688b}.chroma .nd{color:#707a7c}.chroma .ne{color:#008b45;font-weight:bold}.chroma .nf{color:#008b45}.chroma .nn{color:#008b45;text-decoration:underline}.chroma .nt{color:#8b008b;font-weight:bold}.chroma .nv{color:#00688b}.chroma .s{color:#cd5555}.chroma .sa{color:#cd5555}.chroma .sb{color:#cd5555}.chroma .sc{color:#cd5555}.chroma .dl{color:#cd5555}.chroma .sd{color:#cd5555}.chroma .s2{color:#cd5555}.chroma .se{color:#cd5555}.chroma .sh{color:#1c7e71;font-style:italic}.chroma .si{color:#cd5555}.chroma .sx{color:#cb6c20}.chroma .sr{color:#1c7e71}.chroma .s1{color:#cd5555}.chroma .ss{color:#cd5555}.chroma .m{color:#b452cd}.chroma .mb{color:#b452cd}.chroma .mf{color:#b452cd}.chroma .mh{color:#b452cd}.chroma .mi{color:#b452cd}.chroma .il{color:#b452cd}.chroma .mo{color:#b452cd}.chroma .ow{color:#8b008b}.chroma .c{color:#228b22}.chroma .ch{color:#228b22}.chroma .cm{color:#228b22}.chroma .c1{color:#228b22}.chroma .cs{color:#8b008b;font-weight:bold}.chroma .cp{color:#1e889b}.chroma .cpf{color:#1e889b}.chroma .gd{color:#aa0000}.chroma .ge{font-style:italic}.chroma .gr{color:#aa0000}.chroma .gh{color:#000080;font-weight:bold}.chroma .gi{color:#00aa00}.chroma .go{color:#888888}.chroma .gp{color:#555555}.chroma .gs{font-weight:bold}.chroma .gu{color:#800080;font-weight:bold}.chroma .gt{color:#aa0000}.chroma .gl{text-decoration:underline}.chroma .w{color:#bbbbbb}body{background-color:#f9f8f0;color:#222;font-family:"Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif}.tac{text-align:center}a{color:#222;text-decoration:none}.container{max-width:960px;margin-left:auto;margin-right:auto;padding:15px}.container img,.container amp-img{max-width:100%}.site-header{text-align:center;margin-top:40px;font-family:"Songti SC"}.site-title{margin:0;display:inline-block;vertical-align:middle}.site-subtitle{margin:5px;font-size:14px}.site-header--float{font-family:"Songti SC";padding:15px 30px;background:#fff;border-bottom:1px solid #dcdcdc;width:100%;overflow:hidden;position:fixed;top:0;z-index:100}.site-header--float a{display:flex;align-items:center}.site-title--float{font-size:20px;margin:0px;margin-right:20px}.site-subtitle--float{font-size:12px;margin:0px}.site-footer{padding:10px;margin:20px;text-align:center}.site-footer em{color:#d82222}.article-item-title{font-size:24px;font-weight:bold;display:inline-block;vertical-align:middle;font-family:"Songti SC";margin:0}.article-item-title:hover{text-decoration:underline}.article-item-date{font-size:12px;display:block;color:#555}.article-item-summary{margin-top:20px;color:#555}.article-item-link{color:#222;text-decoration:none;margin:30px 0 5px}.article-item{max-width:700px;padding-bottom:40px;margin:0 auto 40px auto}.article-item:not(:last-of-type){border-bottom:1px solid #efefef}.article-item amp-img{margin-bottom:20px}.post-title{text-align:center;font-family:"Songti SC";font-size:32px;margin-bottom:5px}.single{line-height:1.625;color:#4a4a4a;max-width:700px}.single.has-header{margin-top:60px}.single amp-img{margin:15px auto;text-align:center}.single code{color:#AA8D5B;font-size:14px;font-weight:bold;margin:5px}.single pre>code{font-weight:600;margin:0}.single div.highlight{box-shadow:0 3px 3px 1px #d2c7b5}.single .chroma{background-color:transparent}.single a{text-decoration:underline}.single a:hover{color:#000}.single-content{margin-bottom:20px}.pagination{display:flex;justify-content:center;margin:20px 0;padding:0}.pagination .page-item{list-style-type:none}.pagination .page-item a{font-size:16px;margin:0 5px;display:inline-block;padding:5px 10px;cursor:pointer;border-radius:2px}.pagination .page-item.active,.pagination .page-item:hover{color:#fff;transition:all 200ms}.pagination .page-item.active a,.pagination .page-item:hover a{color:#fff;background:#ad9616;transition:all 200ms}.read-more{margin-top:40px;padding-top:40px;border-top:1px solid #efefef;position:relative}.read-more__title{font-size:13px;position:absolute;left:50%;top:0;transform:translate(-50%, -50%);background-color:#f9f8f0;padding:0 10px}.read-more__item{margin-bottom:20px}.read-more__item__container{background-color:#fefefe;border-radius:4px;padding:5px 15px;box-sizing:border-box}.read-more__item a{text-decoration:none}.read-more__item h4{margin:10px 0 0 0}.read-more__summary{font-size:14px}@media screen and (min-width: 767px){.read-more__list{display:flex;justify-content:space-between}.read-more__item{display:flex;flex:1;padding:0 10px}.read-more__item__container{flex-grow:1}.read-more__item:first-of-type{padding-left:0}.read-more__item:last-of-type{padding-right:0}.read-more__item amp-img{display:none}}
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+<header class="site-header--float" amp-fx="float-in-top">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
+
+
+<section class="single container has-header">
+    <h1 class="post-title">RGB色彩和CMYK色彩究竟有什么区别</h1>
+    <div class="tac">
+        <time>2012年8月19日</time>
+    </div>
+
+    <article class="single-content">
+        <amp-img
+    src="https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png"
+    alt="rgb &amp; cmyk "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2012/08/rgbcmyk.png 2000w"
+    
+    
+    
+    
+    width="668"
+    height="328"
+    layout="responsive"
+    on="tap: 476 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="476"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>接触过设计的朋友应该会经常听到诸如RGB、CMYK之类的名词，但是对于很多设计新手往往不知道RGB与CMYK之间到底有什么区别和联系，甚至还经常询问如rgb转cmyk、cmyk和rgb的区别、打印用cmyk还是rgb、怎么转换成rgb这样的问题。</p>
+<h3 id="rgb色彩和cmyk色彩是两种不同的色彩模式"><strong>RGB色彩和CMYK色彩是两种不同的色彩模式。</strong></h3>
+<p>RGB色彩模式是最基础的色彩模式，所以RGB色彩模式是一个重要的模式。只要在电脑屏幕上显示的图像，就一定是以RGB模式。因为显示器的物理结构就是遵循RGB的。</p>
+<p>CMYK也称作印刷色彩模式，顾名思义就是用来印刷的。</p>
+<p>它和RGB相比有一个很大的不同：</p>
+<p>RGB模式是一种发光的色彩模式，你在一间黑暗的房间内仍然可以看见屏幕上的内容；</p>
+<p>CMYK是一种依靠反光的色彩模式，我们是怎样阅读报纸的内容呢？是由阳光或灯光照射到报纸上，再反射到我们的眼中，才看到内容。</p>
+<p>它需要由外界光源，如果你在黑暗房间内是无法阅读报纸的。</p>
+<p>只要在屏幕上显示的图像，就是RGB模式表现的。只要是在印刷品上看到的图像，就是CMYK模式表现的。</p>
+<p>比如期刊、杂志、报纸、宣传画等，都是印刷出来的，那么就是CMYK模式的了。</p>
+<p>和RGB类似，CMY是3种印刷油墨名称的首字母：青色Cyan、洋红色Magenta、黄色Yellow。</p>
+<p>而K取的是black最后一个字母，之所以不取首字母，是为了避免与蓝色(Blue)混淆。</p>
+<p>从理论上来说，只需要CMY三种油墨就足够了，它们三个加在一起就应该得到黑色。</p>
+<p>但是由于目前制造工艺还不能造出高纯度的油墨，CMY相加的结果实际是一种暗红色。因此还需要加入一种专门的黑墨来中和。</p>
+<p>在Photoshop中，了解模式的概念是很重要的，因为色彩模式决定显示和打印电子图像的色彩模型（简单说色彩模型是用于表现颜色的一种数学算法），即一副电子图像用什么样的方式在计算机中显示或打印输出。常见的色彩模式包括位图模式、灰度模式、双色调模式、HSB（表示色相、饱和度、亮度）模式、RGB（表示红、绿、蓝）模式、CMYK（表示青、洋红、黄、黑）模式、Lab模式、索引色模式、多通道模式以及8位/16位模式，每种模式的图像描述和重现色彩的原理及所能显示的颜色数量是不同的。</p>
+<p>色彩模式除确定图像中能显示的颜色数之外，还影响图像的通道数和文件大小。这里提到的通道也是Photoshop中的一个重要概念，每个Photoshop图像具有一个或多个通道，每个通道都存放着图像中颜色元素的信息。图像中默认的颜色通道数取决于其色彩模式。例如，CMYK图像至少有四个通道，分辨代表青、洋红、黄和黑色信息。除了这些默认颜色通道，也可以将叫做Alpha通道的额外通道添加到图像中，以便将选区作为蒙板存放和编辑，并且可添加专色通道。一个图像有时多达24个通道，默认情况下，位图模式、灰度双色调和索引色图像中仍一个通道；RGB和Lab图像有三个通道；CMYK图像有四个通道。</p>
+    </article>
+
+    
+    
+        <div class="read-more">
+            <div class="read-more__title">
+                阅读更多
+            </div>
+            <div class="read-more__list">
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/new-chrome-extension-url2qr/">
+                            <h4>新的Chrome插件「URL2QR」</h4>
+                            <div class="read-more__summary"><p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2015/01/qrcode.jpg"
+    alt="qrcode "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/qrcode.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/qrcode.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/qrcode.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/qrcode.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/qrcode.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/01/qrcode.jpg 2000w"
+    
+    
+    
+    
+    width="1000"
+    height="500"
+    layout="responsive"
+    on="tap: 88 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="88"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+网上的二维码在线制作难道还不够多吗？为什么还要重复发明轮子？</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/everyday-is-unique-day/">
+                            <h4>每一天都是生命中最独特的</h4>
+                            <div class="read-more__summary"><amp-img
+    src="https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg"
+    alt="groundhog-day "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 2000w"
+    
+    
+    
+    
+    width="700"
+    height="394"
+    layout="responsive"
+    on="tap: 193 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="193"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>昨晚看了一部电影《Groundhog Day》（土拨鼠之日），讲述了一个气象预报员重复过一天的生活，颇有感触写此博文。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/webgeek-app-retro/">
+                            <h4>网络极客移动APP经验总结</h4>
+                            <div class="read-more__summary"><amp-img
+    src="https://image.liyaodong.com/uploads/2014/08/banner1.jpg"
+    alt="web-app-dev "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 2000w"
+    
+    
+    
+    
+    width="1024"
+    height="512"
+    layout="responsive"
+    on="tap: 246 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="246"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+
+    <amp-iframe width="700" height="163"
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="https://liyaodong.com/disqus.html#rgb-vs-cmyk.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2frgb-vs-cmyk%2f">
+        <div overflow tabindex=0 role=button aria-label=""></div>
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with <em>&#10084;</em>
+</footer>
+
+<amp-install-serviceworker
+    src="https://blog.liyaodong.com/sw.js"
+    layout="nodisplay">
+</amp-install-serviceworker>
+
+
+
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-30027709-1"
+            },
+            "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
+        }
+    </script>
+</amp-analytics>
+
+</body>
+</html>
+

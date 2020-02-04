@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html amp lang="zh-cn" class="no-js">
+<head>
+    <title>【极客教程】在图片上显示访问者的QQ号和昵称</title>
+    <meta charset="utf-8">
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script><script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+
+
+
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/display-qq-id-on-qzone/">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+
+    <meta name="theme-color" content="#112233" />
+    <meta name="msvalidate.01" content="3C6C979DB103D784162934B1AC452B4B" />
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "晓风博客",
+    "alternateName": "Xiaofeng Blog",
+    "url": "https:\/\/blog.liyaodong.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/blog.liyaodong.com"
+  , "sameAs": ["https://www.facebook.com/lydxfdd","https://www.instagram.com/vvvvanilla","https://www.linkedin.com/in/yaodong-li-8223a385/","https://twitter.com/xiaofengdong"]
+  
+  
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/",
+          "name": "posts"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  4 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/display-qq-id-on-qzone\/",
+          "name": "display-qq-id-on-qzone"
+        }
+    }]
+}
+</script>
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        .chroma{background-color:#eeeedd}.chroma .err{color:#a61717;background-color:#e3d2d2}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffffcc}.chroma .lnt{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .ln{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .k{color:#8b008b;font-weight:bold}.chroma .kc{color:#8b008b;font-weight:bold}.chroma .kd{color:#8b008b;font-weight:bold}.chroma .kn{color:#8b008b;font-weight:bold}.chroma .kp{color:#8b008b;font-weight:bold}.chroma .kr{color:#8b008b;font-weight:bold}.chroma .kt{color:#00688b;font-weight:bold}.chroma .na{color:#658b00}.chroma .nb{color:#658b00}.chroma .nc{color:#008b45;font-weight:bold}.chroma .no{color:#00688b}.chroma .nd{color:#707a7c}.chroma .ne{color:#008b45;font-weight:bold}.chroma .nf{color:#008b45}.chroma .nn{color:#008b45;text-decoration:underline}.chroma .nt{color:#8b008b;font-weight:bold}.chroma .nv{color:#00688b}.chroma .s{color:#cd5555}.chroma .sa{color:#cd5555}.chroma .sb{color:#cd5555}.chroma .sc{color:#cd5555}.chroma .dl{color:#cd5555}.chroma .sd{color:#cd5555}.chroma .s2{color:#cd5555}.chroma .se{color:#cd5555}.chroma .sh{color:#1c7e71;font-style:italic}.chroma .si{color:#cd5555}.chroma .sx{color:#cb6c20}.chroma .sr{color:#1c7e71}.chroma .s1{color:#cd5555}.chroma .ss{color:#cd5555}.chroma .m{color:#b452cd}.chroma .mb{color:#b452cd}.chroma .mf{color:#b452cd}.chroma .mh{color:#b452cd}.chroma .mi{color:#b452cd}.chroma .il{color:#b452cd}.chroma .mo{color:#b452cd}.chroma .ow{color:#8b008b}.chroma .c{color:#228b22}.chroma .ch{color:#228b22}.chroma .cm{color:#228b22}.chroma .c1{color:#228b22}.chroma .cs{color:#8b008b;font-weight:bold}.chroma .cp{color:#1e889b}.chroma .cpf{color:#1e889b}.chroma .gd{color:#aa0000}.chroma .ge{font-style:italic}.chroma .gr{color:#aa0000}.chroma .gh{color:#000080;font-weight:bold}.chroma .gi{color:#00aa00}.chroma .go{color:#888888}.chroma .gp{color:#555555}.chroma .gs{font-weight:bold}.chroma .gu{color:#800080;font-weight:bold}.chroma .gt{color:#aa0000}.chroma .gl{text-decoration:underline}.chroma .w{color:#bbbbbb}body{background-color:#f9f8f0;color:#222;font-family:"Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif}.tac{text-align:center}a{color:#222;text-decoration:none}.container{max-width:960px;margin-left:auto;margin-right:auto;padding:15px}.container img,.container amp-img{max-width:100%}.site-header{text-align:center;margin-top:40px;font-family:"Songti SC"}.site-title{margin:0;display:inline-block;vertical-align:middle}.site-subtitle{margin:5px;font-size:14px}.site-header--float{font-family:"Songti SC";padding:15px 30px;background:#fff;border-bottom:1px solid #dcdcdc;width:100%;overflow:hidden;position:fixed;top:0;z-index:100}.site-header--float a{display:flex;align-items:center}.site-title--float{font-size:20px;margin:0px;margin-right:20px}.site-subtitle--float{font-size:12px;margin:0px}.site-footer{padding:10px;margin:20px;text-align:center}.site-footer em{color:#d82222}.article-item-title{font-size:24px;font-weight:bold;display:inline-block;vertical-align:middle;font-family:"Songti SC";margin:0}.article-item-title:hover{text-decoration:underline}.article-item-date{font-size:12px;display:block;color:#555}.article-item-summary{margin-top:20px;color:#555}.article-item-link{color:#222;text-decoration:none;margin:30px 0 5px}.article-item{max-width:700px;padding-bottom:40px;margin:0 auto 40px auto}.article-item:not(:last-of-type){border-bottom:1px solid #efefef}.article-item amp-img{margin-bottom:20px}.post-title{text-align:center;font-family:"Songti SC";font-size:32px;margin-bottom:5px}.single{line-height:1.625;color:#4a4a4a;max-width:700px}.single.has-header{margin-top:60px}.single amp-img{margin:15px auto;text-align:center}.single code{color:#AA8D5B;font-size:14px;font-weight:bold;margin:5px}.single pre>code{font-weight:600;margin:0}.single div.highlight{box-shadow:0 3px 3px 1px #d2c7b5}.single .chroma{background-color:transparent}.single a{text-decoration:underline}.single a:hover{color:#000}.single-content{margin-bottom:20px}.pagination{display:flex;justify-content:center;margin:20px 0;padding:0}.pagination .page-item{list-style-type:none}.pagination .page-item a{font-size:16px;margin:0 5px;display:inline-block;padding:5px 10px;cursor:pointer;border-radius:2px}.pagination .page-item.active,.pagination .page-item:hover{color:#fff;transition:all 200ms}.pagination .page-item.active a,.pagination .page-item:hover a{color:#fff;background:#ad9616;transition:all 200ms}.read-more{margin-top:40px;padding-top:40px;border-top:1px solid #efefef;position:relative}.read-more__title{font-size:13px;position:absolute;left:50%;top:0;transform:translate(-50%, -50%);background-color:#f9f8f0;padding:0 10px}.read-more__item{margin-bottom:20px}.read-more__item__container{background-color:#fefefe;border-radius:4px;padding:5px 15px;box-sizing:border-box}.read-more__item a{text-decoration:none}.read-more__item h4{margin:10px 0 0 0}.read-more__summary{font-size:14px}@media screen and (min-width: 767px){.read-more__list{display:flex;justify-content:space-between}.read-more__item{display:flex;flex:1;padding:0 10px}.read-more__item__container{flex-grow:1}.read-more__item:first-of-type{padding-left:0}.read-more__item:last-of-type{padding-right:0}.read-more__item amp-img{display:none}}
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+<header class="site-header--float" amp-fx="float-in-top">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
+
+
+<section class="single container has-header">
+    <h1 class="post-title">【极客教程】在图片上显示访问者的QQ号和昵称</h1>
+    <div class="tac">
+        <time>2013年10月24日</time>
+    </div>
+
+    <article class="single-content">
+        <p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2013/10/1.jpg"
+    alt="最终效果 "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 2000w"
+    
+    
+    
+    
+    width="500"
+    height="400"
+    layout="responsive"
+    on="tap: 159 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="159"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+很多人在QQ空间里都能看到一些图片上会有自己的QQ号码之类的，感觉很神奇。今天网络极客就给大家普及一下这种奇怪的图片是如何做出来的。废话不多说，下面开始！</p>
+<h3 id="一最终效果">一、最终效果</h3>
+<p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2013/10/1.jpg"
+    alt="最终效果 "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/1.jpg 2000w"
+    
+    
+    
+    
+    width="500"
+    height="400"
+    layout="responsive"
+    on="tap: 339 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="339"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+在图片上显示出你的QQ和昵称以及浏览器信息</p>
+<p>当在你自己的空间时就会看到QQ号是你自己的，而浏览器信息也是自己的，当然还有昵称也是自己的昵称。看似很神奇，到底是怎么做出来的呢？</p>
+<h3 id="二原理分析">二、原理分析</h3>
+<p>首先呢，这个东西是在自己空间才能看到的。所以可以肯定的是这牵扯到了自己的账号登陆相关信息。其次这个图片是动态变化的，所以可以肯定不是用PS之类的P图P上去的，而是使用编程语言动态生成的。生成图片很多语言都可以，本例采用PHP来生成图片。</p>
+<p>为了不对高手啰嗦，下面直接上源码，自行下载：</p>
+<p><a href="http://pan.baidu.com/s/1j79kT" title="源码下载">http://pan.baidu.com/s/1j79kT</a></p>
+<p>完全的源码，毫无修改。</p>
+<h3 id="三部分代码讲解">三、部分代码讲解</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="nv">$ment</span> <span class="o">=</span>  <span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">&#34;HTTP_REFERER&#34;</span><span class="p">];</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$ment</span> <span class="o">==</span> <span class="s1">&#39;http://cnc.qzs.qq.com/qzone/newblog/v5/editor.html&#39;</span><span class="p">){</span>
+        <span class="nx">header</span><span class="p">(</span><span class="s2">&#34;HTTP/1.0 500 Internal Server Error&#34;</span><span class="p">);</span>
+<span class="k">exit</span><span class="p">;}</span>
+<span class="nx">preg_match</span><span class="p">(</span><span class="s2">&#34;#[0-9]{5,11}#&#34;</span><span class="p">,</span><span class="nv">$ment</span><span class="p">,</span><span class="nv">$rr</span><span class="p">);</span>
+<span class="nv">$qqnumber</span><span class="o">=</span><span class="nv">$rr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nv">$webtext</span> <span class="o">=</span> <span class="nx">file_get_contents</span><span class="p">(</span><span class="s1">&#39;http://liyaodong.sinaapp.com/qzoneapi/qqinfo-service.php?qq=&#39;</span><span class="o">.</span><span class="nv">$qqnumber</span><span class="p">);</span>
+<span class="nv">$temp1</span> <span class="o">=</span> <span class="nx">explode</span><span class="p">(</span><span class="s1">&#39;[&#39;</span><span class="p">,</span><span class="nv">$webtext</span><span class="p">);</span>
+<span class="nv">$temp2</span> <span class="o">=</span> <span class="nx">explode</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="nv">$temp1</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="nv">$nickname</span> <span class="o">=</span> <span class="nv">$temp2</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
+<span class="nx">ob_clean</span><span class="p">();</span>
+<span class="nv">$userBrowser</span> <span class="o">=</span> <span class="nx">userBrowser</span><span class="p">();</span>
+<span class="k">function</span> <span class="nf">userBrowser</span><span class="p">(){</span>
+       <span class="nv">$user_OSagent</span> <span class="o">=</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;HTTP_USER_AGENT&#39;</span><span class="p">];</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Maxthon&#34;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Maxthon(Microsoft IE)&#34;</span><span class="p">;</span>
+       <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Maxthon 2.0&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Maxthon 2.0&#34;</span><span class="p">;</span>
+       <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Maxthon&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Maxthon&#34;</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE 9.0&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE 9.0&#34;</span><span class="p">;</span>
+       <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE 8.0&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE 8.0&#34;</span><span class="p">;</span>
+       <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE 7.0&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE 7.0&#34;</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE 6.0&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE 6.0&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE 5.5&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE 5.5&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE 5.0&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE 5.0&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE 4.01&#34;</span><span class="p">))</span> <span class="p">{</span>
+          <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE 4.01&#34;</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;MSIE&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;MSIE &gt;=10.0&#34;</span><span class="p">;</span>
+      <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;NetCaptor&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;NetCaptor&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Netscape&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Netscape&#34;</span><span class="p">;</span>
+      <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Chrome&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Chrome&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Lynx&#34;</span><span class="p">))</span> <span class="p">{</span>
+          <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Lynx&#34;</span><span class="p">;</span>
+       <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Opera&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Opera&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Konqueror&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Konqueror&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Mozilla/5.0&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Mozilla&#34;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;Firefox&#34;</span><span class="p">))</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Firefox&#34;</span><span class="p">;</span>
+       <span class="p">}</span><span class="k">elseif</span><span class="p">(</span><span class="nx">strpos</span><span class="p">(</span><span class="nv">$user_OSagent</span><span class="p">,</span><span class="s2">&#34;U&#34;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;Firefox&#34;</span><span class="p">;</span>
+       <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+           <span class="nv">$visitor_browser</span> <span class="o">=</span><span class="s2">&#34;unknow&#34;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$visitor_browser</span><span class="p">;</span>
+<span class="p">}</span>
+ <span class="nv">$nickname</span> <span class="o">=</span> <span class="nx">iconv</span><span class="p">(</span><span class="s2">&#34;GBK&#34;</span><span class="p">,</span><span class="s2">&#34;UTF8//IGNORE&#34;</span><span class="p">,</span><span class="nv">$nickname</span><span class="p">);</span>
+ <span class="nv">$nickname</span> <span class="o">=</span> <span class="nx">str_replace</span><span class="p">(</span><span class="s1">&#39;&amp;quot;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$nickname</span><span class="p">);</span>
+ <span class="nv">$qqnumber</span> <span class="o">=</span> <span class="s1">&#39;   &#39;</span><span class="o">.</span><span class="nv">$qqnumber</span><span class="p">;</span>
+ <span class="nv">$userBrowser</span> <span class="o">=</span> <span class="nv">$userBrowser</span><span class="o">.</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="s1">&#39;Browser&#39;</span><span class="o">.</span><span class="s1">&#39;   &#39;</span><span class="p">;</span>
+  <span class="nv">$f</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SaeFetchurl</span><span class="p">();</span>
+ <span class="nv">$img_data</span> <span class="o">=</span> <span class="nv">$f</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span> <span class="s1">&#39;http://i1168.photobucket.com/albums/r494/xiaofengdongdong/1-1.jpg&#39;</span> <span class="p">);</span>
+ <span class="nv">$img</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SaeImage</span><span class="p">();</span>
+ <span class="nv">$img</span><span class="o">-&gt;</span><span class="na">setData</span><span class="p">(</span> <span class="nv">$img_data</span><span class="p">);</span>
+ <span class="c1">//实例化SaeImage并取得最大一张图片的大小，稍后用于设定合成后图片的画布大小
+</span><span class="c1"></span> <span class="c1">//执行合成
+</span><span class="c1"></span> <span class="nv">$img</span><span class="o">-&gt;</span><span class="na">annotate</span><span class="p">(</span><span class="nv">$nickname</span><span class="p">,</span><span class="nv">$opacity</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span><span class="nv">$gravity</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span><span class="nv">$font</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">&#34;name&#34;</span><span class="o">=&gt;</span><span class="nx">SAE_MicroHei</span><span class="p">,</span> <span class="s2">&#34;size&#34;</span><span class="o">=&gt;</span><span class="mi">30</span><span class="p">,</span> <span class="s2">&#34;weight&#34;</span><span class="o">=&gt;</span><span class="mi">150</span><span class="p">,</span> <span class="s2">&#34;color&#34;</span><span class="o">=&gt;</span><span class="s2">&#34;black&#34;</span><span class="p">));</span>
+ <span class="nv">$img</span><span class="o">-&gt;</span><span class="na">annotate</span><span class="p">(</span><span class="nv">$qqnumber</span><span class="p">,</span><span class="nv">$opacity</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span><span class="nv">$gravity</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="nv">$font</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">&#34;name&#34;</span><span class="o">=&gt;</span><span class="nx">SAE_MicroHei</span><span class="p">,</span> <span class="s2">&#34;size&#34;</span><span class="o">=&gt;</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&#34;weight&#34;</span><span class="o">=&gt;</span><span class="mi">300</span><span class="p">,</span> <span class="s2">&#34;color&#34;</span><span class="o">=&gt;</span><span class="s2">&#34;black&#34;</span><span class="p">));</span>
+ <span class="nv">$img</span><span class="o">-&gt;</span><span class="na">annotate</span><span class="p">(</span><span class="nv">$userBrowser</span><span class="p">,</span><span class="nv">$opacity</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span><span class="nv">$gravity</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span><span class="nv">$font</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">&#34;name&#34;</span><span class="o">=&gt;</span><span class="nx">SAE_MicroHei</span><span class="p">,</span> <span class="s2">&#34;size&#34;</span><span class="o">=&gt;</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&#34;weight&#34;</span><span class="o">=&gt;</span><span class="mi">300</span><span class="p">,</span> <span class="s2">&#34;color&#34;</span><span class="o">=&gt;</span><span class="s2">&#34;black&#34;</span><span class="p">));</span>
+ <span class="c1">//输出图片
+</span><span class="c1"></span> <span class="nv">$img</span><span class="o">-&gt;</span><span class="na">exec</span><span class="p">(</span><span class="s1">&#39;jpg&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这段代码中最需要理解的一个就是HTTP REFERER，这是整个程序的核心。当浏览器向web服务器发送请求的时候，一般会带上Referer，告诉服务器我是从哪个页面链接过来的，服务器籍此可以获得一些信息用于处理。因此当你从QQ空间访问到该图片时就会有Referer告诉服务器你是从哪里点过来的，而这个Referer里就藏有你的QQ号码。使用Google Chrome的同学可以按F12打开开发者工具，查看某个HTML文档的Header就可以找到该文档的Referer信息。</p>
+<p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2013/10/QQ%e6%88%aa%e5%9b%be20131024195715.png"
+    alt="screenshot "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/QQ%e6%88%aa%e5%9b%be20131024195715.png 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/QQ%e6%88%aa%e5%9b%be20131024195715.png 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/QQ%e6%88%aa%e5%9b%be20131024195715.png 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/QQ%e6%88%aa%e5%9b%be20131024195715.png 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/QQ%e6%88%aa%e5%9b%be20131024195715.png 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/10/QQ%e6%88%aa%e5%9b%be20131024195715.png 2000w"
+    
+    
+    
+    
+    width="805"
+    height="384"
+    layout="responsive"
+    on="tap: 180 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="180"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+依次点击Network-Qzoneapi也就是你要查看Referer的HTML文档，然后点击Header头部信息就可以看到HTTP Referer信息，可以看到uin后边跟着的就是QQ号码信息。</p>
+<p>在你获得了点击来源之后，下面需要做的就是把Referer信息中的QQ号提取出来，然后再通过QQ空间的API查询该QQ号码的相关信息。这个API的地址就是</p>
+<p><a href="http://base.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg?uins=123456789" title="QQ空间API">http://base.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg?uins=123456789</a></p>
+<p>uins后边跟着你要查询的QQ号码就可以了。在你访问之后返回的数据是JSON格式的：</p>
+<p>`portraitCallBack({&ldquo;123456789&rdquo;:[&ldquo;http://qlogo2.store.qq.com/qzone/123456789/123456789/100&rdquo;,91922,-1,8,0,1,&ldquo;今日观察&rdquo;,0]})``</p>
+<p>然后再用PHP对返回的数据进行解析，可以得到的信息有该QQ号码的头像地址、昵称、QQ号码等信息。</p>
+<p>得到相关数据后接下来要做的就是把这些信息通过PHP或者其他你喜欢的语言生成图片就可以了。就像图片加水印的原理一样，先用PS美化好一张底图，然后再设置文字大小、位置、颜色等信息。然后再输出到浏览器里。大功告成。</p>
+<h3 id="四在qq空间发布">四、在QQ空间发布</h3>
+<p>如果你直接在空间里用说说或者日志插入你会发现无法插入，因为地址格式不对，地址的后缀不是jpg或者png结尾的。所以这个时候需要用到一点HTML代码的知识。在日志中可以切换到HTML输入，在右上角。切换到HTML代码输入后在日志中写<code>&lt;img src=&quot;你的动态图片地址&quot; /&gt;</code>这样就可以插入进去了。</p>
+<p>总的来说没有多少技术含量，对于PHP大神来说都是小菜一碟的事情。由于时间仓促，代码写的很凌乱，各位大神不喜勿喷，欢迎加入网络极客QQ群：277076455一同交流。</p>
+    </article>
+
+    
+    
+        <div class="read-more">
+            <div class="read-more__title">
+                阅读更多
+            </div>
+            <div class="read-more__list">
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/personal-summary-for-2013/">
+                            <h4>回忆如困兽，寂寞太久而渐渐温柔</h4>
+                            <div class="read-more__summary"><amp-img
+    src="https://image.liyaodong.com/uploads/2013/08/timthumb.jpg"
+    
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2013/08/timthumb.jpg 2000w"
+    
+    
+    
+    
+    width="630"
+    height="300"
+    layout="responsive"
+    on="tap: 487 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="487"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>时光是琥珀，泪一滴滴被反锁，情书再不朽，也磨成沙漏。一整个宇宙，换一颗红豆，回忆如困兽，寂寞太久而渐渐温柔。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/windows-blue-8-1-review/">
+                            <h4>Windows Blue (win 8.1)上手初体验</h4>
+                            <div class="read-more__summary"><amp-img
+    src="http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png"
+    alt="Win8.1初体验banner "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner.png 2000w"
+    
+    
+    
+    
+    width="700"
+    height="250"
+    layout="responsive"
+    on="tap: 336 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="336"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>昨天微软放出Win8.1，趁着今天早上网速好，Down下来了。一路安装下来，感觉这玩意真心鸡肋啊。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/introduce-to-baowenli/">
+                            <h4>带你认识宝文理——欢迎各位学弟学妹选报宝文理</h4>
+                            <div class="read-more__summary"><amp-img
+    src="http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner1.jpg"
+    alt="banner "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner1.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner1.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner1.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner1.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner1.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/http://i1168.photobucket.com/albums/r494/xiaofengdongdong/banner1.jpg 2000w"
+    
+    
+    
+    
+    width="700"
+    height="250"
+    layout="responsive"
+    on="tap: 315 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="315"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>又是一年志愿时，各位亲们都为了忙志愿纠结的焦头烂额有木有？本文也帮不了你报志愿，这篇文章只是一个即将大三的学长带你认识一下宝文理，仅此而已。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+
+    <amp-iframe width="700" height="163"
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="https://liyaodong.com/disqus.html#display-qq-id-on-qzone.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fdisplay-qq-id-on-qzone%2f">
+        <div overflow tabindex=0 role=button aria-label=""></div>
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with <em>&#10084;</em>
+</footer>
+
+<amp-install-serviceworker
+    src="https://blog.liyaodong.com/sw.js"
+    layout="nodisplay">
+</amp-install-serviceworker>
+
+
+
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-30027709-1"
+            },
+            "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
+        }
+    </script>
+</amp-analytics>
+
+</body>
+</html>
+
