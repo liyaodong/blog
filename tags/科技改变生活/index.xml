@@ -36,7 +36,7 @@
     width=&#34;800&#34;
     height=&#34;536&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 457 &#34;
+    on=&#34;tap: 166 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -44,7 +44,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;457&#34;
+    id=&#34;166&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -77,7 +77,7 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 91 &#34;
+    on=&#34;tap: 40 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -85,7 +85,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;91&#34;
+    id=&#34;40&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -118,7 +118,7 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 172 &#34;
+    on=&#34;tap: 54 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -126,7 +126,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;172&#34;
+    id=&#34;54&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -159,7 +159,7 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 103 &#34;
+    on=&#34;tap: 335 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -167,7 +167,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;103&#34;
+    id=&#34;335&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -200,7 +200,7 @@
     width=&#34;700&#34;
     height=&#34;350&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 145 &#34;
+    on=&#34;tap: 18 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -208,7 +208,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;145&#34;
+    id=&#34;18&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -243,7 +243,7 @@
     width=&#34;700&#34;
     height=&#34;400&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 27 &#34;
+    on=&#34;tap: 333 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -251,7 +251,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;27&#34;
+    id=&#34;333&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -284,7 +284,7 @@
     width=&#34;1024&#34;
     height=&#34;512&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 425 &#34;
+    on=&#34;tap: 52 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -292,7 +292,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;425&#34;
+    id=&#34;52&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -325,7 +325,7 @@
     width=&#34;700&#34;
     height=&#34;250&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 374 &#34;
+    on=&#34;tap: 66 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -333,7 +333,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;374&#34;
+    id=&#34;66&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -366,7 +366,7 @@
     width=&#34;1440&#34;
     height=&#34;900&#34;
     layout=&#34;responsive&#34;
-    on=&#34;tap: 153 &#34;
+    on=&#34;tap: 404 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -374,7 +374,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;153&#34;
+    id=&#34;404&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -416,7 +416,7 @@
     width=&#34;384&#34;
     height=&#34;332&#34;
     layout=&#34;intrinsic&#34;
-    on=&#34;tap: 124 &#34;
+    on=&#34;tap: 471 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
     tabindex=&#34;0&#34;
@@ -424,7 +424,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;124&#34;
+    id=&#34;471&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
