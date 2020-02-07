@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html amp lang="zh-cn" class="no-js">
+<head>
+    <title>网络极客移动APP经验总结</title>
+    <meta charset="utf-8">
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script><script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+
+
+
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/webgeek-app-retro/">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+
+    <meta name="theme-color" content="#112233" />
+    <meta name="msvalidate.01" content="3C6C979DB103D784162934B1AC452B4B" />
+
+    <meta property="og:title" content="网络极客移动APP经验总结 | 晓风博客" />
+<meta name="twitter:title" content="网络极客移动APP经验总结 | 晓风博客" />
+<meta itemprop="name" content="网络极客移动APP经验总结 | 晓风博客" />
+<meta name="application-name" content="网络极客移动APP经验总结 | 晓风博客" />
+<meta property="og:site_name" content="" />
+
+
+
+    
+    
+
+<meta name="description" content="关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。
+" />
+<meta itemprop="description" content="关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。
+" />
+<meta property="og:description" content="关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。
+" />
+<meta name="twitter:description" content="关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。
+" />
+
+<base href="https://blog.liyaodong.com/posts/webgeek-app-retro/">
+<link rel="canonical" href="https://blog.liyaodong.com/posts/webgeek-app-retro/" itemprop="url" />
+<meta name="url" content="https://blog.liyaodong.com/posts/webgeek-app-retro/" />
+<meta name="twitter:url" content="https://blog.liyaodong.com/posts/webgeek-app-retro/" />
+<meta property="og:url" content="https://blog.liyaodong.com/posts/webgeek-app-retro/" />
+
+<meta property="og:locale" content="en">
+<meta name="language" content="">
+
+
+
+<meta itemprop="image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta property="og:image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta name="twitter:image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta name="twitter:image:src" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "晓风博客",
+    "alternateName": "Xiaofeng Blog",
+    "url": "https:\/\/blog.liyaodong.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/blog.liyaodong.com"
+  , "sameAs": ["https://www.facebook.com/lydxfdd","https://www.instagram.com/vvvvanilla","https://www.linkedin.com/in/yaodong-li-8223a385/","https://twitter.com/xiaofengdong"]
+  
+  
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/",
+          "name": "posts"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  4 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/webgeek-app-retro\/",
+          "name": "webgeek-app-retro"
+        }
+    }]
+}
+</script>
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        .chroma{background-color:#eeeedd}.chroma .err{color:#a61717;background-color:#e3d2d2}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffffcc}.chroma .lnt{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .ln{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .k{color:#8b008b;font-weight:bold}.chroma .kc{color:#8b008b;font-weight:bold}.chroma .kd{color:#8b008b;font-weight:bold}.chroma .kn{color:#8b008b;font-weight:bold}.chroma .kp{color:#8b008b;font-weight:bold}.chroma .kr{color:#8b008b;font-weight:bold}.chroma .kt{color:#00688b;font-weight:bold}.chroma .na{color:#658b00}.chroma .nb{color:#658b00}.chroma .nc{color:#008b45;font-weight:bold}.chroma .no{color:#00688b}.chroma .nd{color:#707a7c}.chroma .ne{color:#008b45;font-weight:bold}.chroma .nf{color:#008b45}.chroma .nn{color:#008b45;text-decoration:underline}.chroma .nt{color:#8b008b;font-weight:bold}.chroma .nv{color:#00688b}.chroma .s{color:#cd5555}.chroma .sa{color:#cd5555}.chroma .sb{color:#cd5555}.chroma .sc{color:#cd5555}.chroma .dl{color:#cd5555}.chroma .sd{color:#cd5555}.chroma .s2{color:#cd5555}.chroma .se{color:#cd5555}.chroma .sh{color:#1c7e71;font-style:italic}.chroma .si{color:#cd5555}.chroma .sx{color:#cb6c20}.chroma .sr{color:#1c7e71}.chroma .s1{color:#cd5555}.chroma .ss{color:#cd5555}.chroma .m{color:#b452cd}.chroma .mb{color:#b452cd}.chroma .mf{color:#b452cd}.chroma .mh{color:#b452cd}.chroma .mi{color:#b452cd}.chroma .il{color:#b452cd}.chroma .mo{color:#b452cd}.chroma .ow{color:#8b008b}.chroma .c{color:#228b22}.chroma .ch{color:#228b22}.chroma .cm{color:#228b22}.chroma .c1{color:#228b22}.chroma .cs{color:#8b008b;font-weight:bold}.chroma .cp{color:#1e889b}.chroma .cpf{color:#1e889b}.chroma .gd{color:#aa0000}.chroma .ge{font-style:italic}.chroma .gr{color:#aa0000}.chroma .gh{color:#000080;font-weight:bold}.chroma .gi{color:#00aa00}.chroma .go{color:#888888}.chroma .gp{color:#555555}.chroma .gs{font-weight:bold}.chroma .gu{color:#800080;font-weight:bold}.chroma .gt{color:#aa0000}.chroma .gl{text-decoration:underline}.chroma .w{color:#bbbbbb}body{background-color:#f9f8f0;color:#222;font-family:"Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif}.tac{text-align:center}a{color:#222;text-decoration:none}.container{max-width:960px;margin-left:auto;margin-right:auto;padding:15px}.container img,.container amp-img{max-width:100%}.site-header{text-align:center;margin-top:40px;font-family:"Songti SC"}.site-title{margin:0;display:inline-block;vertical-align:middle}.site-subtitle{margin:5px;font-size:14px}.site-header--float{font-family:"Songti SC";padding:15px 30px;background:#fff;border-bottom:1px solid #dcdcdc;width:100%;overflow:hidden;position:fixed;top:0;z-index:100}.site-header--float a{display:flex;align-items:center}.site-title--float{font-size:20px;margin:0px;margin-right:20px}.site-subtitle--float{font-size:12px;margin:0px}.site-footer{padding:10px;margin:20px;text-align:center}.site-footer em{color:#d82222}.article-item-title{font-size:24px;font-weight:bold;display:inline-block;vertical-align:middle;font-family:"Songti SC";margin:0}.article-item-title:hover{text-decoration:underline}.article-item-date{font-size:12px;display:block;color:#555}.article-item-summary{margin-top:20px;color:#555}.article-item-link{color:#222;text-decoration:none;margin:30px 0 5px}.article-item{max-width:700px;padding-bottom:40px;margin:0 auto 40px auto}.article-item:not(:last-of-type){border-bottom:1px solid #efefef}.article-item amp-img{margin-bottom:20px}.post-title{text-align:center;font-family:"Songti SC";font-size:32px;margin-bottom:5px}.single{line-height:1.625;color:#4a4a4a;max-width:700px}.single.has-header{margin-top:60px}.single amp-img{margin:15px auto;text-align:center}.single code{color:#AA8D5B;font-size:14px;font-weight:bold;margin:5px}.single pre>code{font-weight:600;margin:0}.single div.highlight{box-shadow:0 3px 3px 1px #d2c7b5}.single .chroma{background-color:transparent}.single a{text-decoration:underline}.single a:hover{color:#000}.single-content{margin-bottom:20px}.pagination{display:flex;justify-content:center;margin:20px 0;padding:0}.pagination .page-item{list-style-type:none}.pagination .page-item a{font-size:16px;margin:0 5px;display:inline-block;padding:5px 10px;cursor:pointer;border-radius:2px}.pagination .page-item.active,.pagination .page-item:hover{color:#fff;transition:all 200ms}.pagination .page-item.active a,.pagination .page-item:hover a{color:#fff;background:#ad9616;transition:all 200ms}.read-more{margin-top:40px;padding-top:40px;border-top:1px solid #efefef;position:relative}.read-more__title{font-size:13px;position:absolute;left:50%;top:0;transform:translate(-50%, -50%);background-color:#f9f8f0;padding:0 10px}.read-more__item{margin-bottom:20px}.read-more__item__container{background-color:#fefefe;border-radius:4px;padding:5px 15px;box-sizing:border-box}.read-more__item a{text-decoration:none}.read-more__item h4{margin:10px 0 0 0}.read-more__summary{font-size:14px}@media screen and (min-width: 767px){.read-more__list{display:flex;justify-content:space-between}.read-more__item{display:flex;flex:1;padding:0 10px}.read-more__item__container{flex-grow:1}.read-more__item:first-of-type{padding-left:0}.read-more__item:last-of-type{padding-right:0}.read-more__item amp-img{display:none}}
+
+    </style>
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/icons/icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png" />
+<link rel="apple-touch-icon" href="/icons/icon-57x57.png" />
+
+<link rel="icon" href="/icons/icon-32x32.png" sizes="32x32" />
+<link rel="icon" sizes="192x192" href="/icons/icon-192x192.png" />
+
+
+
+</head>
+
+<body>
+
+
+
+
+<header class="site-header--float" amp-fx="float-in-top">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
+
+
+<section class="single container has-header">
+    <h1 class="post-title">网络极客移动APP经验总结</h1>
+    <div class="tac">
+        <time>2014年8月10日</time>
+    </div>
+
+    <article class="single-content">
+        <amp-img
+    src="https://image.liyaodong.com/uploads/2014/08/banner1.jpg"
+    alt="web-app-dev "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/banner1.jpg 2000w"
+    
+    
+    
+    
+    width="1024"
+    height="512"
+    layout="responsive"
+    on="tap: 587 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="587"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>关于移动App Native和Web方式不在本文讨论范围之内，仅仅是经验总结，巩固知识方便以后查阅。</p>
+<h3 id="概述">概述</h3>
+<p>首先简单说明下该APP的组成：</p>
+<blockquote>
+<ol>
+<li>后端使用PHP和<a href="http://codeigniter.org.cn/">Codeigniter</a>框架实现</li>
+<li>前端采用<a href="http://goratchet.com">Ratchet</a>框架。</li>
+<li>数据抓取主要采用PHP Curl类</li>
+<li>DOM分析采用simple_html_dom这个插件</li>
+<li>使用SVN作为版本控制系统</li>
+<li>使用JSON作为数据交换格式</li>
+<li>Zepto.js作为javascript框架</li>
+<li>应用地址：<a href="http://geekers.sinaapp.com/mobile/">点击进入</a></li>
+</ol>
+</blockquote>
+<p>App功能实际上主要是模拟登陆教务系统，然后对成绩、课表等进行抓取，并按照手机排版格式优化输出。除此之外，还对数据进行收集，做数据的二次挖掘。</p>
+<h3 id="心得">心得</h3>
+<h5 id="1-关于用户登录">1. 关于用户登录</h5>
+<p>直接模拟到教务系统，对中间数据不做任何保留，防止出现安全问题。所以想测试安全性的同学省省吧，在我这测试和在教务系统直接测试是一样的，没有sql inject。因为评论系统是多说的，所以也不存在XXS了。</p>
+<h5 id="2-关于数据库表格设计">2. 关于数据库表格设计</h5>
+<p>这个本身是没有什么好说的，但是本次在设计的时候使用到了JSON。如果一个二维数组想要存储进数据库，可以把某一列数据格式化为JSON后再存储进去，非常方便，PHP需要用的时候再解析出来。不过再要新加数据的话就要全部解析出来，转化成数组再格式化回去，适合没有多少数据量的列。</p>
+<h5 id="3-移动端的html-meta标记">3. 移动端的HTML meta标记</h5>
+<p>第一个当然要说的是屏幕比例，第一行meta可以禁用用户双击放大、所小用户屏幕。我们已经为移动端做了优化，放大缩小功能当然是不需要的。而viewport则是设定了网页最大宽度等于设备的显示宽度。第二个meta表示是否禁止ios safari浏览器的工具栏。第三个则是工具栏的颜色调试。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;wx_pic&#39;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#39;margin:0 auto;display:none;&#39;</span><span class="p">&gt;</span>
+	    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$images_url</span><span class="p">;</span><span class="cp">?&gt;</span><span class="s">/icon.jpg&#39;</span> <span class="p">/&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="4-移动端框架选择">4. 移动端框架选择：</h5>
+<p>最初尝试了jQuery Mobile，这款框架功能很丰富，尤其是Ajax方面做的很好。但是性能着实堪忧，在Android的低端手机上反应很慢，有时候进一个网页需要30s + 。这当然是无法忍受的，所以又尝试了很多发现Ratchet不错，这个框架是twitter公司开发出的bootstrap“移动版”。这一点令我很纳闷，bootstrap 3.0本身就是移动优先的，那为何又有一个Ratchet？不过使用之后发现这款框架仍然不够成熟，而且用的人也比较少。后来我甚至去掉了框架里的JS，只是使用了布局和图标。</p>
+<h5 id="5-性能优化">5. 性能优化：</h5>
+<p>性能是移动端的瓶颈之一，如果不是引入了jiathis分享和多说评论，我对性能还是很满意的。从测试来看访问速度都很快，毕竟做了很多优化。不过还好，jiathis和多说都是ajax加载的，不会影响太多。说道优化必须说的就是图片优化，这个项目中首先采用了服务器端的gzip优化，将静态资源CSS、JS、图片等在服务器端压缩，然后浏览器会自动解压，节省传输中的带宽。其次对有所有的图片进行了压缩。因为采用了前端构建工具Grunt，所以很方便。Grunt会自动编译Less、压缩所有CSS到style.min.css、压缩所有JS、压缩所有图片。在Google的PageSpeed评分中各项指标都达到了L，只有一项是M。没有H。
+其实总结来说网页的优化就是：</p>
+<blockquote>
+<p>1.减少不必要使用的JS、CSS。</p>
+<p>2.压缩图片。</p>
+<p>3.使用字体图标，试过SVG貌似兼容不太好。</p>
+<p>4.使用Ajax来加载一些东西，比如外部的JS、校验密码等。</p>
+<ol start="5">
+<li>
+<p>数据交换和存储，页面见传递数据采用JSON这种很方便的格式化之后的数据，这比数组和对象更容易在数据库、后端、前端之间中互相交换。非常方便！</p>
+</li>
+<li>
+<p>SEO优化、分享时的标题文字和图片优化。每个页面单独有SEO Title和Description，通过单独设计这些文字，页面被分享的时候才会更加吸引人。如果有必要可以借鉴微信朋友圈很火的游戏“围住神经猫”在分享中带上自己的得分等，引起社交攀比，有利于应用推广。同时附上微信分享中的图片设置代码：</p>
+</li>
+</ol>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;wx_pic&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;margin: 0 auto; display: none;&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$images_url</span><span class="p">;</span><span class="cp">?&gt;</span><span class="s">/icon.jpg&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>对的，你没看错，是在head标签中加入<code>div#wx_pic</code>我也很郁闷这不是破坏了HTML结构么，但是微信就是这么二。</p>
+</blockquote>
+<h5 id="8-关于移动端的布局">8. 关于移动端的布局</h5>
+<p>移动端浏览器对<code>position:fixed</code>支持不是很好，想要尝试固定你的标题栏导航栏之类的可以试试iscroll这个JS框架。除此之外对全局使用<code>position:absolute</code>然后所以页面包含在这个标签内也会有问题，测试发现当网页需要想下翻动时由于浏览器的工具栏有时会隐藏，此种方式会造成<code>position:absolute</code>的判定不准。从形式上来看就会感觉网页有卡顿。所以不再非不得已的情况下不要我觉得还是不要使用<code>absolute</code>和<code>fixed</code>的比较好。</p>
+<h5 id="9-关于移动端的event事件">9. 关于移动端的Event事件</h5>
+<p>移动端的不叫click事件。而且当你使用jQuery的<code>click function</code>的时候会发现有迟钝甚至没反应。因为在移动端的点击事件叫做<code>tap</code>事件，双击<code>double tap</code>等等。推荐在移动端使用Zepto.js作为替代jQuery的选择，用法几乎和jQuery一样，所以不存在学习成本。</p>
+<h5 id="10-input标签的tabindexautofocusplaceholder">10. input标签的tabindex、autofocus、placeholder</h5>
+<p>各个标签的意义就不用解释了，不懂的请自行百度。只是这次新认识一个tabindex表示tab切换的标签，以及一个小的技巧就是隐藏的submit标签，用来enter提交表单。不需要去做事件监听，性能应该好点。只需要在JS端检测submit事件即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group bind_form&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;jwweb&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;jwweb&#34;</span> <span class="na">onsubmit</span><span class="o">=</span><span class="s">&#34;return false&#34;</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;xxx&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-row&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;xh&#34;</span><span class="p">&gt;</span>学号：<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;number&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;201193014000&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;xh&#34;</span> <span class="na">autofocus</span><span class="o">=</span><span class="s">&#34;autofocus&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-row&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;password&#34;</span><span class="p">&gt;</span>密码：<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-row&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>验证码：<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;javascript:void(0)&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;reloadcode&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;codeimg&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">base_url</span><span class="p">(</span><span class="s2">&#34;jwweb/getvalidcode&#34;</span><span class="p">);</span><span class="cp">?&gt;</span><span class="s">&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;
+</span><span class="s">        margin-top: 4px;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-row&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;cCode&#34;</span><span class="p">&gt;</span>请输入：<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">size</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;abcd&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;cCode&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;display:none&#34;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>暂时能想到的就是这么多了，这个项目做完后准备学习一下<code>Node</code>和<code>Angularjs</code>，备战十月份的找工作，如果有哪个公司要招前端的烦劳联系我一下。大四准毕业生，有三年web开发经验，准备在北京找全职工作。会设计、懂代码、前后端通吃。邮箱：mail@liyaodong.com 还有两个月，好好加油！</p>
+    </article>
+
+    
+    
+        <div class="read-more">
+            <div class="read-more__title">
+                阅读更多
+            </div>
+            <div class="read-more__list">
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/vim-shortcut-notes/">
+                            <h4>Vim快键键备忘录</h4>
+                            <div class="read-more__summary"><p>
+
+<amp-img
+    src="https://image.liyaodong.com/vimbanner.jpg"
+    alt="vim banner "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg 2000w"
+    
+    
+    
+    
+    width="700"
+    height="400"
+    layout="responsive"
+    on="tap: 233 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="233"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+不支持Vim快键键的编辑器不是好记事本&hellip;目测一大波Emacs人士正在狂奔而来。。。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/everyday-is-unique-day/">
+                            <h4>每一天都是生命中最独特的</h4>
+                            <div class="read-more__summary"><amp-img
+    src="https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg"
+    alt="groundhog-day "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2014/08/groundhog-day.jpg 2000w"
+    
+    
+    
+    
+    width="700"
+    height="394"
+    layout="responsive"
+    on="tap: 503 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="503"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>昨晚看了一部电影《Groundhog Day》（土拨鼠之日），讲述了一个气象预报员重复过一天的生活，颇有感触写此博文。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/using-html5-to-crop-images/">
+                            <h4>【HTML5】基于客户端的图片裁剪及水印添加功能</h4>
+                            <div class="read-more__summary"><amp-img
+    src="https://image.liyaodong.com/canvascrop.jpg"
+    
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/canvascrop.jpg 2000w"
+    
+    
+    
+    
+    width="800"
+    height="536"
+    layout="responsive"
+    on="tap: 803 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="803"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>首先来说说图片裁剪这件事情。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+
+    <amp-iframe width="700" height="163"
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="https://liyaodong.com/disqus.html#WebGeek-App-Retro.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fwebgeek-app-retro%2f">
+        <div overflow tabindex=0 role=button aria-label=""></div>
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with <em>&#10084;</em>
+</footer>
+
+<amp-install-serviceworker
+    src="https://blog.liyaodong.com/sw.js"
+    layout="nodisplay">
+</amp-install-serviceworker>
+
+
+
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-30027709-1"
+            },
+            "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
+        }
+    </script>
+</amp-analytics>
+
+</body>
+</html>
+

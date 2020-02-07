@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html amp lang="zh-cn" class="no-js">
+<head>
+    <title>文科生如何自学编程</title>
+    <meta charset="utf-8">
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script><script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+
+
+
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/lean-programming-by-yourself/">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+
+    <meta name="theme-color" content="#112233" />
+    <meta name="msvalidate.01" content="3C6C979DB103D784162934B1AC452B4B" />
+
+    <meta property="og:title" content="文科生如何自学编程 | 晓风博客" />
+<meta name="twitter:title" content="文科生如何自学编程 | 晓风博客" />
+<meta itemprop="name" content="文科生如何自学编程 | 晓风博客" />
+<meta name="application-name" content="文科生如何自学编程 | 晓风博客" />
+<meta property="og:site_name" content="" />
+
+
+
+    
+    
+
+<meta name="description" content="谈起编程很多人会觉得很难，但看到别人飞快地的在键盘上对着黑色屏幕舞动手指时又会觉得非常酷，甚至在自己内心萌生出一个想法 —— 我要不要也去学一下编程。
+" />
+<meta itemprop="description" content="谈起编程很多人会觉得很难，但看到别人飞快地的在键盘上对着黑色屏幕舞动手指时又会觉得非常酷，甚至在自己内心萌生出一个想法 —— 我要不要也去学一下编程。
+" />
+<meta property="og:description" content="谈起编程很多人会觉得很难，但看到别人飞快地的在键盘上对着黑色屏幕舞动手指时又会觉得非常酷，甚至在自己内心萌生出一个想法 —— 我要不要也去学一下编程。
+" />
+<meta name="twitter:description" content="谈起编程很多人会觉得很难，但看到别人飞快地的在键盘上对着黑色屏幕舞动手指时又会觉得非常酷，甚至在自己内心萌生出一个想法 —— 我要不要也去学一下编程。
+" />
+
+<base href="https://blog.liyaodong.com/posts/lean-programming-by-yourself/">
+<link rel="canonical" href="https://blog.liyaodong.com/posts/lean-programming-by-yourself/" itemprop="url" />
+<meta name="url" content="https://blog.liyaodong.com/posts/lean-programming-by-yourself/" />
+<meta name="twitter:url" content="https://blog.liyaodong.com/posts/lean-programming-by-yourself/" />
+<meta property="og:url" content="https://blog.liyaodong.com/posts/lean-programming-by-yourself/" />
+
+<meta property="og:locale" content="en">
+<meta name="language" content="">
+
+
+
+<meta itemprop="image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta property="og:image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta name="twitter:image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta name="twitter:image:src" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "晓风博客",
+    "alternateName": "Xiaofeng Blog",
+    "url": "https:\/\/blog.liyaodong.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/blog.liyaodong.com"
+  , "sameAs": ["https://www.facebook.com/lydxfdd","https://www.instagram.com/vvvvanilla","https://www.linkedin.com/in/yaodong-li-8223a385/","https://twitter.com/xiaofengdong"]
+  
+  
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/",
+          "name": "posts"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  4 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/lean-programming-by-yourself\/",
+          "name": "lean-programming-by-yourself"
+        }
+    }]
+}
+</script>
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        .chroma{background-color:#eeeedd}.chroma .err{color:#a61717;background-color:#e3d2d2}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffffcc}.chroma .lnt{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .ln{margin-right:0.4em;padding:0 0.4em 0 0.4em}.chroma .k{color:#8b008b;font-weight:bold}.chroma .kc{color:#8b008b;font-weight:bold}.chroma .kd{color:#8b008b;font-weight:bold}.chroma .kn{color:#8b008b;font-weight:bold}.chroma .kp{color:#8b008b;font-weight:bold}.chroma .kr{color:#8b008b;font-weight:bold}.chroma .kt{color:#00688b;font-weight:bold}.chroma .na{color:#658b00}.chroma .nb{color:#658b00}.chroma .nc{color:#008b45;font-weight:bold}.chroma .no{color:#00688b}.chroma .nd{color:#707a7c}.chroma .ne{color:#008b45;font-weight:bold}.chroma .nf{color:#008b45}.chroma .nn{color:#008b45;text-decoration:underline}.chroma .nt{color:#8b008b;font-weight:bold}.chroma .nv{color:#00688b}.chroma .s{color:#cd5555}.chroma .sa{color:#cd5555}.chroma .sb{color:#cd5555}.chroma .sc{color:#cd5555}.chroma .dl{color:#cd5555}.chroma .sd{color:#cd5555}.chroma .s2{color:#cd5555}.chroma .se{color:#cd5555}.chroma .sh{color:#1c7e71;font-style:italic}.chroma .si{color:#cd5555}.chroma .sx{color:#cb6c20}.chroma .sr{color:#1c7e71}.chroma .s1{color:#cd5555}.chroma .ss{color:#cd5555}.chroma .m{color:#b452cd}.chroma .mb{color:#b452cd}.chroma .mf{color:#b452cd}.chroma .mh{color:#b452cd}.chroma .mi{color:#b452cd}.chroma .il{color:#b452cd}.chroma .mo{color:#b452cd}.chroma .ow{color:#8b008b}.chroma .c{color:#228b22}.chroma .ch{color:#228b22}.chroma .cm{color:#228b22}.chroma .c1{color:#228b22}.chroma .cs{color:#8b008b;font-weight:bold}.chroma .cp{color:#1e889b}.chroma .cpf{color:#1e889b}.chroma .gd{color:#aa0000}.chroma .ge{font-style:italic}.chroma .gr{color:#aa0000}.chroma .gh{color:#000080;font-weight:bold}.chroma .gi{color:#00aa00}.chroma .go{color:#888888}.chroma .gp{color:#555555}.chroma .gs{font-weight:bold}.chroma .gu{color:#800080;font-weight:bold}.chroma .gt{color:#aa0000}.chroma .gl{text-decoration:underline}.chroma .w{color:#bbbbbb}body{background-color:#f9f8f0;color:#222;font-family:"Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif}.tac{text-align:center}a{color:#222;text-decoration:none}.container{max-width:960px;margin-left:auto;margin-right:auto;padding:15px}.container img,.container amp-img{max-width:100%}.site-header{text-align:center;margin-top:40px;font-family:"Songti SC"}.site-title{margin:0;display:inline-block;vertical-align:middle}.site-subtitle{margin:5px;font-size:14px}.site-header--float{font-family:"Songti SC";padding:15px 30px;background:#fff;border-bottom:1px solid #dcdcdc;width:100%;overflow:hidden;position:fixed;top:0;z-index:100}.site-header--float a{display:flex;align-items:center}.site-title--float{font-size:20px;margin:0px;margin-right:20px}.site-subtitle--float{font-size:12px;margin:0px}.site-footer{padding:10px;margin:20px;text-align:center}.site-footer em{color:#d82222}.article-item-title{font-size:24px;font-weight:bold;display:inline-block;vertical-align:middle;font-family:"Songti SC";margin:0}.article-item-title:hover{text-decoration:underline}.article-item-date{font-size:12px;display:block;color:#555}.article-item-summary{margin-top:20px;color:#555}.article-item-link{color:#222;text-decoration:none;margin:30px 0 5px}.article-item{max-width:700px;padding-bottom:40px;margin:0 auto 40px auto}.article-item:not(:last-of-type){border-bottom:1px solid #efefef}.article-item amp-img{margin-bottom:20px}.post-title{text-align:center;font-family:"Songti SC";font-size:32px;margin-bottom:5px}.single{line-height:1.625;color:#4a4a4a;max-width:700px}.single.has-header{margin-top:60px}.single amp-img{margin:15px auto;text-align:center}.single code{color:#AA8D5B;font-size:14px;font-weight:bold;margin:5px}.single pre>code{font-weight:600;margin:0}.single div.highlight{box-shadow:0 3px 3px 1px #d2c7b5}.single .chroma{background-color:transparent}.single a{text-decoration:underline}.single a:hover{color:#000}.single-content{margin-bottom:20px}.pagination{display:flex;justify-content:center;margin:20px 0;padding:0}.pagination .page-item{list-style-type:none}.pagination .page-item a{font-size:16px;margin:0 5px;display:inline-block;padding:5px 10px;cursor:pointer;border-radius:2px}.pagination .page-item.active,.pagination .page-item:hover{color:#fff;transition:all 200ms}.pagination .page-item.active a,.pagination .page-item:hover a{color:#fff;background:#ad9616;transition:all 200ms}.read-more{margin-top:40px;padding-top:40px;border-top:1px solid #efefef;position:relative}.read-more__title{font-size:13px;position:absolute;left:50%;top:0;transform:translate(-50%, -50%);background-color:#f9f8f0;padding:0 10px}.read-more__item{margin-bottom:20px}.read-more__item__container{background-color:#fefefe;border-radius:4px;padding:5px 15px;box-sizing:border-box}.read-more__item a{text-decoration:none}.read-more__item h4{margin:10px 0 0 0}.read-more__summary{font-size:14px}@media screen and (min-width: 767px){.read-more__list{display:flex;justify-content:space-between}.read-more__item{display:flex;flex:1;padding:0 10px}.read-more__item__container{flex-grow:1}.read-more__item:first-of-type{padding-left:0}.read-more__item:last-of-type{padding-right:0}.read-more__item amp-img{display:none}}
+
+    </style>
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/icons/icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png" />
+<link rel="apple-touch-icon" href="/icons/icon-57x57.png" />
+
+<link rel="icon" href="/icons/icon-32x32.png" sizes="32x32" />
+<link rel="icon" sizes="192x192" href="/icons/icon-192x192.png" />
+
+
+
+</head>
+
+<body>
+
+
+
+
+<header class="site-header--float" amp-fx="float-in-top">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
+
+
+<section class="single container has-header">
+    <h1 class="post-title">文科生如何自学编程</h1>
+    <div class="tac">
+        <time>2019年6月10日</time>
+    </div>
+
+    <article class="single-content">
+        <amp-img
+    src="https://image.liyaodong.com/2019/2019-06-10/hitesh-choudhary-562332-unsplash.jpg"
+    alt="Code "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/hitesh-choudhary-562332-unsplash.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/hitesh-choudhary-562332-unsplash.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/hitesh-choudhary-562332-unsplash.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/hitesh-choudhary-562332-unsplash.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/hitesh-choudhary-562332-unsplash.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/hitesh-choudhary-562332-unsplash.jpg 2000w"
+    
+    
+    
+    
+    width="5472"
+    height="3648"
+    layout="responsive"
+    on="tap: 605 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="605"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>谈起编程很多人会觉得很难，但看到别人飞快地的在键盘上对着黑色屏幕舞动手指时又会觉得非常酷，甚至在自己内心萌生出一个想法 —— 我要不要也去学一下编程。</p>
+<p>在我小的时候，编程这个字眼只在电视上寥寥无几的出现过。而每当我想到编程这个字眼的时候出现的便是以下画面：</p>
+
+
+<amp-img
+    src="https://image.liyaodong.com/2019/2019-06-10/photo-1526374965328-7f61d4dc18c5.jpeg"
+    alt="hacker "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/photo-1526374965328-7f61d4dc18c5.jpeg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/photo-1526374965328-7f61d4dc18c5.jpeg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/photo-1526374965328-7f61d4dc18c5.jpeg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/photo-1526374965328-7f61d4dc18c5.jpeg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/photo-1526374965328-7f61d4dc18c5.jpeg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/2019/2019-06-10/photo-1526374965328-7f61d4dc18c5.jpeg 2000w"
+    
+    
+    
+    
+    width="1950"
+    height="1300"
+    layout="responsive"
+    on="tap: 142 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="142"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>在一个黑框里闪烁着一行行的英文字母，仿佛进入到了另外一个世界，既神秘又好奇，一方面觉得编程很酷但另一方面又会觉得“这东西我肯定学不会啦”，然后就放弃了甚至没有开始的学习。</p>
+<p>然而多年以后我回过头来看，编程其实并没有那么神秘，没有人真的去用手指敲出0和1的组合，也没有人可以轻而易举的通过一个黑框随意入侵别人的电脑。编程其实也并不难，如果你只是想要学习一门编程语言然后做一个属于你自己的网站。但我也承认编程有时候确实很难，如果你想要做自己的操作系统又或是想要开发一款类似英雄联盟的游戏。所以找准自己的目标很重要，在开始阶段最好定一个不那么难的目标，比如做一个属于自己的网页。</p>
+<h2 id="文科生并不能代表什么">文科生并不能代表什么</h2>
+<p>是的，如果你尝试用“我是文科生，我学不了编程”这样的话来告诉自己学习编程是如何困难，那我也要用自己的亲身经历来告诉你文科生并不能代表什么。我自己就是一个文科生，虽然我从高中开始就接触计算机相关的东西，但是在整个大学课程中并没有太多计算机相关的课程。而现在我正在一家<a href="https://www.thoughtworks.com/cn/">专业的软件开发咨询公司</a>工作，不是在旧金山也不是北上广，就是西安。</p>
+<p>说起文科生不得不说在高二就选择文理分科对于当时的我们来说或许为时过早，我就属于那种喜欢地理历史但也非常喜欢计算机的同学，最后考虑到升学压力不得不选择了文科。而在大学中我也想过要转到计算机相关的专业，但最后也因为种种原因放弃了转专业这件事情。</p>
+<h3 id="所以文科生究竟和科班出身的计算机从业者区别很大吗">所以文科生究竟和科班出身的计算机从业者区别很大吗？</h3>
+<p>坦白说区别是有的，但并没有那么大。我见到过一些科班出身并且编程也很厉害的朋友，但也见到过太多非科班出身编程同样很厉害的同学，甚至比前者更厉害。所以比起是否科班出身，我更相信重要的是你自己对编程这件事情的兴趣投入有多大，以及你所在的环境氛围究竟有多好。一个一线城市的一流计算机专业出身基本编程素养一定是比一般人好的。而一个三线城市的三流计算机专业出身的基本编程素养&hellip; 可能真的没有太大区别。而幸运的是软件开发行业的缺口足够大，也并不需要你一定是一线城市的一流计算机专业毕业才能找到好工作。如果你的目标不仅仅是做一个属于自己的网页，而是成为一名软件开发工程师，那我可以负责任的告诉你文科生是可以成为专业的软件开发工程师的。</p>
+<h3 id="1-plus-1-2">1+1 &gt; 2</h3>
+<p>作为文科生来说如果你能学会编程其实是要比计算机专业的学生学会编程更厉害的，这就相当于你学会了英文那你可以同时享受英文和中文世界的两种资源，而只会英文的人享受不懂两种文化的资源一样。所以作为一个文科生你也有自己的优势所在。</p>
+<h2 id="这条路已经有很多人走过">这条路已经有很多人走过</h2>
+<p>是的，不仅仅是我或者身边的朋友，也有很多在名人是通过自学成为编程大牛的。比如苹果公司的联合创始人 Steve Wozniak，微软的创始人 Bill Gates 以及 SpaceX Tesla 的创始人 Elon Musk。我们不可否认这几个人都是天才，他们甚至在童年时期就已经开始对数学和编程有了浓厚的兴趣。但是也不可否认的是他们确实也通过自学学会了编程这件事情。</p>
+<h2 id="兴趣是最好的老师">兴趣是最好的老师</h2>
+<p>在你自学编程的开始阶段，并不会有人去奖励你什么。不会有金钱奖励也不会别人的称赞。所以自己喜欢是非常重要的，好奇心一直都是我们与生俱来的天性。你可能小到对“删除桌面快捷方式为什么不能卸载这个软件”这样的问题感兴趣，也可能对汽车为什么能做到自动驾驶、iPhone 为什么能做到人脸识别这样野心勃勃的问题有兴趣。但重点不是问题有多少，而是你为了弄清楚这个问题做了哪些事情。</p>
+<p>在我上高中的时候，QQ空间正在风靡一股自己个性化定制的风潮。大家不断炫耀着自己的空间如何个性，仿佛QQ空间就是自己逃离现实之后的完美的个人展示。我也不例外，看到别人的空间装扮的如何之酷，于是我就开始琢磨我的空间怎样才能变成这么酷。后来我慢慢了解到了空间的装扮是用 flash 来做的，再后来我下载了 Adobe 的 flash 制作软件，去二手书店淘到了一本入门教程（当时计算机书籍通常很贵，网购还并不发达）。就这样靠着一本五块钱的二手书和百度，一步一步的学会怎么使用 flast 做补间动画，怎么去写 Action Script 以加入交互效果。直到今天我仍然觉得这样的事情很有意思，在一个个无聊的周末，我都会看看自己有哪些有趣的主意还没有完成，花费半天甚至一天的时间去折腾一些小玩意。回过头来看正是这些看似无用的小玩意的折腾让我了解到了很多知识，也正是一次又一次把一个小玩意折腾熟练之后让我觉得自己收获满满。</p>
+<p>抓住自己的好奇心，享受它给你带来的探索、发现、收获的奇妙旅程。慢慢地，你就会觉得你知道的东西越来越多。</p>
+<h2 id="可以用于开始的想法">可以用于开始的想法</h2>
+<p>从一开始就想搞清楚如何黑进别人的电脑或是如何让路边的车自动驾驶似乎不是一个好主意，过高的目标可能会让你觉得气馁，在几天几个月的过程中你可能都没有满足感。一些小而美的目标看起来是更好的选择。</p>
+<ul>
+<li>如何给自己电脑桌面的快捷方式自定义一个图标，让整个桌面看起来个性又好看</li>
+<li>如何编写一个网页来计算距离自己的生日究竟还有多少天</li>
+<li>如何搭建一个博客来避免受到大公司和平台的制约</li>
+<li>如何写一个爬虫来自动订阅 Steam 游戏折扣的消息</li>
+<li>如何使用 Siri 来控制家里的灯和音响关闭开启</li>
+<li>&hellip;</li>
+</ul>
+<p>这些目标都是可行并且没有你想象中那么难的，开始一点尝试未必也不是一件坏事，即便是最后失败了也关系，只要开始你总会有收获的。</p>
+<h2 id="一些资源">一些资源</h2>
+<ul>
+<li>你可以通过 <a href="https://www.freecodecamp.cn">Free Code Camp</a> 这个网站像游戏闯关一样学习编程和网站开发</li>
+<li>你也可以通过B站上这个免费<a href="https://www.bilibili.com/video/av21376839">每天十分钟的视频</a>来认识基础的计算机科学知识</li>
+</ul>
+<h2 id="终身学习">终身学习</h2>
+<p>总能听到家长们说上了大学爱干啥就干啥，仿佛大学就是学习的终点，也仿佛大学毕业以后就可以给自己的学习生涯画上句号。但现实是却不是这样。</p>
+<p>人生就像一场马拉松，你所需要做的并不是前五百米的冲锋，而是在这段旅途上不断坚持，有些人跑着跑着就累了。而你所需要做的只是坚持自己相信的东西，一直跑下去。</p>
+<p>一时的得意或失落并不足以给你的人生定性，开始吧，任何时候都不算晚。<a href="https://zhuanlan.zhihu.com/p/37231460">82岁的老奶奶尚能开始学习编程</a>，而年轻气盛的我们又怎能畏畏缩缩停下脚步呢。</p>
+<p>开始吧，与君共勉。</p>
+    </article>
+
+    
+    
+        <div class="read-more">
+            <div class="read-more__title">
+                阅读更多
+            </div>
+            <div class="read-more__list">
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/geek-in-my-mind/">
+                            <h4>我眼中的极客精神</h4>
+                            <div class="read-more__summary"><amp-img
+    src="https://image.liyaodong.com/blog-2019-05-30/banner.jpg"
+    alt="geek "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/blog-2019-05-30/banner.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/blog-2019-05-30/banner.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/blog-2019-05-30/banner.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/blog-2019-05-30/banner.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/blog-2019-05-30/banner.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/blog-2019-05-30/banner.jpg 2000w"
+    
+    
+    
+    
+    width="4032"
+    height="3024"
+    layout="responsive"
+    on="tap: 830 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="830"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>我从小就喜欢拆东西，拆完了，就装不上去了。从满是齿轮的表到自己的玩具四驱车，这些小玩意的身上似乎总有一种魔力在吸引着我，让我不由自主地想要拆了又拆。虽然总是被骂拆完了就装不回去了，但是也有一些时候可以把拆下来的马达、名片以及电池组装在一起变成小伙伴们心奇羡慕的手持风扇，在炎炎的夏日里两节五号电池就能带来一整天的快乐。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/the-real-artist-ship/">
+                            <h4>Real Artist Ship</h4>
+                            <div class="read-more__summary"><amp-img
+    src="https://image.liyaodong.com/steve-jobs-macintosh.jpg"
+    
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/steve-jobs-macintosh.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/steve-jobs-macintosh.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/steve-jobs-macintosh.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/steve-jobs-macintosh.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/steve-jobs-macintosh.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/steve-jobs-macintosh.jpg 2000w"
+    
+    
+    
+    
+    width="1200"
+    height="800"
+    layout="responsive"
+    on="tap: 291 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="291"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+<p>1984年的1月，在苹果的办公室内，已经凌晨的办公室内仍然灯火通明。因为新的Macintosh电脑即将在几天之后向公众展示，大家看起来都非常疲倦，所有人的心头都是一片乌云。整个团队甚至从去年圣诞节工作到了现在，但新的系统仍然有很多问题。虽然这栋大楼里的每一个人都已经在帮助团队进行软件的测试了，但新系统的发布看起来仍然遥遥无期。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+
+    <amp-iframe width="700" height="163"
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="https://liyaodong.com/disqus.html#lean-programming-by-yourself.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2flean-programming-by-yourself%2f">
+        <div overflow tabindex=0 role=button aria-label=""></div>
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with <em>&#10084;</em>
+</footer>
+
+<amp-install-serviceworker
+    src="https://blog.liyaodong.com/sw.js"
+    layout="nodisplay">
+</amp-install-serviceworker>
+
+
+
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-30027709-1"
+            },
+            "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
+        }
+    </script>
+</amp-analytics>
+
+</body>
+</html>
+
