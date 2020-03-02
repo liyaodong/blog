@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ShadowDoc for xiaofeng's blog</title>
+    <script async src="https://cdn.ampproject.org/shadow-v0.js"></script>
+    <style>html,body { padding: 0; margin: 0; } * { box-sizing: border-box; }</style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        (() => {
+            window.AMP = window.AMP || [];
+            const cacheUrl = 'https://blog-liyaodong-com.cdn.ampproject.org/c/s/blog.liyaodong.com/';
+            const getContainer = () => {
+                document.querySelector('#container')
+            };
+
+            function fetchDocument(url) {
+                var xhr = new XMLHttpRequest();
+
+                return new Promise(function(resolve, reject) {
+                    xhr.open('GET', url, true);
+                    xhr.responseType = 'document';
+                    xhr.setRequestHeader('Accept', 'text/html');
+                    xhr.onload = function() {
+                        resolve(xhr.responseXML);
+                    };
+                    xhr.send();
+                });
+            }
+
+            const activeAmpDoc = {
+                _activeDoc: null,
+                set(doc) {
+                    this._activeDoc = doc;
+                },
+                close() {
+                    if (this._activeDoc === null) {
+                        return;
+                    }
+
+                    this._activeDoc.close();
+                    this._activeDoc = null;
+                }
+            };
+
+            const changeToHashUrl = a => {
+                const href = a.getAttribute('href');
+                a.setAttribute('href', href.replace('https://blog.liyaodong.com', '#'));
+            };
+
+            const loadList = url => {
+                fetchDocument(url).then(doc => {
+                    window.AMP.push(AMP => {
+                        const ampDoc = AMP.attachShadowDoc(document.querySelector('#container'), doc, url);
+
+                        const siteHeader = ampDoc.ampdoc.ng.querySelector('.site-header');
+                        siteHeader && siteHeader.remove();
+
+                        ampDoc.ampdoc.ng.querySelectorAll('a').forEach(changeToHashUrl);
+
+                        activeAmpDoc.set(ampDoc);
+
+                        // remove the site-header
+                        document.title = ampDoc.title;
+
+                        window.scrollTo(0, 0);
+                    });
+                });
+            };
+
+            const loadPost = url => {
+                fetchDocument(url)
+                    .then(doc => {
+                        window.AMP.push(AMP => {
+                            const ampDoc = AMP.attachShadowDoc(document.querySelector('#container'), doc, url);
+                            const postHeader = ampDoc.ampdoc.ng.querySelector('.site-header--float');
+                            postHeader && postHeader.remove();
+
+                            activeAmpDoc.set(ampDoc);
+
+                            window.scrollTo(0, 0);
+                        });
+                    });
+            };
+
+            const recreateContianer = () => {
+                document.querySelector('#container').remove();
+                document.body.insertAdjacentHTML('afterbegin', '<div id="container"></div>');
+            };
+
+            const getUrlType = () => {
+                const url = window.location.href;
+                const hash = window.location.hash.split('#'); 
+                let path = hash[hash.length - 1];
+
+                if (path) {
+                    path = path.replace(/^\//, '');
+                    if (/^posts/.test(path)) {
+                        return {
+                            type: 'post',
+                            handler: () => loadPost(cacheUrl + path),
+                        };
+                    } else {
+                        return {
+                            type: 'list',
+                            handler: () => loadList(cacheUrl + path),
+                        }
+                    }
+                } else {
+                    return {
+                        type: 'home',
+                        handler: () => loadList(cacheUrl),
+                    };
+                }
+            };
+
+            const listenUrlChange = () => {
+                activeAmpDoc.close();
+                recreateContianer();
+                getUrlType().handler();
+            };
+
+            listenUrlChange();
+            window.onhashchange = listenUrlChange;
+        })();
+    </script>
+</body>
+</html>

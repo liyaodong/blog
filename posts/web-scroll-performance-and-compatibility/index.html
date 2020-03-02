@@ -1,0 +1,1156 @@
+
+
+<!DOCTYPE html>
+
+
+
+<html amp lang="zh-cn" class="no-js">
+<head>
+    <title>web滚动性能优化及兼容问题</title>
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <meta charset="utf-8">
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script><script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script><script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script><script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+
+
+
+    <link rel="canonical" href="https://blog.liyaodong.com/posts/web-scroll-performance-and-compatibility/">
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="144x144">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    
+
+    <meta name="theme-color" content="#112233" />
+    <meta name="msvalidate.01" content="3C6C979DB103D784162934B1AC452B4B" />
+
+    <meta property="og:title" content="web滚动性能优化及兼容问题 | 晓风博客" />
+<meta name="twitter:title" content="web滚动性能优化及兼容问题 | 晓风博客" />
+<meta itemprop="name" content="web滚动性能优化及兼容问题 | 晓风博客" />
+<meta name="application-name" content="web滚动性能优化及兼容问题 | 晓风博客" />
+<meta property="og:site_name" content="" />
+
+
+
+    
+    
+
+<meta name="description" content="如果滚动仅仅是onscroll那么简单那么本文就没有存在的必要了，至于兼容这个老生常谈的问题&amp;hellip;&amp;hellip;还是呵呵吧。
+" />
+<meta itemprop="description" content="如果滚动仅仅是onscroll那么简单那么本文就没有存在的必要了，至于兼容这个老生常谈的问题&amp;hellip;&amp;hellip;还是呵呵吧。
+" />
+<meta property="og:description" content="如果滚动仅仅是onscroll那么简单那么本文就没有存在的必要了，至于兼容这个老生常谈的问题&amp;hellip;&amp;hellip;还是呵呵吧。
+" />
+<meta name="twitter:description" content="如果滚动仅仅是onscroll那么简单那么本文就没有存在的必要了，至于兼容这个老生常谈的问题&amp;hellip;&amp;hellip;还是呵呵吧。
+" />
+
+<base href="https://blog.liyaodong.com/posts/web-scroll-performance-and-compatibility/">
+<link rel="canonical" href="https://blog.liyaodong.com/posts/web-scroll-performance-and-compatibility/" itemprop="url" />
+<meta name="url" content="https://blog.liyaodong.com/posts/web-scroll-performance-and-compatibility/" />
+<meta name="twitter:url" content="https://blog.liyaodong.com/posts/web-scroll-performance-and-compatibility/" />
+<meta property="og:url" content="https://blog.liyaodong.com/posts/web-scroll-performance-and-compatibility/" />
+
+<meta property="og:locale" content="en">
+<meta name="language" content="">
+
+
+
+<meta itemprop="image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta property="og:image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta name="twitter:image" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+<meta name="twitter:image:src" content="https://res.cloudinary.com/vanillad/image/fetch/w_1400,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/vimbanner.jpg" />
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "晓风博客",
+    "alternateName": "Xiaofeng Blog",
+    "url": "https:\/\/blog.liyaodong.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/blog.liyaodong.com"
+  , "sameAs": ["https://www.facebook.com/lydxfdd","https://www.instagram.com/vvvvanilla","https://www.linkedin.com/in/yaodong-li-8223a385/","https://twitter.com/xiaofengdong"]
+  
+  
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/",
+          "name": "posts"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  4 ,
+        "item": {
+          "@id": "https:\/\/blog.liyaodong.com\/posts\/web-scroll-performance-and-compatibility\/",
+          "name": "web-scroll-performance-and-compatibility"
+        }
+    }]
+}
+</script>
+
+
+
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        /* Background */
+.chroma {
+  background-color: #eeeedd;
+}
+
+/* Error */
+.chroma .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+/* LineTableTD */
+.chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* LineTable */
+.chroma .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+  overflow: auto;
+  display: block;
+}
+
+/* LineHighlight */
+.chroma .hl {
+  display: block;
+  width: 100%;
+  background-color: #ffffcc;
+}
+
+/* LineNumbersTable */
+.chroma .lnt {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+}
+
+/* LineNumbers */
+.chroma .ln {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+}
+
+/* Keyword */
+.chroma .k {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* KeywordConstant */
+.chroma .kc {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* KeywordDeclaration */
+.chroma .kd {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* KeywordNamespace */
+.chroma .kn {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* KeywordPseudo */
+.chroma .kp {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* KeywordReserved */
+.chroma .kr {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* KeywordType */
+.chroma .kt {
+  color: #00688b;
+  font-weight: bold;
+}
+
+/* NameAttribute */
+.chroma .na {
+  color: #658b00;
+}
+
+/* NameBuiltin */
+.chroma .nb {
+  color: #658b00;
+}
+
+/* NameClass */
+.chroma .nc {
+  color: #008b45;
+  font-weight: bold;
+}
+
+/* NameConstant */
+.chroma .no {
+  color: #00688b;
+}
+
+/* NameDecorator */
+.chroma .nd {
+  color: #707a7c;
+}
+
+/* NameException */
+.chroma .ne {
+  color: #008b45;
+  font-weight: bold;
+}
+
+/* NameFunction */
+.chroma .nf {
+  color: #008b45;
+}
+
+/* NameNamespace */
+.chroma .nn {
+  color: #008b45;
+  text-decoration: underline;
+}
+
+/* NameTag */
+.chroma .nt {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* NameVariable */
+.chroma .nv {
+  color: #00688b;
+}
+
+/* LiteralString */
+.chroma .s {
+  color: #cd5555;
+}
+
+/* LiteralStringAffix */
+.chroma .sa {
+  color: #cd5555;
+}
+
+/* LiteralStringBacktick */
+.chroma .sb {
+  color: #cd5555;
+}
+
+/* LiteralStringChar */
+.chroma .sc {
+  color: #cd5555;
+}
+
+/* LiteralStringDelimiter */
+.chroma .dl {
+  color: #cd5555;
+}
+
+/* LiteralStringDoc */
+.chroma .sd {
+  color: #cd5555;
+}
+
+/* LiteralStringDouble */
+.chroma .s2 {
+  color: #cd5555;
+}
+
+/* LiteralStringEscape */
+.chroma .se {
+  color: #cd5555;
+}
+
+/* LiteralStringHeredoc */
+.chroma .sh {
+  color: #1c7e71;
+  font-style: italic;
+}
+
+/* LiteralStringInterpol */
+.chroma .si {
+  color: #cd5555;
+}
+
+/* LiteralStringOther */
+.chroma .sx {
+  color: #cb6c20;
+}
+
+/* LiteralStringRegex */
+.chroma .sr {
+  color: #1c7e71;
+}
+
+/* LiteralStringSingle */
+.chroma .s1 {
+  color: #cd5555;
+}
+
+/* LiteralStringSymbol */
+.chroma .ss {
+  color: #cd5555;
+}
+
+/* LiteralNumber */
+.chroma .m {
+  color: #b452cd;
+}
+
+/* LiteralNumberBin */
+.chroma .mb {
+  color: #b452cd;
+}
+
+/* LiteralNumberFloat */
+.chroma .mf {
+  color: #b452cd;
+}
+
+/* LiteralNumberHex */
+.chroma .mh {
+  color: #b452cd;
+}
+
+/* LiteralNumberInteger */
+.chroma .mi {
+  color: #b452cd;
+}
+
+/* LiteralNumberIntegerLong */
+.chroma .il {
+  color: #b452cd;
+}
+
+/* LiteralNumberOct */
+.chroma .mo {
+  color: #b452cd;
+}
+
+/* OperatorWord */
+.chroma .ow {
+  color: #8b008b;
+}
+
+/* Comment */
+.chroma .c {
+  color: #228b22;
+}
+
+/* CommentHashbang */
+.chroma .ch {
+  color: #228b22;
+}
+
+/* CommentMultiline */
+.chroma .cm {
+  color: #228b22;
+}
+
+/* CommentSingle */
+.chroma .c1 {
+  color: #228b22;
+}
+
+/* CommentSpecial */
+.chroma .cs {
+  color: #8b008b;
+  font-weight: bold;
+}
+
+/* CommentPreproc */
+.chroma .cp {
+  color: #1e889b;
+}
+
+/* CommentPreprocFile */
+.chroma .cpf {
+  color: #1e889b;
+}
+
+/* GenericDeleted */
+.chroma .gd {
+  color: #aa0000;
+}
+
+/* GenericEmph */
+.chroma .ge {
+  font-style: italic;
+}
+
+/* GenericError */
+.chroma .gr {
+  color: #aa0000;
+}
+
+/* GenericHeading */
+.chroma .gh {
+  color: #000080;
+  font-weight: bold;
+}
+
+/* GenericInserted */
+.chroma .gi {
+  color: #00aa00;
+}
+
+/* GenericOutput */
+.chroma .go {
+  color: #888888;
+}
+
+/* GenericPrompt */
+.chroma .gp {
+  color: #555555;
+}
+
+/* GenericStrong */
+.chroma .gs {
+  font-weight: bold;
+}
+
+/* GenericSubheading */
+.chroma .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+/* GenericTraceback */
+.chroma .gt {
+  color: #aa0000;
+}
+
+/* GenericUnderline */
+.chroma .gl {
+  text-decoration: underline;
+}
+
+/* TextWhitespace */
+.chroma .w {
+  color: #bbbbbb;
+}
+
+body {
+  background-color: #f9f8f0;
+  color: #222;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
+}
+
+.tac {
+  text-align: center;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+.container img,
+.container amp-img {
+  max-width: 100%;
+}
+
+.site-header {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Songti SC";
+}
+
+.site-title {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.site-subtitle {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.site-header--float {
+  font-family: "Songti SC";
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header--float a {
+  display: flex;
+  align-items: center;
+}
+
+.site-title--float {
+  font-size: 20px;
+  margin: 0px;
+  margin-right: 20px;
+}
+
+.site-subtitle--float {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.site-footer {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+.site-footer em {
+  color: #d82222;
+}
+
+.article-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Songti SC";
+  margin: 0;
+}
+.article-item-title:hover {
+  text-decoration: underline;
+}
+
+.article-item-date {
+  font-size: 12px;
+  display: block;
+  color: #555;
+}
+
+.article-item-summary {
+  margin-top: 20px;
+  color: #555;
+}
+
+.article-item-link {
+  color: #222;
+  text-decoration: none;
+  margin: 30px 0 5px;
+}
+
+.article-item {
+  max-width: 700px;
+  padding-bottom: 40px;
+  margin: 0 auto 40px auto;
+}
+.article-item:not(:last-of-type) {
+  border-bottom: 1px solid #efefef;
+}
+.article-item amp-img {
+  margin-bottom: 20px;
+}
+
+.post-title {
+  text-align: center;
+  font-family: "Songti SC";
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.single {
+  line-height: 1.625;
+  color: #4a4a4a;
+  max-width: 700px;
+}
+.single.has-header {
+  margin-top: 60px;
+}
+.single amp-img {
+  margin: 15px auto;
+  text-align: center;
+}
+.single code {
+  color: #AA8D5B;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;
+}
+.single pre > code {
+  font-weight: 600;
+  margin: 0;
+}
+.single div.highlight {
+  box-shadow: 0 3px 3px 1px #d2c7b5;
+}
+.single .chroma {
+  background-color: transparent;
+}
+.single a {
+  text-decoration: underline;
+}
+.single a:hover {
+  color: #000;
+}
+
+.single-content {
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+.pagination .page-item {
+  list-style-type: none;
+}
+.pagination .page-item a {
+  font-size: 16px;
+  margin: 0 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.pagination .page-item.active, .pagination .page-item:hover {
+  color: #fff;
+  transition: all 200ms;
+}
+.pagination .page-item.active a, .pagination .page-item:hover a {
+  color: #fff;
+  background: #ad9616;
+  transition: all 200ms;
+}
+
+.read-more {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #efefef;
+  position: relative;
+}
+.read-more__title {
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  background-color: #f9f8f0;
+  padding: 0 10px;
+}
+.read-more__item {
+  margin-bottom: 20px;
+}
+.read-more__item__container {
+  background-color: #fefefe;
+  border-radius: 4px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+}
+.read-more__item a {
+  text-decoration: none;
+}
+.read-more__item h4 {
+  margin: 10px 0 0 0;
+}
+.read-more__summary {
+  font-size: 14px;
+}
+@media screen and (min-width: 767px) {
+  .read-more__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .read-more__item {
+    display: flex;
+    flex: 1;
+    padding: 0 10px;
+  }
+  .read-more__item__container {
+    flex-grow: 1;
+  }
+  .read-more__item:first-of-type {
+    padding-left: 0;
+  }
+  .read-more__item:last-of-type {
+    padding-right: 0;
+  }
+  .read-more__item amp-img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.html.map */
+
+    </style>
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/icons/icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png" />
+<link rel="apple-touch-icon" href="/icons/icon-57x57.png" />
+
+<link rel="icon" href="/icons/icon-32x32.png" sizes="32x32" />
+<link rel="icon" sizes="192x192" href="/icons/icon-192x192.png" />
+
+
+
+</head>
+
+<body>
+
+
+
+
+<header class="site-header--float" amp-fx="float-in-top">
+    <a href="https://blog.liyaodong.com">
+        <h1 class="site-title--float">
+            晓风博客
+        </h1>
+        <h2 class="site-subtitle--float">
+            一片荒芜的地方
+        </h2>
+    </a>
+</header>
+
+
+<section class="single container has-header">
+    <h1 class="post-title">web滚动性能优化及兼容问题</h1>
+    <div class="tac">
+        <time>2015年5月7日</time>
+    </div>
+
+    <article class="single-content">
+        <p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2015/05/mouse.jpg"
+    alt="mouse "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/05/mouse.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/05/mouse.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/05/mouse.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/05/mouse.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/05/mouse.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/05/mouse.jpg 2000w"
+    
+    
+    
+    
+    width="700"
+    height="350"
+    layout="responsive"
+    on="tap: 445 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="445"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+如果滚动仅仅是onscroll那么简单那么本文就没有存在的必要了，至于兼容这个老生常谈的问题&hellip;&hellip;还是呵呵吧。</p>
+<h3 id="先来说说需求"> 先来说说需求</h3>
+<p>某日看到某文发现其网站有一很舒适的设计，即当你向下看文章的时候会提示你看到多少了。细心一想这个主意还是蛮有用的，遂「<!-- raw HTML omitted -->抄袭<!-- raw HTML omitted -->」之。</p>
+<blockquote>
+<p>某文某网站：<a href="http://www.ozy.com/pov/teaching-kids-code/3238">http://www.ozy.com/pov/teaching-kids-code/3238</a></p>
+<p>最终效果：<a href="http://www.geekpark.net/topics/171430">http://www.geekpark.net/topics/171430</a></p>
+</blockquote>
+<h3 id="开撸">开撸</h3>
+<p>呵，不就是这么个小小的功能么，都不用打开我的Sublime，vi都搞定了。</p>
+<blockquote>
+<ol>
+<li>先画个 <code>div</code> ，然后 <code>position: fixed</code> 到最顶部，然后 <code>width: 0</code> 调整颜色 balabala&hellip;.<!-- raw HTML omitted --></li>
+<li>然后根据js监听浏览器滚动，用已滚动的部分的高度 <code>-</code> 文章距离顶部的高度 <code>=</code> 已阅读部分文章的高度。然后用这个高度除以文章总高度就等于阅读百分比。</li>
+</ol>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">$line</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#reading_progress&#39;</span><span class="p">)</span><span class="p">,</span>
+      <span class="nx">$article</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#article&#39;</span><span class="p">)</span><span class="p">,</span>
+      <span class="nx">articleH</span> <span class="o">=</span> <span class="nx">$article</span><span class="p">.</span><span class="nx">height</span><span class="p">(</span><span class="p">)</span><span class="p">,</span>
+      <span class="nx">articleMt</span> <span class="o">=</span> <span class="nx">$article</span><span class="p">.</span><span class="nx">offset</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="nx">top</span><span class="p">;</span>
+
+  <span class="nb">window</span><span class="p">.</span><span class="nx">onscroll</span> <span class="o">=</span> <span class="nx">render</span><span class="p">;</span>
+
+  <span class="kd">function</span> <span class="nx">render</span> <span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">readed</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">)</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">(</span><span class="p">)</span> <span class="o">-</span> <span class="nx">articleMt</span><span class="p">,</span>
+        <span class="nx">progress</span><span class="p">;</span>
+    <span class="c1">// 如果超出阅读则不进行操作
+</span><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="nx">readed</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">progress</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">readed</span> <span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="nx">articleH</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">progress</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">progress</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">readed</span> <span class="o">/</span> <span class="nx">articleH</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">$line</span><span class="p">.</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="nx">progress</span> <span class="o">+</span> <span class="s1">&#39;px&#39;</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>看起来好像咩有什么问题了，于是浏览器刷新调试&hellip; 好像和别人的效果不太一样，别人的是舒畅的音乐的感觉，我这一卡一卡的感觉像便秘&hellip;</p>
+<p>恩，可能是因为没有动画吧。祭出我的杀器：<code>transition: all 0.3s</code> 动画神马必备，看了看效果好像好点了。不过感觉还是有些卡顿，心理作用？</p>
+<p>好吧，<!-- raw HTML omitted -->可能<!-- raw HTML omitted -->是 <code>width</code> 触发重绘（repaint）了。</p>
+<p>关于浏览器重绘请移步：<a href="http://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/">Avoiding Unnecessary Paints</a></p>
+<p>那不用 <code>width: 100%</code> 如何做到从 0% - 100% 的阅读进度提示呢？另外一个好的方案是 <code>translateX</code> 或者更好的方案 <code>translate3d</code> ， 为啥？因为相比 <code>width</code> 的变换，<code>translate</code> 不会引发重绘，这对于性能上有优势。而 <code>translateX</code> 和 <code>translate3d</code> 相比，前者已经足够好了但是后者会开启GPU加速，理论上性能更好。所以最后的CSS看起来是酱紫的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">reading_progress</span>
+  <span class="nt">width</span><span class="o">:</span> <span class="nt">100</span><span class="o">%</span>
+  <span class="nt">height</span><span class="o">:</span> <span class="nt">3px</span>
+  <span class="nt">position</span><span class="o">:</span> <span class="nt">fixed</span>
+  <span class="nt">z-index</span><span class="o">:</span> <span class="nt">999</span>
+  <span class="nt">background-color</span><span class="o">:</span> <span class="p">#</span><span class="nn">7fc042</span>
+  <span class="nt">transform</span><span class="o">:</span> <span class="nt">translate3d</span><span class="o">(</span><span class="nt">-100</span><span class="o">%</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">)</span>
+  <span class="nt">transition</span><span class="o">:</span> <span class="nt">all</span> <span class="nt">0</span><span class="p">.</span><span class="nc">3s</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>CSS的性能优化到这里就要结束啦，其实 <code>position: fixed</code> 已经引发了重绘，优化 <code>width</code> 什么的都是自我安慰。但在以后的项目中还是尽量少的触发重绘，用户体验毕竟是由众多细小的细节组成的。</p>
+<p>接下来聊聊JS，这样写功能上是没有太大问题的。问题在于 <code>onscroll</code> 是否性能足够优秀？</p>
+<p>参考该文：
+<a href="http://www.html5rocks.com/zh/tutorials/speed/scrolling/">Scrolling Performance</a>
+<a href="http://kristerkari.github.io/adventures-in-webkit-land/blog/2013/08/30/fixing-a-parallax-scrolling-website-to-run-in-60-fps/">Fixing a parallax scrolling website to run in 60 FPS</a>
+<a href="http://www.html5rocks.com/en/tutorials/speed/animations/">Leaner, Meaner, Faster Animations with requestAnimationFrame</a></p>
+<p>夜太长，字太多。不如我来总结一下，总得来说在浏览器滚动的过程中尽量<strong>避免</strong>图片大小的缩放、<code>bow-shadow</code>、<code>width</code>、<code>height</code>等变化。在循环动画等问题上尽量避免使用 <code>setTimeout</code> 而是使用 <code>requestAnimationFrame</code>去代替。这和本文有什么关系呢？在我们的 <code>onscroll</code> 中调用的 render()函数会在滚动发生的时候去触发。其实这是很没有必要的，可以通过加锁的形式让其 <code>60fps</code> 的速度去刷新。具体来看代码可能是酱紫的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">didScroll</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">ua</span> <span class="o">=</span> <span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="p">,</span>
+    <span class="nx">isMobile</span> <span class="o">=</span> <span class="sr">/iPhone|iPad|iPod|Android/i</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="p">)</span><span class="p">;</span>
+
+<span class="c1">// better way to loop animation
+</span><span class="c1"></span><span class="nb">window</span><span class="p">.</span><span class="nx">requestAnimFrame</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>
+  <span class="k">return</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">requestAnimationFrame</span>       <span class="o">||</span>
+          <span class="nb">window</span><span class="p">.</span><span class="nx">webkitRequestAnimationFrame</span> <span class="o">||</span>
+          <span class="nb">window</span><span class="p">.</span><span class="nx">mozRequestAnimationFrame</span>    <span class="o">||</span>
+          <span class="kd">function</span><span class="p">(</span> <span class="nx">callback</span> <span class="p">)</span><span class="p">{</span>
+            <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">callback</span><span class="p">,</span> <span class="mi">1000</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span><span class="p">;</span>
+          <span class="p">}</span><span class="p">;</span>
+<span class="p">}</span><span class="p">)</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nx">isMobile</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">)</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;touchmove&#39;</span><span class="p">,</span> <span class="nx">updateProgress</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">)</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;scroll&#39;</span><span class="p">,</span> <span class="nx">updateProgress</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">updateProgress</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">didScroll</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 这个东西不应该在 updateProgress里么？好吧，我试着放进去然后没动画效果了，原因未知。
+</span><span class="c1"></span><span class="c1">// 这样的话即时不滚动也会不停的检查高度信息，但是... 谁看文章不滚动呢...
+</span><span class="c1"></span><span class="p">(</span><span class="kd">function</span> <span class="nx">animloop</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>
+  <span class="nx">requestAnimFrame</span><span class="p">(</span><span class="nx">animloop</span><span class="p">)</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">didScroll</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">didScroll</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">render</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span><span class="p">)</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在移动端应该使用 <code>touchmove</code> 事件而不是 <code>onscroll</code> 事件，但即使使用了 <code>touchmove</code> 事件在我的 ios 8.3 chrome version 42.0上仍然有问题，因为Chrome考虑到性能问题跳过了 <code>touchmove</code>事件。通常来说使用 <code>onscroll</code> 事件在众多移动端浏览器上事件触发是在滚动结束后才触发。而PC端是只要滚动就能触发，因此随滚动而产生的动画会比较流畅。但如果是滚动结束后才产生，那就会表现的有点卡。其实不是性能问题。而 <code>touchmove</code> 在移动端却可以连续触发。虽然在某些浏览器上还是有Bug。</p>
+<p><a href="http://tjvantoll.com/2012/08/19/onscroll-event-issues-on-mobile-browsers/">onscroll Event Issues on Mobile Browsers</a>
+<a href="http://wilsonpage.co.uk/touch-events-in-chrome-android/">Touch events in Chrome Android</a></p>
+<p>那么这个问题真的没法解决吗？ iScroll 的解决办法是用 JS 模拟滚动，而对于本需求来说确实有那么点杀鸡用牛刀的感觉，毕竟不是什么核心需求。所以直到目前位置这个问题依然在 ios android上 没有解决，期待以后的解决方案。</p>
+<p>头图来自<a href="https://dribbble.com/shots/1445181-Mouse-Grid?list=searches&amp;tag=mouse&amp;offset=22">Dribbble @Jamal</a></p>
+    </article>
+
+    
+    
+        <div class="read-more">
+            <div class="read-more__title">
+                阅读更多
+            </div>
+            <div class="read-more__list">
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/how-to-get-valueable-information/">
+                            <h4>聊聊信息渠道这件事</h4>
+                            <div class="read-more__summary"><p>想想真是件可怕的事情，媒体一直以来都是件很重要的工具——法西斯用来控制人心、宗教用来控制思想、百度告诉你什么是「最好的」医院，朋友圈告诉你，什么是「最好的」祖传秘方。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/thanks-to-passed-your-self/">
+                            <h4>谢谢过去的自己</h4>
+                            <div class="read-more__summary"><p>
+
+<amp-img
+    src="https://image.liyaodong.com/759816-b7debb4a15a19734.jpg"
+    alt="Thanks to yourself "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/759816-b7debb4a15a19734.jpg 2000w"
+    
+    
+    
+    
+    width="630"
+    height="300"
+    layout="responsive"
+    on="tap: 624 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="624"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+你好，谢谢你。</p>
+<p>我穿越回过去，对那时的自己说。</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="read-more__item">
+                    <div class="read-more__item__container">
+                        <a href="/posts/responsive-image-workflow/">
+                            <h4>响应式图片解决方案</h4>
+                            <div class="read-more__summary"><p>
+
+<amp-img
+    src="https://image.liyaodong.com/uploads/2015/1018/car.jpg"
+    alt="响应式图片 "
+    
+    sizes="(min-width: 720px) 700px, 100vw"
+    srcset="
+      https://res.cloudinary.com/vanillad/image/fetch/w_450,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/1018/car.jpg 450w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_750,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/1018/car.jpg 750w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_900,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/1018/car.jpg 900w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1200,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/1018/car.jpg 1200w,
+      https://res.cloudinary.com/vanillad/image/fetch/w_1500,q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/1018/car.jpg 1500w,
+      https://res.cloudinary.com/vanillad/image/fetch/q_auto,f_auto,c_scale,dpr_auto/https://image.liyaodong.com/uploads/2015/1018/car.jpg 2000w"
+    
+    
+    
+    
+    width="1440"
+    height="677"
+    layout="responsive"
+    on="tap: 840 "
+    role="button"
+    aria-label="Image lightbox button"
+    tabindex="0"
+>
+</amp-img>
+
+<amp-image-lightbox
+    id="840"
+    layout="nodisplay"
+>
+</amp-image-lightbox>
+
+如今开发一个网站不是响应式都不好意思拿出来，那么作为响应式中的重要一环「响应式图片」你又是如何解决的呢？</p></div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+
+    <amp-iframe width="700" height="163"
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="https://liyaodong.com/disqus.html#web-scroll-performance-and-compatibility.md|https%3a%2f%2fblog.liyaodong.com%2fposts%2fweb-scroll-performance-and-compatibility%2f">
+        <div overflow tabindex=0 role=button aria-label=""></div>
+    </amp-iframe>
+</section>
+
+<footer class="site-footer">
+    Powered by <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="https://gohugo.io/">Hugo</a> with <em>&#10084;</em>
+</footer>
+
+<amp-install-serviceworker
+    src="https://blog.liyaodong.com/sw.js"
+    layout="nodisplay">
+</amp-install-serviceworker>
+
+
+
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-30027709-1"
+            },
+            "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
+        }
+    </script>
+</amp-analytics>
+
+</body>
+</html>
+
