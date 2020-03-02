@@ -821,7 +821,7 @@ a {
      width="2560"
      height="1347"
      layout="responsive"
-    on="tap: 13 "
+    on="tap: 629 "
     role="button"
     aria-label="Image lightbox button"
    tabindex="0"
@@ -829,7 +829,7 @@ a {
 </amp-img>
 
 <amp-image-lightbox
-    id="13"
+    id="629"
     layout="nodisplay"
 >
 </amp-image-lightbox>
@@ -896,7 +896,7 @@ a {
      width="1966"
      height="844"
      layout="responsive"
-    on="tap: 756 "
+    on="tap: 681 "
     role="button"
     aria-label="Image lightbox button"
    tabindex="0"
@@ -904,7 +904,7 @@ a {
 </amp-img>
 
 <amp-image-lightbox
-    id="756"
+    id="681"
     layout="nodisplay"
 >
 </amp-image-lightbox>
@@ -944,7 +944,7 @@ a {
      width="1864"
      height="1134"
      layout="responsive"
-    on="tap: 409 "
+    on="tap: 362 "
     role="button"
     aria-label="Image lightbox button"
    tabindex="0"
@@ -952,7 +952,7 @@ a {
 </amp-img>
 
 <amp-image-lightbox
-    id="409"
+    id="362"
     layout="nodisplay"
 >
 </amp-image-lightbox>
@@ -995,7 +995,7 @@ a {
      width="1080"
      height="788"
      layout="responsive"
-    on="tap: 85 "
+    on="tap: 225 "
     role="button"
     aria-label="Image lightbox button"
    tabindex="0"
@@ -1003,7 +1003,7 @@ a {
 </amp-img>
 
 <amp-image-lightbox
-    id="85"
+    id="225"
     layout="nodisplay"
 >
 </amp-image-lightbox>
@@ -1046,7 +1046,7 @@ a {
      width="1290"
      height="754"
      layout="responsive"
-    on="tap: 510 "
+    on="tap: 670 "
     role="button"
     aria-label="Image lightbox button"
    tabindex="0"
@@ -1054,7 +1054,7 @@ a {
 </amp-img>
 
 <amp-image-lightbox
-    id="510"
+    id="670"
     layout="nodisplay"
 >
 </amp-image-lightbox>
@@ -1063,11 +1063,50 @@ a {
 <p>上图中 Navigation Start 代表你的浏览器收到了你想要跳转网页的请求，可能是你在地址栏输入了链接并敲下了回车，也可能是你点击了某个链接发生了跳转。从这个事件开始便是浏览器尝试去解析 DNS，你的服务器端收到请求进行对应的数据库查询或是相关操作并返回 HTML。</p>
 <p>在这个过程中一个重要的指标便是 TTFB。</p>
 <ul>
-<li>TTFB(Time To First Byte)</li>
+<li><strong>TTFB(Time To First Byte)</strong></li>
 </ul>
-<p>即从 Navigation Start 开始后你的浏览器接受到了第一个字节，意味着对于第一个请求必要的 DNS、HTTPS 握手结束，并且你的后端已经完成了相应操作返回了对应的 HTML。</p>
-<h2 id="性能预算和持续集成">性能预算和持续集成</h2>
+<p>即从 Navigation Start 开始后你的浏览器接受到了第一个字节，意味着对于第一个请求必要的 DNS、HTTPS 握手结束，并且你的后端已经完成了相应操作返回了对应的 HTML。如果 TTFB 的数据不理想通常意味着你的后端应用程序需要进行优化，可能是对网站进行静态化以减少数据库压力，也可能是数据库查询出现瓶颈，更多的问题需要像<a href="https://newrelic.com/"> New Relic</a> 这样的专业工具去分析。</p>
+<p>在浏览器收到第一个字节之后下一个重要的里程碑便是 Start Render。</p>
+<ul>
+<li><strong>Start Render</strong> 浏览器开始渲染一些东西了</li>
+</ul>
+<p>我们知道浏览器在加载的过程中有很多因素是阻止浏览器进行渲染的，例如在 <code>&lt;head&gt;</code> 标签中嵌入的 <code>&lt;script&gt;</code> (没有 <code>async/defer</code> 标签的情况下)，又或是你的 CSS 文件太大没有加载完成等。Start Render 指标标明了用户现在开始能看到一些内容开始加载了，而不是一片纯白的屏幕。</p>
+<p>接下来你可能要关注的是我已经看到了内容那我是否能做交互呢？例如点击一些按钮，滑动查看图片等。如果一个网站优化的不好你很有可能看到了内容但是点击页面上的按钮却不起作用。此时就要关注 First CPU Idle 这个指标了。</p>
+<ul>
+<li><strong>First CPU Idle</strong> 第一次 CPU 空闲，还有一个类似的指标即 <strong>Time To Interactive(TTI)</strong></li>
+</ul>
+<p>通常浏览器会使用主线程来做页面布局、垃圾回收以及解析执行 JS 的工作。如果你的 JS 文件庞大，需要消耗 CPU 大量的时间来解析，那这个指标则可以很好的显示出这个问题。这时候你需要做的可能是减少 JS 文件的体积、删除无用的 CSS/JS 等。</p>
+<p>除了以上的三个指标之外还有很多其他的指标，不同的指标类型标明了不同的问题，不过我建议在开始其他指标之前先熟悉并统计以上的三个指标。</p>
+<h2 id="把指标做成统计图">把指标做成统计图</h2>
+<p>当我们收集了足够的指标数据时，我们可能会想要做一个漂亮的数据统计图。方便告诉别人你的网站加载速度如何。此时你可能会说，我的网站平均 2s 即可加载完毕。但平均 2s 这个数值可能并不能反映出真正的问题所在，有可能70%的用户都是在 1.8s 内加载完毕的，但是又 20% 的用户加载时间在 5s 甚至 8s。作为一个性能报表你可能更多的想要看到问题在哪而不是大家平均加载速度怎样。因此常见的性能统计报表有以下三个方法：</p>
+<ul>
+<li>平均值</li>
+<li>中位值</li>
+<li>第95百分位值</li>
+</ul>
+<p>平均值的计算方法相信每个人都很清楚了，中位值即对数据进行排序，在总样本的 1/2 处所在的性能数据。那第95百分位值又是怎样计算出来的呢？</p>
+<p>95百分位值即对数据进行排序，找出第 95% 处的数据，通常这个数据都是整个数据集中垫底的数据，既能帮你放大问题所在还能让你体验到用户群中最“弱势”的用户感受（可能是设备性能不好或网络较差）。如果你能保持这个值的相对稳定和优化，那基本上代表了你的系统有较好的稳定性和性能。</p>
 <h2 id="为什么我的优化对整体加载效果不佳">为什么我的优化对整体加载效果不佳</h2>
+<p>当你满腔热血的对 CSS 进行了优化，裁剪并压缩了图片，使用了更好的压缩算法却发现你的 First CPU Idle 只优化了 0.1s。这个时候难免有些丧气。但实际上这却是正常的。</p>
+<blockquote>
+<p>并不是你的每处优化都会对系统带来巨大提升，正如你的系统出问题的时候也不一定全盘皆输。</p>
+</blockquote>
+<h3 id="amdahl-s-law-阿姆达尔定律">Amdahl&rsquo;s law - 阿姆达尔定律</h3>
+<p>在读 <a href="https://book.douban.com/subject/26912767/">CSAPP</a> 这本书的时候读到了这个定理，即你对系统某处性能的优化对系统整体的作用取决于该处在系统中的重要性以及你提升了多大。举个例子：</p>
+<p>你的网页加载原本需要 10s，CSS 解析占用了 2s。</p>
+<p>你作出了一定的优化，即将 CSS 的解析时间缩短了一半，但你的网页加载速度并没有对应的提升一半。显而易见的是你的网页优化之后的加载速度为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">10s - 2s * 0.5 = 9s
+// 提升了 10%
+</code></pre></td></tr></table>
+</div>
+</div><p>所以当你在尝试优化系统的时候可以挑当前占用系统时间最长的部分下手，如果这部分已经优化到头了那就换个部分优化。因为 10s 加载一个网页你把 CSS 解析时间优化没了网站也只能快 2s。</p>
+<p>是不是很有意思？接下来的几篇博客会继续深入介绍网站的图片优化以及渲染优化等，欢迎留言和分享！</p>
     </article>
 
     
@@ -1103,7 +1142,7 @@ a {
      width="1920"
      height="1267"
      layout="responsive"
-    on="tap: 758 "
+    on="tap: 693 "
     role="button"
     aria-label="Image lightbox button"
    tabindex="0"
@@ -1111,7 +1150,7 @@ a {
 </amp-img>
 
 <amp-image-lightbox
-    id="758"
+    id="693"
     layout="nodisplay"
 >
 </amp-image-lightbox>
@@ -1147,7 +1186,7 @@ a {
      width="1920"
      height="1281"
      layout="responsive"
-    on="tap: 645 "
+    on="tap: 831 "
     role="button"
     aria-label="Image lightbox button"
    tabindex="0"
@@ -1155,7 +1194,7 @@ a {
 </amp-img>
 
 <amp-image-lightbox
-    id="645"
+    id="831"
     layout="nodisplay"
 >
 </amp-image-lightbox>
