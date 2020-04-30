@@ -38,7 +38,7 @@
      width=&#34;3750&#34;
      height=&#34;1842&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 453 &#34;
+    on=&#34;tap: 113 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -46,7 +46,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;453&#34;
+    id=&#34;113&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -82,7 +82,7 @@
      width=&#34;1920&#34;
      height=&#34;937&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 613 &#34;
+    on=&#34;tap: 251 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -90,7 +90,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;613&#34;
+    id=&#34;251&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -126,7 +126,7 @@
      width=&#34;2560&#34;
      height=&#34;1347&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 81 &#34;
+    on=&#34;tap: 164 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -134,7 +134,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;81&#34;
+    id=&#34;164&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -170,7 +170,7 @@
      width=&#34;1920&#34;
      height=&#34;1267&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 409 &#34;
+    on=&#34;tap: 467 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -178,7 +178,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;409&#34;
+    id=&#34;467&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -214,7 +214,7 @@
      width=&#34;1920&#34;
      height=&#34;1281&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 96 &#34;
+    on=&#34;tap: 420 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -222,7 +222,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;96&#34;
+    id=&#34;420&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -258,7 +258,7 @@
      width=&#34;5472&#34;
      height=&#34;3648&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 345 &#34;
+    on=&#34;tap: 700 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -266,7 +266,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;345&#34;
+    id=&#34;700&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -302,7 +302,7 @@
      width=&#34;4032&#34;
      height=&#34;3024&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 838 &#34;
+    on=&#34;tap: 261 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -310,7 +310,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;838&#34;
+    id=&#34;261&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -346,7 +346,7 @@
      width=&#34;1200&#34;
      height=&#34;800&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 133 &#34;
+    on=&#34;tap: 762 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -354,7 +354,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;133&#34;
+    id=&#34;762&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -399,7 +399,7 @@
      width=&#34;1000&#34;
      height=&#34;621&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 226 &#34;
+    on=&#34;tap: 544 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -407,7 +407,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;226&#34;
+    id=&#34;544&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -443,7 +443,7 @@
      width=&#34;1024&#34;
      height=&#34;768&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 834 &#34;
+    on=&#34;tap: 745 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -451,7 +451,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;834&#34;
+    id=&#34;745&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -497,7 +497,7 @@
      width=&#34;3264&#34;
      height=&#34;2448&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 418 &#34;
+    on=&#34;tap: 331 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -505,7 +505,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;418&#34;
+    id=&#34;331&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -541,7 +541,7 @@
      width=&#34;640&#34;
      height=&#34;404&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 740 &#34;
+    on=&#34;tap: 495 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -549,7 +549,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;740&#34;
+    id=&#34;495&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -585,7 +585,7 @@
      width=&#34;1200&#34;
      height=&#34;799&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 894 &#34;
+    on=&#34;tap: 165 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -593,7 +593,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;894&#34;
+    id=&#34;165&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -650,7 +650,7 @@
      width=&#34;630&#34;
      height=&#34;300&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 941 &#34;
+    on=&#34;tap: 813 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -658,7 +658,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;941&#34;
+    id=&#34;813&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -705,7 +705,7 @@
      width=&#34;1440&#34;
      height=&#34;677&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 361 &#34;
+    on=&#34;tap: 843 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -713,7 +713,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;361&#34;
+    id=&#34;843&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -759,7 +759,7 @@
      width=&#34;1440&#34;
      height=&#34;875&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 316 &#34;
+    on=&#34;tap: 153 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -767,7 +767,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;316&#34;
+    id=&#34;153&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -813,7 +813,7 @@
      width=&#34;1200&#34;
      height=&#34;799&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 800 &#34;
+    on=&#34;tap: 627 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -821,7 +821,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;800&#34;
+    id=&#34;627&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -868,7 +868,7 @@
      width=&#34;800&#34;
      height=&#34;600&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 178 &#34;
+    on=&#34;tap: 648 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -876,7 +876,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;178&#34;
+    id=&#34;648&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -922,7 +922,7 @@
      width=&#34;1600&#34;
      height=&#34;1200&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 500 &#34;
+    on=&#34;tap: 138 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -930,7 +930,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;500&#34;
+    id=&#34;138&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -966,7 +966,7 @@
      width=&#34;800&#34;
      height=&#34;600&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 976 &#34;
+    on=&#34;tap: 193 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -974,7 +974,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;976&#34;
+    id=&#34;193&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1020,7 +1020,7 @@
      width=&#34;800&#34;
      height=&#34;514&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 921 &#34;
+    on=&#34;tap: 161 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1028,7 +1028,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;921&#34;
+    id=&#34;161&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1074,7 +1074,7 @@
      width=&#34;700&#34;
      height=&#34;350&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 552 &#34;
+    on=&#34;tap: 688 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1082,7 +1082,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;552&#34;
+    id=&#34;688&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1118,7 +1118,7 @@
      width=&#34;800&#34;
      height=&#34;536&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 805 &#34;
+    on=&#34;tap: 461 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1126,7 +1126,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;805&#34;
+    id=&#34;461&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1162,7 +1162,7 @@
      width=&#34;700&#34;
      height=&#34;350&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 340 &#34;
+    on=&#34;tap: 318 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1170,7 +1170,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;340&#34;
+    id=&#34;318&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1206,7 +1206,7 @@
      width=&#34;700&#34;
      height=&#34;350&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 853 &#34;
+    on=&#34;tap: 597 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1214,7 +1214,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;853&#34;
+    id=&#34;597&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1260,7 +1260,7 @@
      width=&#34;1000&#34;
      height=&#34;500&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 648 &#34;
+    on=&#34;tap: 370 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1268,7 +1268,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;648&#34;
+    id=&#34;370&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1304,7 +1304,7 @@
      width=&#34;700&#34;
      height=&#34;350&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 497 &#34;
+    on=&#34;tap: 776 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1312,7 +1312,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;497&#34;
+    id=&#34;776&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1348,7 +1348,7 @@
      width=&#34;700&#34;
      height=&#34;350&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 747 &#34;
+    on=&#34;tap: 632 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1356,7 +1356,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;747&#34;
+    id=&#34;632&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1402,7 +1402,7 @@
      width=&#34;700&#34;
      height=&#34;400&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 676 &#34;
+    on=&#34;tap: 46 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1410,7 +1410,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;676&#34;
+    id=&#34;46&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1446,7 +1446,7 @@
      width=&#34;700&#34;
      height=&#34;400&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 520 &#34;
+    on=&#34;tap: 848 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1454,7 +1454,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;520&#34;
+    id=&#34;848&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1490,7 +1490,7 @@
      width=&#34;735&#34;
      height=&#34;456&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 472 &#34;
+    on=&#34;tap: 944 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1498,7 +1498,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;472&#34;
+    id=&#34;944&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1535,7 +1535,7 @@
      width=&#34;700&#34;
      height=&#34;394&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 90 &#34;
+    on=&#34;tap: 79 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1543,7 +1543,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;90&#34;
+    id=&#34;79&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1579,7 +1579,7 @@
      width=&#34;1024&#34;
      height=&#34;512&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 116 &#34;
+    on=&#34;tap: 747 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1587,7 +1587,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;116&#34;
+    id=&#34;747&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1623,7 +1623,7 @@
      width=&#34;700&#34;
      height=&#34;300&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 337 &#34;
+    on=&#34;tap: 681 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1631,7 +1631,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;337&#34;
+    id=&#34;681&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1677,7 +1677,7 @@
      width=&#34;500&#34;
      height=&#34;400&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 547 &#34;
+    on=&#34;tap: 499 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1685,7 +1685,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;547&#34;
+    id=&#34;499&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1721,7 +1721,7 @@
      width=&#34;700&#34;
      height=&#34;250&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 939 &#34;
+    on=&#34;tap: 349 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1729,7 +1729,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;939&#34;
+    id=&#34;349&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1765,7 +1765,7 @@
      width=&#34;700&#34;
      height=&#34;250&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 612 &#34;
+    on=&#34;tap: 172 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1773,7 +1773,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;612&#34;
+    id=&#34;172&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1809,7 +1809,7 @@
      width=&#34;700&#34;
      height=&#34;307&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 80 &#34;
+    on=&#34;tap: 237 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1817,7 +1817,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;80&#34;
+    id=&#34;237&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1854,7 +1854,7 @@
      width=&#34;700&#34;
      height=&#34;336&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 157 &#34;
+    on=&#34;tap: 900 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1862,7 +1862,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;157&#34;
+    id=&#34;900&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;</description>
@@ -1895,7 +1895,7 @@
      width=&#34;630&#34;
      height=&#34;300&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 940 &#34;
+    on=&#34;tap: 597 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1903,7 +1903,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;940&#34;
+    id=&#34;597&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1939,7 +1939,7 @@
      width=&#34;1440&#34;
      height=&#34;900&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 438 &#34;
+    on=&#34;tap: 600 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -1947,7 +1947,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;438&#34;
+    id=&#34;600&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -1992,7 +1992,7 @@
      width=&#34;307&#34;
      height=&#34;313&#34;
      layout=&#34;intrinsic&#34;
-    on=&#34;tap: 493 &#34;
+    on=&#34;tap: 820 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -2000,7 +2000,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;493&#34;
+    id=&#34;820&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -2036,7 +2036,7 @@
      width=&#34;384&#34;
      height=&#34;332&#34;
      layout=&#34;intrinsic&#34;
-    on=&#34;tap: 148 &#34;
+    on=&#34;tap: 93 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -2044,7 +2044,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;148&#34;
+    id=&#34;93&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -2080,7 +2080,7 @@
      width=&#34;1280&#34;
      height=&#34;960&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 140 &#34;
+    on=&#34;tap: 816 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -2088,7 +2088,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;140&#34;
+    id=&#34;816&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -2124,7 +2124,7 @@
      width=&#34;668&#34;
      height=&#34;328&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 311 &#34;
+    on=&#34;tap: 264 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -2132,7 +2132,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;311&#34;
+    id=&#34;264&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
@@ -2178,7 +2178,7 @@
      width=&#34;670&#34;
      height=&#34;502&#34;
      layout=&#34;responsive&#34;
-    on=&#34;tap: 368 &#34;
+    on=&#34;tap: 612 &#34;
     role=&#34;button&#34;
     aria-label=&#34;Image lightbox button&#34;
    tabindex=&#34;0&#34;
@@ -2186,7 +2186,7 @@
 &lt;/amp-img&gt;
 
 &lt;amp-image-lightbox
-    id=&#34;368&#34;
+    id=&#34;612&#34;
     layout=&#34;nodisplay&#34;
 &gt;
 &lt;/amp-image-lightbox&gt;
